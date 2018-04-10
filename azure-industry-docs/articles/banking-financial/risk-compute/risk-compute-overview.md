@@ -25,7 +25,7 @@ Risk model input data comes in several forms, the most common being Excel files 
 
 Batch processing allows many worker virtual machines to run in parallel as show in Figure 1. Processing data files and submitting results to machine learning systems or data stores are common tasks for the worker nodes. Given the jobs run by the worker nodes are created by the customer, almost any action may be taken in the batch job.
  
-![](assets/overview-02.png | width=475)
+![](assets/overview-02.png)
 Figure 1
 
 Azure provides an elegant solution for batch processing. Customers can choose to connect to data stored on premises after connecting Azure-based processing nodes to the on-premise networks. The customer can also upload data to an appropriate location within Azure, allowing for lower latency and higher bandwidth access to that data.
