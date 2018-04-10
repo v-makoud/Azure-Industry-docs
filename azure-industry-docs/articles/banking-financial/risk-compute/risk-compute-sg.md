@@ -1,3 +1,3 @@
-## Risk Compute Solutions Guide
+# Risk Compute Solutions Guide
 
-THis is a solutions guide.
+This is a solutions guide.
