@@ -25,7 +25,9 @@ Risk model input data comes in several forms, the most common being Excel files 
 
 Batch processing allows many worker virtual machines to run in parallel as show in Figure 1. Processing data files and submitting results to machine learning systems or data stores are common tasks for the worker nodes. Given the jobs run by the worker nodes are created by the customer, almost any action may be taken in the batch job.
  
-![](assets/overview-02.png)
+
+<img src="assets/overview-02.png" width="400" /> 
+
 
 Figure 1
 
