@@ -1,3 +1,13 @@
+---
+# required metadata
+title: Risk Compute in Banking Overview 
+author: dstarr
+ms.author: dstarr
+ms.date: 04/12/2018
+ms.topic: article
+ms.prod: sql-server-2017
+ms.technology: database-engine
+---
 # Risk Compute in Banking Overview
 
 ## Introduction
