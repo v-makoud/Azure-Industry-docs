@@ -11,3 +11,5 @@ description: (not to exceed 140)
 # Predictive Maintenance in Manufacturing Overview
 
 ## Introduction
+
+Lorem ipsum ...
