@@ -4,7 +4,3 @@
   items:
   - name: Azure
     topicHref: /azure/
-    items:
-    - name: Industry Experience
-      tocHref: /industry/
-      topicHref: /industry/
