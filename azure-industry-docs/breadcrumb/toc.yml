@@ -1,7 +1,7 @@
 - name: Industry Experience
   tocHref: /Industry/
   topicHref: /azure-industry-docs/index
-#  items:
-#    - name: Risk Compute in Banking Overview
-#      tocHref: /azure-industry-docs/financial/risk-compute/risk-compute-overview
-#      topicHref: /azure-industry-docs/financial/risk-compute/risk-compute-overview
+  items:
+  - name: Risk Compute in Banking Overview
+    tocHref: /azure-industry-docs/financial/risk-compute/risk-compute-overview
+    topicHref: /azure-industry-docs/financial/risk-compute/risk-compute-overview
