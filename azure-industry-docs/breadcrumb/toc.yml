@@ -5,15 +5,15 @@
   - name: Azure
     topicHref: /azure/
   - name: Azure Industry Experience
-    href: index.md
+    href: ../index.md
     items:
     - name: Financial Services
       items:
         - name: Risk Compute in Banking
-          href: financial/risk-compute-overview.md
+          href: ../financial/risk-compute-overview.md
         - name: Solutions Guide
-          href: financial/risk-compute-solutions-guide.md
+          href: ../financial/risk-compute-solutions-guide.md
     - name: Manufacturing
       items:
         - name: Predictive Maintenance in Manufacturing
-          href: manufacturing/pdm-overview.md
+          href: ../manufacturing/pdm-overview.md
