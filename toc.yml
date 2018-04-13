@@ -2,12 +2,14 @@
   href: index.md
   items:
   - name: Financial Services
-  items:
-    - name: Risk Compute in Banking
-      href: financial/risk-compute-overview.md
-    - name: Solutions Guide
-      href: financial/risk-compute-solutions-guide.md
-  - name: Manufacturing
+    topicHref: /financial/
     items:
-    - name: Predictive Maintenance in Manufacturing
-      href: manufacturing/pdm-overview.md
+      - name: Risk Compute in Banking
+        href: financial/risk-compute-overview.md
+      - name: Solutions Guide
+        href: financial/risk-compute-solutions-guide.md
+  - name: Manufacturing
+  topicHref: /manufacturing/
+    items:
+      - name: Predictive Maintenance in Manufacturing
+        href: manufacturing/pdm-overview.md
