@@ -1,1 +1,1 @@
-# Welcome to Azure Industry Experience documents
+# Azure Industry Experience documents
