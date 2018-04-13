@@ -1,10 +1,11 @@
 - name: Azure Industry Experience
   href: index.md
   items:
-  - name: Risk Compute in Banking
-    href: financial/risk-compute-overview.md
-    items:
+  - name: Financial Services
+    - name: Risk Compute in Banking
+      href: financial/risk-compute-overview.md
     - name: Solutions Guide
       href: financial/risk-compute-solutions-guide.md
-  - name: Predictive Maintenance in Manufacturing
-    href: manufacturing/pdm-overview.md
+  - name: Manufacturing
+    - name: Predictive Maintenance in Manufacturing
+      href: manufacturing/pdm-overview.md
