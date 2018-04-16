@@ -7,12 +7,12 @@
         href: financial/risk-compute-overview.md
       - name: Risk Compute Solution Guide
         href: financial/risk-compute-solutions-guide.md
-      - name: Additional Information
+      - name: Additional Resources
         items: 
             - name: Azure Batch Documentation
-              href: https://docs.microsoft.com/azure/batch/?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+              href: https://docs.microsoft.com/azure/batch/?toc=/azure/industry/toc.yml&bc=/azure/industry/breadcrumb/toc.yml
             - name: Batch Code Samples 
-              href: https://azure.microsoft.com/en-us/resources/samples/?service=batch&sort=0toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+              href: https://azure.microsoft.com/en-us/resources/samples/?service=batch&sort=0toc=/azure/industry/toc.yml&bc=/azure/industry/breadcrumb/toc.yml
             - name: On-premise Connectivity
               href: https://docs.microsoft.com/en-us/azure/networking/networking-overview#connectivity?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
     - name: Manufacturing
