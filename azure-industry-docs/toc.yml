@@ -16,7 +16,7 @@
           - name: Batch Code Samples Repo
             href: https://github.com/Azure/azure-batch-samples
           - name: On-premise Connectivity
-            href: https://docs.microsoft.com/networking/networking-overview#connectivity?toc=/industry/toc.json&bc=/industry/breadcrumb/toc.json
+            href: https://docs.microsoft.com/en-us/azure/networking/networking-overview#connectivity?toc=/industry/toc.json&bc=/industry/breadcrumb/toc.json
     - name: Manufacturing
       items:
         - name: Predictive Maintenance in Manufacturing
