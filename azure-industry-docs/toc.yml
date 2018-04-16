@@ -23,7 +23,11 @@
           href: /azure/security/blueprints/financial-services-regulated-workloads?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
         - name: Tutorial - Azure Active Directory integration with Asset Bank
           href: /azure/active-directory/active-directory-saas-assetbank-tutorial?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+    - name: Health & Life Sciences
+    - name: Insurance
     - name: Manufacturing
       items:
         - name: Predictive Maintenance in Manufacturing
           href: manufacturing/pdm-overview.md
+    - name: Retail
+    - name: Cross Industry
