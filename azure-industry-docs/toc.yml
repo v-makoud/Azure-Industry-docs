@@ -13,6 +13,8 @@
               href: https://docs.microsoft.com/azure/batch/?toc=/azure/industry/toc.yml&bc=/azure/industry/breadcrumb/toc.yml
             - name: Batch Code Samples 
               href: https://azure.microsoft.com/en-us/resources/samples/?service=batch&sort=0toc=/azure/industry/toc.yml&bc=/azure/industry/breadcrumb/toc.yml
+            - name: Batch Code Samples
+              href: https://github.com/Azure/azure-batch-samples
             - name: On-premise Connectivity
               href: https://docs.microsoft.com/en-us/azure/networking/networking-overview#connectivity?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
     - name: Manufacturing
