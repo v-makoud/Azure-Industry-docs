@@ -6,7 +6,7 @@
       - name: Risk Compute in Banking Overview
         href: financial/risk-compute-overview.md
       - name: Risk Compute Solution Guide
-        href: financial/risk-compute-solutions-guide.md
+        href: financial/risk-compute-sg.md
       - name: Additional Resources
         items: 
           - name: Azure Batch Documentation
