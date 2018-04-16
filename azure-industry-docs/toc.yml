@@ -3,18 +3,18 @@
   items:
     - name: Financial Services
       items:
-        - name: Risk Compute
+        - name: Risk Compute in Banking
           items: 
-          - name: Risk Compute in Banking Overview
+          - name: Overview
             href: financial/risk-compute-overview.md
-          - name: Risk Compute Solution Guide
+          - name: Solution Guide
             href: financial/risk-compute-sg.md
           - name: Additional Resources
             items: 
               - name: Azure Batch documentation
                 href: /azure/batch/?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
               - name: On-premise connectivity
-                href: /azure/networking/networking-overview?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json#connectivity
+                href: /azure/networking/networking-overview#connectivity?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
               - name: Batch code samples 
                 href: https://azure.microsoft.com/en-us/resources/samples/
               - name: Batch code samples repo
