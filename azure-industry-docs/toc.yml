@@ -10,13 +10,13 @@
       - name: Additional Resources
         items: 
           - name: Azure Batch Documentation
-            href: https://docs.microsoft.com/en-us/azure/batch/?toc=/industry/toc.yml&bc=/industry/breadcrumb/toc.yml
+            href: https://docs.microsoft.com/en-us/azure/batch/?toc=/azure/industry/toc.yml&bc=/azure/industry/breadcrumb/toc.yml
           - name: Batch Code Samples 
             href: https://azure.microsoft.com/en-us/resources/samples/
           - name: Batch Code Samples Repo
             href: https://github.com/Azure/azure-batch-samples
           - name: On-premise Connectivity
-            href: https://docs.microsoft.com/en-us/azure/networking/networking-overview#connectivity?toc=/industry/toc.json&bc=/industry/breadcrumb/toc.json
+            href: https://docs.microsoft.com/en-us/azure/networking/networking-overview#connectivity?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
     - name: Manufacturing
       items:
         - name: Predictive Maintenance in Manufacturing
