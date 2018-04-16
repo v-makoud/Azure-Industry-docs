@@ -5,9 +5,19 @@
       items:
       - name: Risk Compute in Banking Overview
         href: financial/risk-compute-overview.md
-      - name: Risk Compute in Banking Solutions Guide
-        href: financial/risk-compute-sg.md
+      - name: Risk Compute Solution Guide
+        href: financial/risk-compute-solutions-guide.md
+      - name: Additional Resources
+        items: 
+          - name: Azure Batch Documentation
+            href: /azure/batch/?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+          - name: Batch Code Samples 
+            href: https://azure.microsoft.com/en-us/resources/samples/
+          - name: Batch Code Samples Repo
+            href: https://github.com/Azure/azure-batch-samples
+          - name: On-premise Connectivity
+            href: /azure/networking/networking-overview?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json#connectivity
     - name: Manufacturing
       items:
-      - name: Predictive Maintenance in Manufacturing
-        href: manufacturing/pdm-overview.md
+        - name: Predictive Maintenance in Manufacturing
+          href: manufacturing/pdm-overview.md
