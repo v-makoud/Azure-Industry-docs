@@ -5,9 +5,8 @@
       items:
       - name: Risk Compute in Banking
         href: financial/risk-compute-overview.md
-        items:
-        - name: Risk Compute Solutions Guide
-          href: financial/risk-compute-solutions-guide.md
+      - name: Risk Compute Solutions Guide
+        href: financial/risk-compute-solutions-guide.md
     - name: Manufacturing
       items:
       - name: Predictive Maintenance in Manufacturing
