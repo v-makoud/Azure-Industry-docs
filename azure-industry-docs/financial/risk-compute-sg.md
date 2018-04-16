@@ -6,7 +6,7 @@ ms.author: dastarr
 ms.date: 04/12/2018
 ms.topic: article
 ms.prod: non-product specific
-description: (not to exceed 140)
+description: This article presents the technical considerations of implementing Risk Compute in Banking on Azure
 ---
 # Risk Compute Solutions Guide
 

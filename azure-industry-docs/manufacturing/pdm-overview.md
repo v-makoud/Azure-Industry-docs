@@ -6,7 +6,7 @@ ms.author: XXXX
 ms.date: 04/12/2018
 ms.topic: article
 ms.prod: non-product specific
-description: (not to exceed 140)
+description: This article presents the business considerations of implementing Predictive Maintenance in Manufacturing on Azure 
 ---
 # Predictive Maintenance in Manufacturing Overview
 

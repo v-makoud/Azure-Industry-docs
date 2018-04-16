@@ -1,7 +1,7 @@
 - name: Industry
   href: index.md
   items:
-    - name: Financial
+    - name: Financial Services
       items:
       - name: Risk Compute in Banking Overview
         href: financial/risk-compute-overview.md
