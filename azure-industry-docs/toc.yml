@@ -24,6 +24,15 @@
           - name: FFIEC for Regulated Workloads
             href: /azure/security/blueprints/financial-services-regulated-workloads?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
     - name: Health & Life Sciences
+      items:
+        - name: Designing Secure Health Solutions with Azure
+          href: https://gallery.technet.microsoft.com/Azure-A-Practical-Guide-to-5ebdc8bd
+        - name: Biomedical entity recognition with ML
+          href: /azure/machine-learning/preview/scenario-tdsp-biomedical-recognition?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+        - name: Security - HIPAA/HITRUST Health Data and AI
+          href: /azure/security/blueprints/azure-health?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+        - name: The Health Bot Overview
+          href: /healthbot/?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
     - name: Insurance
     - name: Manufacturing
       items:
