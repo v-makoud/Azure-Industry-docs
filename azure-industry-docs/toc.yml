@@ -19,10 +19,10 @@
                 href: https://azure.microsoft.com/en-us/resources/samples/
               - name: Batch code samples repo
                 href: https://github.com/Azure/azure-batch-samples
-        - name: Financial Services for Regulated Workloads
+      - name: Additional Resources
+        items:
+        - name: FFIEC for Regulated Workloads
           href: /azure/security/blueprints/financial-services-regulated-workloads?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
-        - name: Tutorial - Azure Active Directory integration with Asset Bank
-          href: /azure/active-directory/active-directory-saas-assetbank-tutorial?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
     - name: Health & Life Sciences
     - name: Insurance
     - name: Manufacturing
