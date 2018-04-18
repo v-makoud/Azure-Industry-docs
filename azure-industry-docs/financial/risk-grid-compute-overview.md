@@ -6,7 +6,7 @@ ms.author: dastarr
 ms.date: 04/12/2018
 ms.topic: article
 ms.prod: non-product specific
-description: This article presents the business considerations of implementing Risk Compute in Banking on Azure
+description: Presents the business considerations of implementing Risk Grid Computing in Banking on Azure
 ---
 # Risk Compute in Banking Overview
 
@@ -24,8 +24,6 @@ When building a risk compute solution on Azure, the business will continue to us
 
 Before beginning any sort of integrated computing, Azure must be connected to the on-premise network. Azure offers two models for securely and reliably connecting current on-premise systems to Azure, [Microsoft Azure ExpressRoute](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-introduction) and [VPN Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/). Both offer secure and reliable connectivity, although there are differences in implementation, performance, cost and other attributes.
 
-![VPN or ExpressRoute](risk-compute-assets/overview-01.png "VPN or ExpressRoute")
-
 There are several physical network connectivity configurations beyond those in this logical model. To help with decisions and architectural guidance regarding connecting your network to Azure, see the article [Connect an on-premises network to Azure](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/) by the patterns & practices group.
 
 ## Batch Processing
@@ -34,8 +32,6 @@ Analysts need a simple and reliable way to provide their models to a [batch proc
 Risk model input data comes in several forms, the most common being Excel files or .csv files. These files are often restructured into Parquet or RCFile formats, more suitable for processing the risk model in later stages of the risk computing pipeline. A common technique for parsing and processing these files is batch processing.
 
 Batch processing allows many worker virtual machines to run in parallel as show in Figure 1. Processing data files and submitting results to machine learning systems or data stores are common tasks for the worker nodes. Given the jobs run by the worker nodes are created by the customer, almost any action may be taken in the batch job.
-
-![On-premise batch compute](risk-compute-assets/overview-02.png "On-premise batch compute")
 
 Figure 1
 
