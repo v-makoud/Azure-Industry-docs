@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Predictive Maintenance in Manufacturing 
+title: Predictive Maintenance in Manufacturing Overview
 author: XXXX
 ms.author: XXXX
 ms.date: 04/12/2018
