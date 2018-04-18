@@ -57,4 +57,15 @@
             - name: Azure Stream Analytics to process data from IoT devices
               href: https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-get-started-with-azure-stream-analytics-to-process-data-from-iot-devices?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
     - name: Retail
+      items:
+        - name: PCI DSS-compliant Payment Processing
+          href: https://docs.microsoft.com/en-us/azure/security/blueprints/payment-processing-blueprint?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+        - name: Additional Resources
+          items:
+            - name: Azure Cosmos DB in retail and marketing
+              href: https://docs.microsoft.com/en-us/azure/cosmos-db/use-cases?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json#retail-and-marketing
+            - name: Demand Forecasting and Price Optimization
+              href: https://gallery.azure.ai/Solution/Demand-Forecasting-and-Price-Optimization
+            - name: Inventory Optimization Solution with Azure AI
+              href: https://blogs.technet.microsoft.com/machinelearning/2018/04/05/inventory-optimization-solution-in-the-azure-ai-gallery
     - name: Cross Industry
