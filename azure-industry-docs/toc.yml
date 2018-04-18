@@ -12,9 +12,9 @@
           - name: Additional Resources
             items: 
               - name: Azure Batch documentation
-                href: /azure/batch/?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+                href: https://docs.microsoft.com/en-us/azure/batch/?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
               - name: On-premise connectivity
-                href: /azure/networking/networking-overview#connectivity?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+                href: https://docs.microsoft.com/en-us/azure/networking/networking-overview?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json#connectivity
               - name: Batch code samples 
                 href: https://azure.microsoft.com/en-us/resources/samples/
               - name: Batch code samples repo
