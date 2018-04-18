@@ -26,8 +26,14 @@
     - name: Health & Life Sciences
       - name: Biomedical Entity Recognition
         href: https://docs.microsoft.com/en-us/azure/machine-learning/preview/scenario-tdsp-biomedical-recognition?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+      - name: HL7 FHIR health care record changes 
+        href: https://docs.microsoft.com/en-us/azure/cosmos-db/change-feed-hl7-fhir-logic-apps?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json 
       - name: Additional Resources
         items:
+          - name: Quickstart - The Microsoft Genomics service 
+            href: https://docs.microsoft.com/en-us/azure/genomics/quickstart-run-genomics-workflow-portal?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json 
+          - name: Microsoft Azure GxP Guidelines
+            href: https://gallery.technet.microsoft.com/Azure-GxP-Guidelines-ab1b98d9 
           - name: Designing Secure Health Solutions with Azure
             href: https://gallery.technet.microsoft.com/Azure-A-Practical-Guide-to-5ebdc8bd
           - name: Biomedical entity recognition with ML
