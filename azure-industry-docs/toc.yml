@@ -3,12 +3,12 @@
   items:
     - name: Financial Services
       items:
-        - name: Risk Compute in Banking
+        - name: Risk Grid Computing in Banking
           items: 
           - name: Overview
-            href: financial/risk-compute-overview.md
+            href: financial/risk-grid-compute-overview.md
           - name: Solution Guide
-            href: financial/risk-compute-sg.md
+            href: financial/risk-grid-compute-sg.md
           - name: Additional Resources
             items: 
               - name: Azure Batch documentation
@@ -24,10 +24,48 @@
           - name: FFIEC for Regulated Workloads
             href: /azure/security/blueprints/financial-services-regulated-workloads?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
     - name: Health & Life Sciences
+      items:
+      - name: Biomedical Entity Recognition
+        href: https://docs.microsoft.com/en-us/azure/machine-learning/preview/scenario-tdsp-biomedical-recognition?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+      - name: HL7 FHIR health care record changes 
+        href: https://docs.microsoft.com/en-us/azure/cosmos-db/change-feed-hl7-fhir-logic-apps?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json 
+      - name: Additional Resources
+        items:
+          - name: Quickstart - The Microsoft Genomics service 
+            href: https://docs.microsoft.com/en-us/azure/genomics/quickstart-run-genomics-workflow-portal?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json 
+          - name: Microsoft Azure GxP Guidelines
+            href: https://gallery.technet.microsoft.com/Azure-GxP-Guidelines-ab1b98d9 
+          - name: Designing Secure Health Solutions with Azure
+            href: https://gallery.technet.microsoft.com/Azure-A-Practical-Guide-to-5ebdc8bd
+          - name: Biomedical entity recognition with ML
+            href: /azure/machine-learning/preview/scenario-tdsp-biomedical-recognition?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+          - name: Security - HIPAA/HITRUST Health Data and AI
+            href: /azure/security/blueprints/azure-health?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+          - name: The Health Bot Overview
+            href: /healthbot/?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
     - name: Insurance
     - name: Manufacturing
       items:
         - name: Predictive Maintenance in Manufacturing
           href: manufacturing/pdm-overview.md
+        - name: Additional Resources
+          items:
+            - name: Deep learning for PdM real-world scenarios
+              href: https://docs.microsoft.com/en-us/azure/machine-learning/preview/scenario-deep-learning-for-predictive-maintenance?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+            - name: Predictive Maintenance in aircraft engines
+              href: https://gallery.azure.ai/Solution/Predictive-Maintenance-10
+            - name: Azure Stream Analytics to process data from IoT devices
+              href: https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-get-started-with-azure-stream-analytics-to-process-data-from-iot-devices?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
     - name: Retail
+      items:
+        - name: PCI DSS-compliant Payment Processing
+          href: https://docs.microsoft.com/en-us/azure/security/blueprints/payment-processing-blueprint?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+        - name: Additional Resources
+          items:
+            - name: Azure Cosmos DB in retail and marketing
+              href: https://docs.microsoft.com/en-us/azure/cosmos-db/use-cases?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json#retail-and-marketing
+            - name: Demand Forecasting and Price Optimization
+              href: https://gallery.azure.ai/Solution/Demand-Forecasting-and-Price-Optimization
+            - name: Inventory Optimization Solution with Azure AI
+              href: https://blogs.technet.microsoft.com/machinelearning/2018/04/05/inventory-optimization-solution-in-the-azure-ai-gallery
     - name: Cross Industry

@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Risk Compute in Banking Solutions Guide 
+title: Risk Grid Computing in Banking Solutions Guide 
 author: dstarr
 ms.author: dastarr
 ms.date: 04/12/2018
