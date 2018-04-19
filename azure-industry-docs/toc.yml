@@ -24,9 +24,9 @@
           - name: FFIEC for Regulated Workloads
             href: /azure/security/blueprints/financial-services-regulated-workloads?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
           - name: Tutorial- AAD integration with Asset Bank
-            href: https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-assetbank-tutorial
+            href: https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-assetbank-tutorial?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
       - name: Health & Life Sciences
-      items:
+        items:
       - name: Biomedical Entity Recognition
         href: https://docs.microsoft.com/en-us/azure/machine-learning/preview/scenario-tdsp-biomedical-recognition?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
       - name: HL7 FHIR health care record changes 
