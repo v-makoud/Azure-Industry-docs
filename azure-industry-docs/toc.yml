@@ -8,7 +8,7 @@
           - name: Overview
             href: financial/risk-grid-compute-overview.md
           - name: Solution Guide
-            href: financial/risk-grid-compute-sg.md
+            href: financial/risk-grid-compute-solution-guide.md
           - name: Additional Resources
             items: 
               - name: Azure Batch documentation
