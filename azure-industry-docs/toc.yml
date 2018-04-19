@@ -28,7 +28,7 @@
     - name: Health & Life Sciences
       items:
       - name: Biomedical Entity Recognition
-        href: https://docs.microsoft.com/en-us/azure/machine-learning/preview/scenario-tdsp-biomedical-recognition?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+        href: /azure/machine-learning/preview/scenario-tdsp-biomedical-recognition?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
       - name: HL7 FHIR health care record changes 
         href: https://docs.microsoft.com/en-us/azure/cosmos-db/change-feed-hl7-fhir-logic-apps?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json 
       - name: Additional Resources
