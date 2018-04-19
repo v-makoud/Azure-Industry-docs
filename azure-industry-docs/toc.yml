@@ -12,7 +12,7 @@
           - name: Additional Resources
             items: 
               - name: Azure Batch documentation
-                href: https://docs.microsoft.com/en-us/azure/batch/?toc=/azure/industry/toc.json
+                href: https://docs.microsoft.com/en-us/azure/batch/?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
               - name: On-premise connectivity
                 href: https://docs.microsoft.com/en-us/azure/networking/networking-overview?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json#connectivity
               - name: Batch code samples 
@@ -31,10 +31,10 @@
         href: https://docs.microsoft.com/en-us/azure/cosmos-db/change-feed-hl7-fhir-logic-apps?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json 
       - name: Additional Resources
         items:
-          - name: Quickstart - The Microsoft Genomics service 
-            href: https://docs.microsoft.com/en-us/azure/genomics/quickstart-run-genomics-workflow-portal?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json 
+          - name: Quickstart - The Microsoft Genomics service
+            href: https://docs.microsoft.com/en-us/azure/genomics/quickstart-run-genomics-workflow-portal?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
           - name: Microsoft Azure GxP Guidelines
-            href: https://gallery.technet.microsoft.com/Azure-GxP-Guidelines-ab1b98d9 
+            href: https://gallery.technet.microsoft.com/Azure-GxP-Guidelines-ab1b98d9
           - name: Designing Secure Health Solutions with Azure
             href: https://gallery.technet.microsoft.com/Azure-A-Practical-Guide-to-5ebdc8bd
           - name: Biomedical entity recognition with ML
@@ -43,7 +43,6 @@
             href: /azure/security/blueprints/azure-health?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
           - name: The Health Bot Overview
             href: /healthbot/?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
-    - name: Insurance
     - name: Manufacturing
       items:
         - name: Predictive Maintenance in Manufacturing
@@ -69,3 +68,4 @@
             - name: Inventory Optimization Solution with Azure AI
               href: https://blogs.technet.microsoft.com/machinelearning/2018/04/05/inventory-optimization-solution-in-the-azure-ai-gallery
     - name: Cross Industry
+
