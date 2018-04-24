@@ -24,7 +24,7 @@ When building a risk compute solution on Azure, the business will continue to us
 
 Before beginning any sort of integrated computing, Azure must be connected to the on-premise network. Azure offers two models for securely and reliably connecting current on-premise systems to Azure, [Microsoft Azure ExpressRoute](/azure/expressroute/expressroute-introduction) and [VPN Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/). Both offer secure and reliable connectivity, although there are differences in implementation, performance, cost and other attributes.
 
-There are several physical network connectivity configurations beyond those in this logical model. To help with decisions and architectural guidance regarding connecting your network to Azure, see the article [Connect an on-premises network to Azure](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/) by the patterns & practices group.
+There are several physical network connectivity configurations beyond those in this logical model. To help with decisions and architectural guidance regarding connecting your network to Azure, see the article [Connect an on-premises network to Azure (Test Link)](/azure/architecture/reference-architectures/hybrid-networking/) by the patterns & practices group.
 
 ## Batch Processing
 
