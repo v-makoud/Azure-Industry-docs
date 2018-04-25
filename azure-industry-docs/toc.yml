@@ -3,7 +3,8 @@
   items:
     - name: Financial Services
       items:
-        - name: Risk Grid Computing in Banking
+        - name: Finanical Service
+          href: financial/index.md
           items: 
           - name: Overview
             href: financial/risk-grid-compute-overview.md
@@ -46,15 +47,14 @@
           - name: The Health Bot Overview
             href: /healthbot/?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
     - name: Manufacturing
+      href: manufacturing/index.md
       items:
-        - name: Predictive Maintenance in Manufacturing
-          href: manufacturing/pdm-overview.md
+        - name: Deep learning for PdM real-world scenarios
+          href: /azure/machine-learning/preview/scenario-deep-learning-for-predictive-maintenance?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+        - name: Predictive Maintenance in aircraft engines
+          href: https://gallery.azure.ai/Solution/Predictive-Maintenance-10
         - name: Additional Resources
           items:
-            - name: Deep learning for PdM real-world scenarios
-              href: /azure/machine-learning/preview/scenario-deep-learning-for-predictive-maintenance?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
-            - name: Predictive Maintenance in aircraft engines
-              href: https://gallery.azure.ai/Solution/Predictive-Maintenance-10
             - name: Azure Stream Analytics to process data from IoT devices
               href: /azure/stream-analytics/stream-analytics-get-started-with-azure-stream-analytics-to-process-data-from-iot-devices?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
     - name: Retail
