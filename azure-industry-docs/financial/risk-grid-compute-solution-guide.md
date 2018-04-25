@@ -5,7 +5,7 @@ author: dstarr
 ms.author: dastarr
 ms.date: 04/12/2018
 ms.topic: article
-ms.prod: non-product specific
+ms.prod: Industry
 description: This article presents the technical considerations of implementing Risk Grid Computing in Banking on Azure
 ---
 # Risk Compute Solutions Guide
