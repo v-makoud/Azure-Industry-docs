@@ -15,7 +15,7 @@ Learn how to use Azure to build solutions for common industry uses cases. Use ca
 
 <ul class="cardsFTitle panelContent">
     <li>
-        <a href="/azure/industry/">
+        <a href="/azure/industry/financial">
         <div class="cardSize">
             <div class="cardPadding" style="padding-bottom: 0;">
                 <div class="card">
@@ -33,7 +33,7 @@ Learn how to use Azure to build solutions for common industry uses cases. Use ca
         </a>
     </li>
     <li>
-        <a href="/azure/industry/">
+        <a href="/azure/industry/health">
         <div class="cardSize">
             <div class="cardPadding" style="padding-bottom: 0;">
                 <div class="card">
@@ -54,7 +54,7 @@ Learn how to use Azure to build solutions for common industry uses cases. Use ca
 
 <ul class="cardsFTitle panelContent">
     <li>
-        <a href="/azure/industry/">
+        <a href="/azure/industry/manufacturing">
         <div class="cardSize">
             <div class="cardPadding" style="padding-bottom: 0;">
                 <div class="card">
@@ -72,7 +72,7 @@ Learn how to use Azure to build solutions for common industry uses cases. Use ca
         </a>
     </li>
     <li>
-        <a href="/azure/industry/">
+        <a href="/azure/industry/retail">
         <div class="cardSize">
             <div class="cardPadding" style="padding-bottom: 0;">
                 <div class="card">
