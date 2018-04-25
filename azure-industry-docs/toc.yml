@@ -4,7 +4,7 @@
     - name: Financial Services
       href: financial/index.md
       items:
-        - name: Finanical Service
+        - name: Risk Grid Computing in Banking
           items: 
           - name: Overview
             href: financial/risk-grid-compute-overview.md
@@ -71,5 +71,4 @@
               href: https://gallery.azure.ai/Solution/Demand-Forecasting-and-Price-Optimization
             - name: Inventory Optimization Solution with Azure AI
               href: https://blogs.technet.microsoft.com/machinelearning/2018/04/05/inventory-optimization-solution-in-the-azure-ai-gallery
-    - name: Cross Industry
 
