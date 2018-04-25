@@ -11,7 +11,7 @@ description: Home of the Industry Experiences team
 ---
 # Azure For Industry
 
-Learn how to use Azure to build solutions for common industry uses cases. Use case overviews, solution guides, tutorials and other resources provide the materials needed to start building solutions for common scenarios today.
+Learn how to use Azure to build solutions for common industry use cases. Use case overviews, solution guides, tutorials and other resources provide the materials needed to start building solutions for common scenarios today.
 
 <ul class="cardsFTitle panelContent">
     <li>
