@@ -8,9 +8,9 @@ ms.topic: article
 ms.prod: Industry
 description: Retail use cases from Azure Industry Experiences
 ---
-# Retail
+# Retail Industry
 
-![Retail](/azure/industry/assets/index-assets/retailers.png)
+![Retail](./assets/index-assets/retailers.png)
 
 This content area focuses on specific use cases for the Retail industry. Learn how to use Azure to build solutions for common Retail use cases. Use case overviews, solution guides, tutorials and other resources provide the materials needed to start building Retail solutions for common scenarios today.
 
