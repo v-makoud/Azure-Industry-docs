@@ -7,18 +7,18 @@
     topicHref: /azure/
     items:
     - name: Industry
-      tocHref: /Azure/Industry/
+      tocHref: /Industry/
       topicHref: /industry/index
       items:
       - name: Financial Services
-        tocHref: /Azure/Industry/Financial/
+        tocHref: /Financial/
         topicHref: /industry/financial/index
       - name: Health & Life Sciences
-        tocHref: /Azure/Industry/Health/
+        tocHref: /Health/
         topicHref: /industry/health/index
       - name: Manufacturing
-        tocHref: /Azure/Industry/Manufacturing/
+        tocHref: /Manufacturing/
         topicHref: /industry/manufacturing/index
       - name: Retail
-        tocHref: /Azure/Industry/Retail/
+        tocHref: /Retail/
         topicHref: /industry/retail/index
