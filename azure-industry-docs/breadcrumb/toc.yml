@@ -5,3 +5,14 @@
   - name: Azure
     tocHref: /azure/
     topicHref: /azure/
+    items:
+    - name: Industry
+      tocHref: /azure/industry
+      topicHref: /azure/industry
+      items:
+      - name: Financial Services
+        tocHref: /azure/industry/financial
+        topicHref: /azure/industry/financial
+      - name: Health & Life Sciences
+        tocHref: /azure/industry/health
+        topicHref: /azure/industry/health
