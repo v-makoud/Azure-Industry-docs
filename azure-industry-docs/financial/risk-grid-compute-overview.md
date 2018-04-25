@@ -117,7 +117,7 @@ Lastly, you may be ready for a complete migration of your risk compute infrastru
 
 [Azure Batch](/azure/batch/) enables augmenting on-premises risk computing worker nodes to dynamically provide compute resources based on demand.
 
-[Azure DataLake](https://azure.microsoft.com/en-us/solutions/data-lake/) provides storage, processing and analytics across for your risk analysis data.
+[Azure DataLake](/azure/data-lake-store) provides storage, processing and analytics across for your risk analysis data.
 
 [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) extends your on-premises network to Azure over a private connection facilitated by a connectivity provider.
 
