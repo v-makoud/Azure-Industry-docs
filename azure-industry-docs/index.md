@@ -1,16 +1,92 @@
 ---
 # required metadata
-title: Azure Industry Experience 
+title: Azure For Industry 
 author: dstarr
+layout: LandingPage
 ms.author: dastarr
 ms.date: 04/12/2018
 ms.topic: article
 ms.prod: Industry
 description: Home of the Industry Experiences team
 ---
-# Azure Industry Experience documents
+# Azure For Industry
 
-- [Financial Services](/azure/industry/financial/index)
-- [Health & Life Sciences](/azure/industry/health/index)
-- [Manufacturing](/azure/industry/manufacturing/index)
-- [Retail](/azure/industry/retail/index)
+Learn how to use Azure to build solutions for common industry uses cases. Use case overviews, solution guides, tutorials and other resources provide the materials needed to start building solutions for common scenarios today.
+
+<ul class="cardsFTitle panelContent">
+    <li>
+        <a href="/azure/industry/">
+        <div class="cardSize">
+            <div class="cardPadding" style="padding-bottom: 0;">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img alt="" src="https://azure.microsoft.com/en-us/patterns/styles/glyphs-icons/financial.svg">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Financial services</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/azure/industry/">
+        <div class="cardSize">
+            <div class="cardPadding" style="padding-bottom: 0;">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img alt="" src="https://azure.microsoft.com/en-us/patterns/styles/glyphs-icons/healthcare.svg">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Health and life sciences</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
+
+<ul class="cardsFTitle panelContent">
+    <li>
+        <a href="/azure/industry/">
+        <div class="cardSize">
+            <div class="cardPadding" style="padding-bottom: 0;">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img alt="" src="https://azure.microsoft.com/en-us/patterns/styles/glyphs-icons/discrete-manufacturing.svg">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Manufacturing</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/azure/industry/">
+        <div class="cardSize">
+            <div class="cardPadding" style="padding-bottom: 0;">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img alt="" src="https://azure.microsoft.com/en-us/patterns/styles/glyphs-icons/retailers.svg">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Retail</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
