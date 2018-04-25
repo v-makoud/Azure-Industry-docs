@@ -26,7 +26,7 @@ Analysts need a simple and reliable way to provide their models to a [batch proc
 
 Risk model input data comes in several forms, the most common being Excel files or .csv files. These files are often restructured into formats more suitable for processing the risk model in later stages of the risk compute pipeline. A common technique for parsing and processing these files is batch processing with a grid of virtual machines (VMs) working together to reach a common goal.
 
-Azure Batch allows multiple worker VMs to run in parallel, as shown in Figure 2. Processing data files and submitting results to machine learning systems or data stores are common tasks for the worker nodes. The application code run by the worker nodes is created by the customer, so almost any action may be taken in the batch job.
+Azure Batch allows multiple worker VMs to run in parallel, as shown in below. Processing data files and submitting results to machine learning systems or data stores are common tasks for the worker nodes. The application code run by the worker nodes is created by the customer, so almost any action may be taken in the batch job.
 
 ![On premises batch](./assets/risk-grid-compute-assets/01-on-prem.png)
 
@@ -48,7 +48,7 @@ A hybrid network ties Azure directly to the customer&#39;s on-premises network. 
 
 &quot;Burst to cloud&quot; offloads computing jobs to cloud-based machines when existing resources spike, augmenting the customer&#39;s data center or private cloud resources. Using the hybrid network model allows for easy burst to cloud scenarios as the cloud-based risk computing grid is a simple extension of the existing network.
 
-There are several network connectivity configurations beyond those in the simple model presented in Figure 1. To help with decisions and architectural guidance regarding connecting your network to Azure, see the article _Connect an on-premises network to Azure_ by the patterns &amp; practices group.
+There are several network connectivity configurations beyond those in the simple model presented in the logical architecture above. To help with decisions and architectural guidance regarding connecting your network to Azure, see the article _Connect an on-premises network to Azure_ by the patterns &amp; practices group.
 
 ### REST API solution over Internet
 
