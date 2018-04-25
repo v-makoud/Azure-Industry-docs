@@ -11,6 +11,6 @@ description: Home of the Industry Experiences team
 # Azure Industry Experience documents
 
 - [Financial Services](/azure/industry/financial/index)
-- [Health & Life Sciences](/azure/health/index)
+- [Health & Life Sciences](/azure/industry/health/index)
 - [Manufacturing](/azure/industry/manufacturing/index)
 - [Retail](/azure/industry/retail/index)
