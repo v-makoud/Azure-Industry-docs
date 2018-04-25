@@ -16,3 +16,9 @@
       - name: Health & Life Sciences
         tocHref: /azure/industry/health
         topicHref: /azure/industry/health
+      - name: Manufacturing
+        tocHref: /azure/industry/manufacturing
+        topicHref: /azure/industry/manufacturing
+      - name: Retail
+        tocHref: /azure/industry/retail
+        topicHref: /azure/industry/retail
