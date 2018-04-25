@@ -8,16 +8,14 @@
           href: financial/risk-grid-compute-overview.md
         - name: Additional Resources
           items: 
-            - name: Azure Batch documentation
-              href: /azure/batch/?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
-            - name: On-premise connectivity
-              href: /azure/networking/networking-overview?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json#connectivity
-            - name: Batch code samples 
-              href: https://azure.microsoft.com/en-us/resources/samples/
-            - name: Batch code samples repo
-              href: https://github.com/Azure/azure-batch-samples
-        - name: Additional Resources
-          items:
+          - name: Azure Batch documentation
+            href: /azure/batch/?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+          - name: On-premise connectivity
+            href: /azure/networking/networking-overview?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json#connectivity
+          - name: Batch code samples 
+            href: https://azure.microsoft.com/en-us/resources/samples/
+          - name: Batch code samples repo
+            href: https://github.com/Azure/azure-batch-samples
           - name: FFIEC for Regulated Workloads
             href: /azure/security/blueprints/financial-services-regulated-workloads?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
           - name: Tutorial- AAD integration with Asset Bank
