@@ -1,12 +1,12 @@
 ---
 # required metadata
-title: Financial Services 
+title: Financial Services Industry
 author: dstarr
 ms.author: dastarr
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: Industry
-description: Financial Services use cases from the Azure Industry Experiences
+description: Financial Services use cases from Azure Industry Experiences
 ---
 # Financial Services
 

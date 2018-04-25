@@ -2,9 +2,9 @@
   href: index.md
   items:
     - name: Financial Services
+      href: financial/index.md
       items:
         - name: Finanical Service
-          href: financial/index.md
           items: 
           - name: Overview
             href: financial/risk-grid-compute-overview.md
@@ -27,6 +27,7 @@
           - name: Tutorial- AAD integration with Asset Bank
             href: /azure/active-directory/active-directory-saas-assetbank-tutorial?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
     - name: Health & Life Sciences
+      href: health/index.md
       items:
       - name: Biomedical Entity Recognition
         href: /azure/machine-learning/preview/scenario-tdsp-biomedical-recognition?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
@@ -58,6 +59,7 @@
             - name: Azure Stream Analytics to process data from IoT devices
               href: /azure/stream-analytics/stream-analytics-get-started-with-azure-stream-analytics-to-process-data-from-iot-devices?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
     - name: Retail
+      href: retail/index.md
       items:
         - name: PCI DSS-compliant Payment Processing
           href: /azure/security/blueprints/payment-processing-blueprint?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
