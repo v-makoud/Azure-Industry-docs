@@ -16,7 +16,7 @@ In corporate finance and investment banking, one of the most important jobs is a
 
 To provide a comprehensive picture of the risk associated with an investment portfolio, financial risk analysts review research, monitor economic and social conditions, stay abreast of regulations, and create computer models of the investment climate.
 
-Risk analysis across the many vectors that affect a portfolio is sufficiently complex that computer modeling is required. Most analysts spend quite a bit of time working with computer models to simulate and predict how financial conditions will change. When evaluating investment risks (Market Risk, Credit Risk and Operational Risk), the computational load of processing the predicative models can be quite large due the volume of and diversity diverse data involved.
+Risk analysis across the many vectors that affect a portfolio is sufficiently complex that computer modeling is required. Most analysts spend quite a bit of time working with computer models to simulate and predict how financial conditions will change. When evaluating investment risks (Market Risk, Credit Risk and Operational Risk), the computational load of processing the predicative models can be quite large due to the volume of and diversity data.
 
 Cloud computing offers significant benefits for risk grid computing or risk modeling because it enables analysts to access massive compute resources on demand, without incurring capital costs or managing infrastructure. This article examines leveraging Microsoft Azure to augment current risk grid compute resources and optimize the cost and speed of risk grid computing workloads. Topics covered include secure and reliable connectivity, batch processing, and augmenting compute resources based on demand when on-premises servers are at capacity.
 
@@ -48,7 +48,7 @@ A hybrid network ties Azure directly to the customer&#39;s on-premises network. 
 
 &quot;Burst to cloud&quot; offloads computing jobs to cloud-based machines when existing resources spike, augmenting the customer&#39;s data center or private cloud resources. Using the hybrid network model allows for easy burst to cloud scenarios as the cloud-based risk computing grid is a simple extension of the existing network.
 
-There are several network connectivity configurations beyond those in the simple model presented in the logical architecture above. To help with decisions and architectural guidance regarding connecting your network to Azure, see the article _Connect an on-premises network to Azure_ by the patterns &amp; practices group.
+There are several network connectivity configurations beyond those in the simple model presented in the logical architecture above. To help with decisions and architectural guidance regarding connecting your network to Azure, see the article [_Connect an on-premises network to Azure_](/azure/architecture/reference-architectures/hybrid-networking/).
 
 ### REST API solution over Internet
 
@@ -121,11 +121,11 @@ Lastly, you may be ready for a complete migration of your risk compute infrastru
 
 [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) extends your on-premises network to Azure over a private connection facilitated by a connectivity provider.
 
-[Azure HDInsight](https://azure.microsoft.com/en-us/services/hdinsight/) is a fully managed open-source analytics service to process massive amounts of data such as the data provided in month-end batch runs.
+[Azure HDInsight](/azure/hdinsight/) is a fully managed open-source analytics service to process massive amounts of data such as the data provided in month-end batch runs.
 
 [Microsoft HPC Pack](/azure/virtual-machines/windows/hpcpack-cluster-options) enables provisioning High Performance Computing clusters for batch processing.
 
-[Power BI](https://powerbi.microsoft.com/en-us/) is a suite of business analytics tools risk analysts use to gain and share insights.
+[Power BI](/power-bi/) is a suite of business analytics tools risk analysts use to gain and share insights.
 
 [VPN Gateway](/azure/vpn-gateway/) extends your on-premises network to the Azure cloud over the Internet.
 
