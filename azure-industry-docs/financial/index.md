@@ -5,7 +5,7 @@ author: dstarr
 ms.author: dastarr
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: Industry
+ms.prod: industry
 description: Financial Services use cases from Azure Industry Experiences
 ---
 # Financial Services Industry
