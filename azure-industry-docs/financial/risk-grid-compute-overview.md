@@ -5,7 +5,7 @@ author: dstarr
 ms.author: dastarr
 ms.date: 04/12/2018
 ms.topic: article
-ms.prod: Industry
+ms.prod: industry
 description: Presents the business considerations of implementing Risk Grid Computing in Banking on Azure.
 ---
 # Risk Grid Computing in Banking Overview
@@ -22,11 +22,11 @@ Cloud computing offers significant benefits for risk grid computing or risk mode
 
 ## Grid computing services
 
-Analysts need a simple and reliable way to provide their models to a [batch processing](/azure/batch/) pipeline, which starts with data ingestion and flows through data processing to analysis, where insights can be derived from the resulting data.
+Analysts need a simple and reliable way to provide their models to a batch processing pipeline, which starts with data ingestion and flows through data processing to analysis, where insights can be derived from the resulting data.
 
 Risk model input data comes in several forms, the most common being Excel files or .csv files. These files are often restructured into formats more suitable for processing the risk model in later stages of the risk compute pipeline. A common technique for parsing and processing these files is batch processing with a grid of virtual machines (VMs) working together to reach a common goal.
 
-Azure Batch allows multiple worker VMs to run in parallel, as shown in below. Processing data files and submitting results to machine learning systems or data stores are common tasks for the worker nodes. The application code run by the worker nodes is created by the customer, so almost any action may be taken in the batch job.
+[Azure Batch](/azure/batch/) is an Azure service which allows multiple worker VMs to run in parallel, as shown below. Processing data files and submitting results to machine learning systems or data stores are common tasks for the worker nodes. The application code run by the worker nodes is created by the customer, so almost any action may be taken in the batch job.
 
 ![On premises batch](./assets/risk-grid-compute-assets/01-on-prem.png)
 
