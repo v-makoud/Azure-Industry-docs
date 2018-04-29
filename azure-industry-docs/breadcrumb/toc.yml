@@ -59,4 +59,4 @@
           - name: Additional Resources
             items:
               - name: Azure Cosmos DB in retail and marketing
-                tocHref: /azure/cosmos-db/use-cases#retail-and-marketing
+                tocHref: /azure/cosmos-db/use-cases
