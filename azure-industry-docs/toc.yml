@@ -28,23 +28,29 @@
       href: health/index.md
       items:
       - name: Biomedical Entity Recognition
-        href: /azure/machine-learning/preview/scenario-tdsp-biomedical-recognition?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+        href: /azure/machine-learning/preview/scenario-tdsp-biomedical-recognition
+        maintainContext: true
       - name: HL7 FHIR health care record changes
-        href: /azure/cosmos-db/change-feed-hl7-fhir-logic-apps?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+        href: /azure/cosmos-db/change-feed-hl7-fhir-logic-apps
+        maintainContext: true
       - name: Additional Resources
         items:
           - name: Quickstart - The Microsoft Genomics service
-            href: /azure/genomics/quickstart-run-genomics-workflow-portal?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+            href: /azure/genomics/quickstart-run-genomics-workflow-portal
+            maintainContext: true
           - name: Microsoft Azure GxP Guidelines
             href: https://gallery.technet.microsoft.com/Azure-GxP-Guidelines-ab1b98d9
           - name: Designing Secure Health Solutions with Azure
             href: https://gallery.technet.microsoft.com/Azure-A-Practical-Guide-to-5ebdc8bd
           - name: Biomedical entity recognition with ML
-            href: /azure/machine-learning/preview/scenario-tdsp-biomedical-recognition?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+            href: /azure/machine-learning/preview/scenario-tdsp-biomedical-recognition
+            maintainContext: true
           - name: Security - HIPAA/HITRUST Health Data and AI
-            href: /azure/security/blueprints/azure-health?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+            href: /azure/security/blueprints/azure-health
+            maintainContext: true
           - name: The Health Bot Overview
-            href: /healthbot/?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+            href: /healthbot/
+            maintainContext: true
     - name: Manufacturing
       href: manufacturing/index.md
       items:
@@ -62,11 +68,13 @@
       href: retail/index.md
       items:
         - name: PCI DSS-compliant Payment Processing
-          href: /azure/security/blueprints/payment-processing-blueprint?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+          href: /azure/security/blueprints/payment-processing-blueprint
+          maintainContext: true
         - name: Additional Resources
           items:
             - name: Azure Cosmos DB in retail and marketing
-              href: /azure/cosmos-db/use-cases?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json#retail-and-marketing
+              href: /azure/cosmos-db/use-cases#retail-and-marketing
+              maintainContext: true
             - name: Demand Forecasting and Price Optimization
               href: https://gallery.azure.ai/Solution/Demand-Forecasting-and-Price-Optimization
             - name: Inventory Optimization Solution with Azure AI
