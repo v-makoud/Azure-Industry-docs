@@ -45,8 +45,7 @@
         topicHref: /industry/manufacturing/
         items:
           - name: Deep learning for PdM real-world scenarios
-            tocHref: /azure/machine-learning/preview/
-            topicHref: /azure/machine-learning/preview/scenario-deep-learning-for-predictive-maintenance?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+            tocHref: /azure/machine-learning/desktop-workbench/scenario-deep-learning-for-predictive-maintenance
           - name: Additional Resources
             items:
               - name: Azure Stream Analytics to process data from IoT devices

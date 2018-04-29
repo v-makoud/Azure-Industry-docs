@@ -52,7 +52,7 @@
       href: manufacturing/index.md
       items:
         - name: Deep learning for PdM real-world scenarios
-          href: /azure/machine-learning/preview/scenario-deep-learning-for-predictive-maintenance
+          href: /azure/machine-learning/desktop-workbench/scenario-deep-learning-for-predictive-maintenance
           maintainContext: true
         - name: Predictive Maintenance in aircraft engines
           href: https://gallery.azure.ai/Solution/Predictive-Maintenance-10
