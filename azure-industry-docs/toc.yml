@@ -7,26 +7,30 @@
         - name: Risk Grid Computing in Banking Overview
           href: financial/risk-grid-compute-overview.md
         - name: Additional Resources
-          items: 
+          items:
           - name: Azure Batch documentation
-            href: /azure/batch/?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+            href: /azure/batch/
+            maintainContext: true
           - name: On-premise connectivity
-            href: /azure/networking/networking-overview?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json#connectivity
-          - name: Batch code samples 
+            href: /azure/networking/networking-overview#connectivity
+            maintainContext: true
+          - name: Batch code samples
             href: https://azure.microsoft.com/en-us/resources/samples/
           - name: Batch code samples repo
             href: https://github.com/Azure/azure-batch-samples
           - name: FFIEC for Regulated Workloads
-            href: /azure/security/blueprints/financial-services-regulated-workloads?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+            href: /azure/security/blueprints/financial-services-regulated-workloads
+            maintainContext: true
           - name: Tutorial- AAD integration with Asset Bank
-            href: /azure/active-directory/active-directory-saas-assetbank-tutorial?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+            href: /azure/active-directory/active-directory-saas-assetbank-tutorial
+            maintainContext: true
     - name: Health & Life Sciences
       href: health/index.md
       items:
       - name: Biomedical Entity Recognition
         href: /azure/machine-learning/preview/scenario-tdsp-biomedical-recognition?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
-      - name: HL7 FHIR health care record changes 
-        href: /azure/cosmos-db/change-feed-hl7-fhir-logic-apps?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json 
+      - name: HL7 FHIR health care record changes
+        href: /azure/cosmos-db/change-feed-hl7-fhir-logic-apps?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
       - name: Additional Resources
         items:
           - name: Quickstart - The Microsoft Genomics service
@@ -45,13 +49,15 @@
       href: manufacturing/index.md
       items:
         - name: Deep learning for PdM real-world scenarios
-          href: /azure/machine-learning/preview/scenario-deep-learning-for-predictive-maintenance?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+          href: /azure/machine-learning/preview/scenario-deep-learning-for-predictive-maintenance
+          maintainContext: true
         - name: Predictive Maintenance in aircraft engines
           href: https://gallery.azure.ai/Solution/Predictive-Maintenance-10
         - name: Additional Resources
           items:
             - name: Azure Stream Analytics to process data from IoT devices
-              href: /azure/stream-analytics/stream-analytics-get-started-with-azure-stream-analytics-to-process-data-from-iot-devices?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
+              href: /azure/stream-analytics/stream-analytics-get-started-with-azure-stream-analytics-to-process-data-from-iot-devices
+              maintainContext: true
     - name: Retail
       href: retail/index.md
       items:

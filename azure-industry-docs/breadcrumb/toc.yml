@@ -8,17 +8,28 @@
     items:
     - name: Industry
       tocHref: /Industry/
-      topicHref: /industry/index
+      topicHref: /industry/
       items:
       - name: Financial Services
         tocHref: /Financial/
-        topicHref: /industry/financial/index
+        topicHref: /industry/financial/
+        items:
+          - name: Additional Resources
+            items:
+            - name: Azure Batch documentation
+              tocHref: /azure/batch/
+            - name: On-premise connectivity
+              tocHref: /azure/networking/
+            - name: FFIEC for Regulated Workloads
+              tocHref: /azure/security/blueprints/financial-services-regulated-workloads
+            - name: Tutorial- AAD integration with Asset Bank
+              tocHref: /azure/active-directory/active-directory-saas-assetbank-tutorial
       - name: Health & Life Sciences
         tocHref: /Health/
-        topicHref: /industry/health/index
+        topicHref: /industry/health/
       - name: Manufacturing
         tocHref: /Manufacturing/
-        topicHref: /industry/manufacturing/index
+        topicHref: /industry/manufacturing/
         items:
           - name: Deep learning for PdM real-world scenarios
             tocHref: /azure/machine-learning/preview/
@@ -27,7 +38,6 @@
             items:
               - name: Azure Stream Analytics to process data from IoT devices
                 tocHref: /azure/stream-analytics/
-                topicHref: /azure/stream-analytics/stream-analytics-get-started-with-azure-stream-analytics-to-process-data-from-iot-devices?toc=/azure/industry/toc.json&bc=/azure/industry/breadcrumb/toc.json
       - name: Retail
         tocHref: /Retail/
-        topicHref: /industry/retail/index
+        topicHref: /industry/retail/
