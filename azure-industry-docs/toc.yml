@@ -28,7 +28,7 @@
       href: health/index.md
       items:
       - name: Biomedical Entity Recognition
-        href: /azure/machine-learning/preview/scenario-tdsp-biomedical-recognition
+        href: /azure/machine-learning/desktop-workbench/scenario-tdsp-biomedical-recognition
         maintainContext: true
       - name: HL7 FHIR health care record changes
         href: /azure/cosmos-db/change-feed-hl7-fhir-logic-apps
@@ -42,9 +42,6 @@
             href: https://gallery.technet.microsoft.com/Azure-GxP-Guidelines-ab1b98d9
           - name: Designing Secure Health Solutions with Azure
             href: https://gallery.technet.microsoft.com/Azure-A-Practical-Guide-to-5ebdc8bd
-          - name: Biomedical entity recognition with ML
-            href: /azure/machine-learning/preview/scenario-tdsp-biomedical-recognition
-            maintainContext: true
           - name: Security - HIPAA/HITRUST Health Data and AI
             href: /azure/security/blueprints/azure-health
             maintainContext: true

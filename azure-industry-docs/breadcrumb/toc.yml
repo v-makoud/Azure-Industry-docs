@@ -29,15 +29,13 @@
         topicHref: /industry/health/
         items:
         - name: Biomedical Entity Recognition
-          tocHref: /azure/machine-learning/preview/scenario-tdsp-biomedical-recognition
+          tocHref: /azure/machine-learning/desktop-workbench/scenario-tdsp-biomedical-recognition
         - name: HL7 FHIR health care record changes
           tocHref: /azure/cosmos-db/change-feed-hl7-fhir-logic-apps
         - name: Additional Resources
           items:
             - name: Quickstart - The Microsoft Genomics service
               tocHref: /azure/genomics/quickstart-run-genomics-workflow-portal
-            - name: Biomedical entity recognition with ML
-              tocHref: /azure/machine-learning/preview/scenario-tdsp-biomedical-recognition
             - name: Security - HIPAA/HITRUST Health Data and AI
               tocHref: /azure/security/blueprints/azure-health
             - name: The Health Bot Overview
