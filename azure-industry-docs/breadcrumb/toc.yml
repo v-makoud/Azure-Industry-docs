@@ -1,0 +1,62 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Azure
+    tocHref: /azure/
+    topicHref: /azure/
+    items:
+    - name: Industry
+      tocHref: /Industry/
+      topicHref: /azure/industry/
+      items:
+      - name: Financial Services
+        tocHref: /Financial/
+        topicHref: /azure/industry/financial/
+        items:
+          - name: Additional Resources
+            items:
+            - name: Azure Batch documentation
+              tocHref: /azure//resources/samples/?sort=0&service=batch
+            - name: On-premise connectivity
+              tocHref: /azure/networking/networking-overview
+            - name: FFIEC for Regulated Workloads
+              tocHref: /azure/security/blueprints/financial-services-regulated-workloads
+            - name: Tutorial- AAD integration with Asset Bank
+              tocHref: /azure/active-directory/active-directory-saas-assetbank-tutorial
+      - name: Health & Life Sciences
+        tocHref: /azure/industry/health/
+        topicHref: /industry/health/
+        items:
+        - name: Biomedical Entity Recognition
+          tocHref: /azure/machine-learning/desktop-workbench/scenario-tdsp-biomedical-recognition
+        - name: HL7 FHIR health care record changes
+          tocHref: /azure/cosmos-db/change-feed-hl7-fhir-logic-apps
+        - name: Additional Resources
+          items:
+            - name: Quickstart - The Microsoft Genomics service
+              tocHref: /azure/genomics/quickstart-run-genomics-workflow-portal
+            - name: Security - HIPAA/HITRUST Health Data and AI
+              tocHref: /azure/security/blueprints/azure-health
+            - name: The Health Bot Overview
+              tocHref: /azure/healthbot/
+      - name: Manufacturing
+        tocHref: /azure/industry/manufacturing/
+        topicHref: /azure/industry/manufacturing/
+        items:
+          - name: Deep learning for PdM real-world scenarios
+            tocHref: /azure/machine-learning/desktop-workbench/scenario-deep-learning-for-predictive-maintenance
+          - name: Additional Resources
+            items:
+              - name: Azure Stream Analytics to process data from IoT devices
+                tocHref: /azure/stream-analytics/
+      - name: Retail
+        tocHref: /azure/industry/retail/
+        topicHref: /azure/industry/retail/
+        items:
+          - name: PCI DSS-compliant Payment Processing
+            tocHref: /azure/security/blueprints/payment-processing-blueprint
+          - name: Additional Resources
+            items:
+              - name: Azure Cosmos DB in retail and marketing
+                tocHref: /azure/cosmos-db/use-cases
