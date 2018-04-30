@@ -30,9 +30,9 @@ Risk model input data comes in several forms, the most common being Excel files 
 
 ![On premises batch](./assets/risk-grid-compute-assets/01-on-prem.png)
 
-Azure provides [an elegant solution for risk grid computing](/azure/batch/) using Azure Batch. Customers can use Azure Batch to extend their existing risk computing grid, or to replace on-premises resources with a completely cloud-based solution.
+Azure provides an elegant solution for risk grid computing using Azure Batch. Customers can use Azure Batch to extend their existing risk computing grid, or to replace on-premises resources with a completely cloud-based solution.
 
-One option for the risk processing grid worker nodes to access modeling data is connecting to data stored on-premises when connecting to Azure with a hybrid network. The customer can also upload data to appropriate storage within Azure, allowing Batch to have direct access to the data.
+Connecting directly and securely to the Azure cloud is fully supported. The Batch risk processing grid worker nodes can access modeling data when connecting to data stored on-premises when connecting to Azure with a hybrid network. The customer can also upload data to appropriate storage within Azure, allowing Batch to have direct access to the data.
 
 ## Secure connectivity to Azure
 
@@ -54,9 +54,9 @@ There are several network connectivity configurations beyond those in the simple
 
 An alternative to creating a hybrid network is to upload data into Azure Storage (file or Blob storage being likely candidates) and have Batch read the data files from storage. This can be achieved using a secure (SSL) connection to connect to Azure, storing the documents in Azure Storage, and then managing the risk grid computing jobs via the [Batch service REST API](/rest/api/batchservice/) or SDK with a fit-for-purpose application, orchestrating the Batch run.
 
-### Data Factory
+### Azure Data Factory
 
-Another solution for your scenario may be using [Data Factory](/azure/data-factory/), a cloud-based data integration service, to compose large storage, movement and processing pipelines. Data can be uploaded on demand through a Data Factory pipeline. The service provides a visual designer in the Azure portal for building Extract, Transform and Load (ETL) solutions in Azure. Data Factory can help ingest data into Azure for further processing.
+Another solution for your scenario may be using [Azure Data Factory](/azure/data-factory/), a cloud-based data integration service, to compose large storage, movement and processing pipelines. Data can be uploaded on demand through a Data Factory pipeline. The service provides a visual designer in the Azure portal for building Extract, Transform and Load (ETL) solutions in Azure. Data Factory can help ingest data into Azure for further processing.
 
 ## Matching processing needs with demand
 
@@ -73,7 +73,7 @@ The Azure Batch processing model has several benefits for risk grid computing:
 - Provides extra capacity to the risk compute grid when demand is high.
 - Enables matching machine profiles to the processing power needed by Batch workload, even when the load calls for [High Performance Computing (HPC)](/azure/virtual-machines/windows/hpcpack-cluster-options) configurations.
 
-A common solution automatically adds worker nodes in Azure when the on-premises workers are all in use. The risk grid head node simply asks for more workers. This automatically scales the number of grid worker nodes in Azure and enables an elastic demand solution.
+A common solution is to automatically add worker nodes in Azure when the on-premises workers are all in use. The risk grid head node simply asks for more workers. This automatically scales the number of grid worker nodes in Azure and enables an elastic demand solution.
 
 ![Hybrid cloud](./assets/risk-grid-compute-assets/03-hybrid-cloud.png)
 
@@ -81,7 +81,7 @@ Along with efficient use of resources, this arrangement provides other benefits.
 
 For times when more compute capacity is needed, such as quarterly valuations, the extra capacity can also come from Azure Batch auto-scaling. Auto-scaling provides elasticity to your Batch solution. By scaling resources to match needed load, Azure provides significantly greater capacity at a lower cost than owning the hardware.
 
-Most commercial grid products do support some form of burst to cloud, enabling easier proofs of concept for your risk analysis load. For example, [Microsoft HPC Pack](/azure/virtual-machines/windows/hpcpack-cluster-options) can run in Azure, as can products from companies like TIBCO, Univa, and others. Many of these 3rd party tools or systems are available through the Azure Marketplace.
+Most commercial grid products do support some form of burst to cloud, enabling easier proofs of concept for your risk analysis load. For example, [Microsoft HPC Pack](/azure/virtual-machines/windows/hpcpack-cluster-options) can run in Azure, as can products from companies like TIBCO, Univa, and others. Many of these 3rd party tools or systems are available through the [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/).
 
 ### Migrating additional resources to the cloud
 
