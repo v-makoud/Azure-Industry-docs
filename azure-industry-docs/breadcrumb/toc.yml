@@ -26,7 +26,7 @@
               tocHref: /azure/active-directory/active-directory-saas-assetbank-tutorial
       - name: Health & Life Sciences
         tocHref: /azure/industry/health/
-        topicHref: /industry/health/
+        topicHref: /azure/industry/health/
         items:
         - name: Biomedical Entity Recognition
           tocHref: /azure/machine-learning/desktop-workbench/scenario-tdsp-biomedical-recognition
