@@ -17,7 +17,7 @@
           - name: Additional Resources
             items:
             - name: Azure Batch documentation
-              tocHref: /azure/batch/
+              tocHref: /azure//resources/samples/?sort=0&service=batch
             - name: On-premise connectivity
               tocHref: /azure/networking/networking-overview
             - name: FFIEC for Regulated Workloads
