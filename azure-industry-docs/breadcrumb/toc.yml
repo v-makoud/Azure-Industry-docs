@@ -25,7 +25,7 @@
             - name: Tutorial- AAD integration with Asset Bank
               tocHref: /azure/active-directory/active-directory-saas-assetbank-tutorial
       - name: Health & Life Sciences
-        tocHref: /azure/industry/health/
+        tocHref: /Health & Life Sciences/
         topicHref: /azure/industry/health/
         items:
         - name: Biomedical Entity Recognition
