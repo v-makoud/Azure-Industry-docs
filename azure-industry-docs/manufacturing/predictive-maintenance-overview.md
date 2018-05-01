@@ -1,7 +1,5 @@
 # Predictive Maintenance Overview
 
-Industry Experiences Team
-
 # Introduction
 
 Predictive Maintenance (PdM) anticipates maintenance needs to avoid costs associated with unscheduled downtime. By connecting to devices and monitoring the data the devices produce, you can identify patterns that lead to potential problems or failures. You can then use these insights to address issues before they happen. This ability to predict when equipment or assets need maintenance allows you to optimize equipment lifetime and minimize downtime.
@@ -10,7 +8,7 @@ PdM extracts insights from the data produced by the equipment on the shop floor 
 
 PdM requires the equipment to provide data from sensors monitoring the equipment as well as other operational data. The PdM system analyzes the data and stores the results. Humans act based on the analysis.
 
-After introducing some background in this article, we discuss how to implement the various pieces of a PdM solution using a combination of on-premises data, Azure machine learning, and usage of the machine learning models. PdM relies heavily on data to make decisions, so we start by looking at data collection. The data must be collected and then used to evaluate what is happening now as well as used to build up better predictive models in the future. Finally, we explain what an analysis solution looks like, including visualizing the analysis results in a reporting tool like Power BI.
+After introducing some background in this article, we discuss how to implement the various pieces of a PdM solution using a combination of on-premises data, Azure machine learning, and usage of the machine learning models. PdM relies heavily on data to make decisions, so we start by looking at data collection. The data must be collected and then used to evaluate what is happening now as well as used to build up better predictive models in the future. Finally, we explain what an analysis solution looks like, including visualizing the analysis results in a reporting tool like [Power BI](https://docs.microsoft.com/en-us/power-bi/).
 
 # Maintenance Strategies
 
@@ -24,7 +22,6 @@ Predictive maintenance monitors the usage of assets using models to predict when
 
  ![](./assets/pdm-assets/maintenancestrategies.png)
 
-Figure 1: Maintenance Strategies
 
 # Different Ways PdM can be Offered
 
@@ -40,7 +37,6 @@ To build a PdM solution we start with data; ideally data that shows normal opera
 
  ![](./assets/pdm-assets/DataScienceDiagram.png)
 
-Figure 2: Team Data Science Process
 
 Your first task will be to identify the types of failures you want to predict. With that in mind, you then identify the data sources which have interesting data around that failure type. The pipeline gets the data into the system from your environment. The data scientists will use their favorite machine learning tools to prepare the data. At this point, they are ready to create and train models which can identify diverse types of issues. The models answer questions like:
 
@@ -87,5 +83,7 @@ To see an example solution, review the solution, guide, and playbook for [PdM in
 
 # Conclusion
 
-PdM requires machines to have some level of instrumentation and connectivity to allow us to build systems which can predict issues and allow us to act before a failure occurs. PdM augments preventive maintenance schedules by identifying specific components to inspect and repair or replace. Many resources exist to help you get started. Microsoft&#39;s infrastructure can help you build solutions that run on the device, at the edge, and in the cloud. To begin, pick out the top 1-3 failures you would like to prevent and begin your discovery process with those items. Then, identify where the data resides that helps identify the failures. Combine that data with the skills you pick up from the [Introduction to Machine Learning with Azure ML](https://aischool.microsoft.com/learning-paths/4ZYo4wHJVCsUSAKa2EoAk8) course to build your PdM models.
+PdM requires machines to have some level of instrumentation and connectivity to allow us to build systems which can predict issues and allow us to act before a failure occurs. PdM augments preventive maintenance schedules by identifying specific components to inspect and repair or replace. Many resources exist to help you get started. Microsoft&#39;s infrastructure can help you build solutions that run on the device, at the edge, and in the cloud. 
+
+To begin, pick out the top 1-3 failures you would like to prevent and begin your discovery process with those items. Then, identify where the data resides that helps identify the failures. Combine that data with the skills you pick up from the [Introduction to Machine Learning with Azure ML](https://aischool.microsoft.com/learning-paths/4ZYo4wHJVCsUSAKa2EoAk8) course to build your PdM models.
 
