@@ -11,7 +11,7 @@ description: Overview of how to develop Predictive Maintenance (PdM) for Manufac
 
 # Predictive Maintenance Overview
 
-# Introduction
+## Introduction
 
 Predictive Maintenance (PdM) anticipates maintenance needs to avoid costs associated with unscheduled downtime. By connecting to devices and monitoring the data the devices produce, you can identify patterns that lead to potential problems or failures. You can then use these insights to address issues before they happen. This ability to predict when equipment or assets need maintenance allows you to optimize equipment lifetime and minimize downtime.
 
@@ -21,7 +21,7 @@ PdM requires the equipment to provide data from sensors monitoring the equipment
 
 After introducing some background in this article, we discuss how to implement the various pieces of a PdM solution using a combination of on-premises data, Azure machine learning, and usage of the machine learning models. PdM relies heavily on data to make decisions, so we start by looking at data collection. The data must be collected and then used to evaluate what is happening now as well as used to build up better predictive models in the future. Finally, we explain what an analysis solution looks like, including visualizing the analysis results in a reporting tool like [Power BI](https://docs.microsoft.com/en-us/power-bi/).
 
-# Maintenance Strategies
+## Maintenance Strategies
 
 Over the history of the manufacturing industry, several maintenance strategies emerged. Reactive maintenance fixes issues after they occur. Preventive maintenance fixes issues before they occur by following a maintenance schedule based on prior failure experience. PdM also fixes issues before they occur but considers the actual utilization of the equipment instead of working from a fixed schedule. Of the three, PdM was the most difficult to achieve because of historical limitations on data collection, processing, and data visualization. Let&#39;s look at each option in a bit more detail.
 
@@ -34,7 +34,7 @@ Predictive maintenance monitors the usage of assets using models to predict when
  ![](./assets/pdm-assets/maintenancestrategies.png)
 
 
-# Different Ways PdM can be Offered
+## Different Ways PdM can be Offered
 
 A PdM solution can be used by a manufacturer directly, monitoring the data coming from its own manufacturing operations. Other ways exist which mean new business opportunities and revenue streams for other organizations. For example:
 
@@ -42,7 +42,7 @@ A PdM solution can be used by a manufacturer directly, monitoring the data comin
 - A manufacturer offers its products under a Product-as-a-Service model - where customers &quot;subscribe&quot; to the product instead of purchasing it outright. Under this model, the manufacturer wants to maximize product uptime; the product will not generate revenue when the product is not working.
 - A company provides predictive maintenance products and services for products manufactured by one or more manufacturers.
 
-# Building a Predictive Maintenance Solution
+## Building a Predictive Maintenance Solution
 
 To build a PdM solution we start with data; ideally data that shows normal operation as well as data that shows what the equipment looked like before, during, and after a failure. The data comes from sensors, notes maintained by equipment operators, run information, environmental data, machine specifications, etc. Systems of record may include historians, manufacturing execution systems, ERP, etc. The data is made available for analytics in a variety of ways. [The Team Data Science Process](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/), illustrated below and customized for manufacturing, does an excellent job explaining the various concerns one has when building and executing machine learning models.
 
@@ -62,13 +62,13 @@ The horsepower of Azure allows you to train and test the models on your technolo
 
 Whatever your PdM needs, Azure has the tools, the scale, the capabilities you need for building a solid solution.
 
-# Getting Started
+## Getting Started
 
 A lot of equipment found on the factory floor collects data and provides mechanisms to collect the data from the devices. Start collecting that data as soon as possible. As failures occur, have the data scientists analyze the data to create models which can detect future failures. As knowledge builds about failure detection, you will move to predictive mode where you fix components during planned downtime. The [Predictive Maintenance Modeling Guide](https://gallery.azure.ai/Collection/Predictive-Maintenance-Modelling-Guide-1) provides a solid walkthrough of how to build the Machine Learning pieces of the solution.
 
 To see an example solution, review the solution, guide, and playbook for [PdM in Aerospace](https://github.com/Azure/cortana-intelligence-predictive-maintenance-aerospace). If you need to ramp up on building models, we recommend visiting [AI School](https://aischool.microsoft.com/). The [Introduction to Machine Learning with Azure ML](https://aischool.microsoft.com/learning-paths/4ZYo4wHJVCsUSAKa2EoAk8) course will help provide familiarity with our tools.
 
-# Technologies Presented
+## Technologies Presented
 
 [Azure Blob Storage](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction) stores from hundreds to billions of objects in hot, cool, or archive tiers, depending on how often data access is needed.
 
@@ -92,7 +92,7 @@ To see an example solution, review the solution, guide, and playbook for [PdM in
 
 [Time Series Insights](https://docs.microsoft.com/en-us/azure/time-series-insights/) is a fully managed analytics, storage, and visualization service for managing IoT-scale time-series data in the cloud.
 
-# Conclusion
+## Conclusion
 
 PdM requires machines to have some level of instrumentation and connectivity to allow us to build systems which can predict issues and allow us to act before a failure occurs. PdM augments preventive maintenance schedules by identifying specific components to inspect and repair or replace. Many resources exist to help you get started. Microsoft&#39;s infrastructure can help you build solutions that run on the device, at the edge, and in the cloud. 
 
