@@ -4,8 +4,12 @@
     - name: Financial Services
       href: financial/index.md
       items:
-        - name: Risk Grid Computing in Banking Overview
-          href: financial/risk-grid-compute-overview.md
+        - name: Risk Grid Computing in Banking
+          items:
+          - name: Overview
+            href: financial/risk-grid-banking-overview.md
+          - name: Solution Guide
+            href: financial/risk-grid-banking-solution-guide.md
         - name: Additional Resources
           items:
           - name: Azure Batch documentation

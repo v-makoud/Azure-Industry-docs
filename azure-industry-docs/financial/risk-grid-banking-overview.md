@@ -62,7 +62,7 @@ Another solution for your scenario may be using [Azure Data Factory](/azure/data
 
 When computing risk, whether daily or with the heavier loads at the end of the month, the calculations consume significant computational resources. These calculations do not run 24x7. When risk calculations are not being run on the on-premises grid, the organization leaves valuable and expensive servers running with no workload, but with ongoing costs for power, cooling, and datacenter space, along with other fixed costs.
 
-## Augmenting on-premises grid with Azure Batch
+### Augmenting on-premises grid with Azure Batch
 
 To minimize costs, a business could choose to own and manage just enough worker nodes to satisfy requirements when demand is low. High demand risk grid computing jobs can then be pushed to high performance servers in Azure, elastically scaling up and down with workload demand.
 
