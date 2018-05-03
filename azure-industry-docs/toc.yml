@@ -58,6 +58,17 @@
         - name: Predictive Maintenance Overview
           href: manufacturing/predictive-maintenance-overview.md      
           maintainContext: true
+        - name: Additional Resources
+          items:
+            - name: Azure Machine Learning Documentation
+              href: https://docs.microsoft.com/en-us/azure/machine-learning
+            - name: Deep learning for predictive maintenance real-world scenarios
+              href: /azure/machine-learning/desktop-workbench/scenario-deep-learning-for-predictive-maintenance
+              maintainContext: true
+            - name: Microsoft IoT Solution Architecture
+              href: https://docs.microsoft.com/en-us/azure/iot-suite/iot-suite-what-is-azure-iot
+            - name: Pillars of Software Quality
+              href: https://docs.microsoft.com/en-us/azure/architecture/guide/pillars
     - name: Retail
       href: retail/index.md
       items:
@@ -73,4 +84,3 @@
               href: https://gallery.azure.ai/Solution/Demand-Forecasting-and-Price-Optimization
             - name: Inventory Optimization Solution with Azure AI
               href: https://blogs.technet.microsoft.com/machinelearning/2018/04/05/inventory-optimization-solution-in-the-azure-ai-gallery
-
