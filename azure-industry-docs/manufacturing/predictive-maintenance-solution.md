@@ -79,7 +79,7 @@ periodically with any changes in failure conditions.
 previously used for training the model. In other words, we may model the failure
 as the function of variables _x<sub>1</sub>,x<sub>2</sub>,⋯,x<sub>n</sub>, f(x<sub>1</sub>,x<sub>2</sub>,⋯,x<sub>n</sub>)_, but eventually we
 may discover variables _x<sub>(n+1)</sub>,⋯,x<sub>(m+n)</sub>_ are also influencing the failure, thus
-we may need to modify our model training for _f(x<sub>1</sub>,x<sub>2</sub>,⋯,x<sub>(m+n)</sub>)_.
+we may need to modify our model training for _f(x<sub>1</sub>,x<sub>2</sub>,⋯,x<sub>(m+n)</sub>)_. The model may not be performing well for detecting the failures, and a new model may be built including data points from the machine’s MES logs as well for the next iteration.
 
 Even without a modern IoT environment streaming data to the cloud, the data
 needed to train the machine learning models may be already in your MES,
@@ -210,8 +210,7 @@ into the solution, or offline by periodically importing the sensor data into the
 solution.
 
 Microsoft Azure platform provides a variety of services for ingesting,
-processing and storing the data. We are not going to get into the details on how
-to use them, but they include:
+processing and storing the data, such as:
 
 - [Azure Event
     Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-what-is-event-hubs)
@@ -236,7 +235,7 @@ cloud only.
 
 The ML model is consumed locally, while data is sent
 to the cloud for ingestion, storage, and further processing. This option is well
-suited for scenarios in which latency is critical.
+suited for scenarios where early detection is critical.
 
 ![local execution](assets/pdm-assets/localandcloud.png)
 
@@ -300,8 +299,7 @@ on the Azure platform has logical components on three stages:
 
 ![IoT solution architecture](assets/pdm-assets/iot.png)
 
-This article won’t cover each component in the Azure IoT Solution Architecture
-as many details are [available
+The details of the Azure IoT Solution Architecture are [available
 online](https://azure.microsoft.com/en-us/updates/microsoft-azure-iot-reference-architecture-available/).
 However, there are unique challenges that may arise due to the potentially
 substantial number of devices connecting to backend services.
@@ -396,9 +394,7 @@ and [Azure SQL
 Database](https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql)
 are examples of services that can be used for encrypting the data at rest. The
 solution providers should also consider how to partition the data either within
-the same resource (e.g. database) or multiple ones. This approach follows the
-[Bulkhead
-pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/bulkhead).
+the same resource (e.g. database) or multiple ones. 
 
 ### Geographical considerations
 
