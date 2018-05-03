@@ -56,7 +56,9 @@
       href: manufacturing/index.md
       items:
         - name: Predictive Maintenance Overview
-          href: manufacturing/predictive-maintenance-overview.md      
+          href: manufacturing/predictive-maintenance-overview.md  
+        - name: Predictive Maintenance Solution Guide
+          href: manufacturing/predictive-maintenance-solution.md                 
           maintainContext: true
         - name: Additional Resources
           items:
