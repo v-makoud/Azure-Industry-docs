@@ -57,16 +57,7 @@
       items:
         - name: Predictive Maintenance Overview
           href: manufacturing/predictive-maintenance-overview.md      
-        - name: Deep learning for PdM real-world scenarios
-          href: /azure/machine-learning/desktop-workbench/scenario-deep-learning-for-predictive-maintenance
           maintainContext: true
-        - name: Predictive Maintenance in aircraft engines
-          href: https://gallery.azure.ai/Solution/Predictive-Maintenance-10
-        - name: Additional Resources
-          items:
-            - name: Azure Stream Analytics to process data from IoT devices
-              href: /azure/stream-analytics/stream-analytics-get-started-with-azure-stream-analytics-to-process-data-from-iot-devices
-              maintainContext: true
     - name: Retail
       href: retail/index.md
       items:
