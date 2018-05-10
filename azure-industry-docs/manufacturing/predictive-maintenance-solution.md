@@ -10,12 +10,6 @@ description: Solution description of how to develop Predictive Maintenance (PdM)
 ---
 # Predictive Maintenance in Manufacturing Solution Guide
 
-## Abstract
-
-This document prepares the reader to investigate a Predictive Maintenance (PdM)
-solution. While there are too many variables involved in specific
-implementations, there are some commonalities and patterns to consider. This
-article looks at building PdM solutions with Microsoft Azure.
 
 ## Introduction
 
@@ -27,7 +21,7 @@ Let’s start with the high-level components of a PdM solution.
 
 ![High Level Solution](./assets/pdm-assets/highlevelsolution.png)
 
-In this breakdown, the following activities occur:
+In this breakdown, the following high-level activities occur:
 
 1. Collect training data, including failure data
 
@@ -49,7 +43,7 @@ In this breakdown, the following activities occur:
 Building an ML model requires sufficient, correct and complete data. In
 addition, PdM poses unique challenges, a major one being the availability of
 failure data. Failures are relatively rare events – particularly in high-capital
-equipment; so even if we have collected sensor data over a long period of time,
+equipment, such as CNC machines, or components of oil refineries; so even if we have collected sensor data over a long period of time,
 we may not have sufficient failure data. Consider how “failure” is defined; what
 exactly constitutes a failure? Is it when the device stops working unexpectedly?
 Is it when the device degrades to a level where it is not performing at a
@@ -300,7 +294,7 @@ on the Azure platform has logical components on three stages:
 ![IoT solution architecture](assets/pdm-assets/iot.png)
 
 The details of the Azure IoT Solution Architecture are [available
-online](https://azure.microsoft.com/en-us/updates/microsoft-azure-iot-reference-architecture-available/).
+online](http://download.microsoft.com/download/A/4/D/A4DAD253-BC21-41D3-B9D9-87D2AE6F0719/Microsoft_Azure_IoT_Reference_Architecture.pdf).
 However, there are unique challenges that may arise due to the potentially
 substantial number of devices connecting to backend services.
 
@@ -322,9 +316,7 @@ from a common hub.
 
 Injecting a new component for data ingestion makes the communication more
 scalable. This component needs to be scalable, secure and most probably globally
-accessible, with the option of geo-partitioning the data ingestion process. You
-can read more about this in the [Gateway Aggregation
-Pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation).
+accessible, with the option of geo-partitioning the data ingestion process. 
 
 Considering PdM is a feature of the IoT solution. As the data streams through
 the gateway, it needs to be routed to services related with PdM functionality.
@@ -357,12 +349,7 @@ alerts on the shop floor, while still scrubbing and posting data to a
 multitenant solution in the cloud for archival, model training, and
 non-time-critical reporting. With Azure IoT Edge and IoT Hub’s capabilities,
 customers can control the data-filtering options on the edge device, as well as
-interact with other shop-floor systems to deliver alerts. Another common pattern
-is to introduce an [Anti-corruption
-Layer](https://docs.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer)
-for translating requests from one subsystem to another. This handles issues in
-protocol differences, security boundaries etc. IoT Edge can be useful for
-implementing the anti-corruption layer.
+interact with other shop-floor systems to deliver alerts. 
 
 ![Multitenant](assets/pdm-assets/multitenant.png)
 

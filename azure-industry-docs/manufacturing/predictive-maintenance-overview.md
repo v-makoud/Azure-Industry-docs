@@ -1,8 +1,8 @@
 ---
 # required metadata
 title: Predictive Maintenance Overview 
-author: scseely,ercenk
-ms.author: scseely,ercenk
+author: scseely
+ms.author: scseely
 ms.date: 05/02/2018
 ms.topic: article
 ms.prod: industry
