@@ -6,18 +6,18 @@ ms.author: ercenk
 ms.date: 05/03/2018
 ms.topic: article
 ms.prod: industry
-description: Solution description of how to develop Predictive Maintenance (PdM) for Manufacturing customers on Azure.
+description: Solution description of how to develop Predictive Maintenance (predictive maintenance) for Manufacturing customers on Azure.
 ---
 # Predictive Maintenance in Manufacturing Solution Guide
 
 
 ## Introduction
 
-This article presents approaches for building a PdM solution. The intent is not
-to provide another solution architecture, but rather to present different
-perspectives and reference existing materials to get you started.
+Predictive maintenance (PdM) uses a combination of sensors, artificial intelligence, and data science to optimize equipment maintenance. Anticipating equipment maintenance needs to minimize maintenance costs and maximize uptime provides significant value to manufacturers. 
+Data lies at the heart of the solution. The data needs to have adequate failure indicators, as well as other aspects that describe the context. It can come from multiple sources, such as sensors, machine logs, and manufacturing application logs.
+This article presents options for building a predictive maintenance solution. It presents different perspectives and reference existing materials to get you started. The requirements for a predictive maintenance solution vary by equipment, environment, process, and organization; we are attempting to give alternative approaches and technologies for guiding you in the journey of coming up with a solution for your needs.
+Let’s start with the high-level components of a predictive maintenance solution.
 
-Let’s start with the high-level components of a PdM solution.
 
 ![High Level Solution](./assets/pdm-assets/highlevelsolution.png)
 
@@ -41,7 +41,7 @@ In this breakdown, the following high-level activities occur:
 ## Training the ML Model
 
 Building an ML model requires sufficient, correct and complete data. In
-addition, PdM poses unique challenges, a major one being the availability of
+addition, predictive maintenance poses unique challenges, a major one being the availability of
 failure data. Failures are relatively rare events – particularly in high-capital
 equipment, such as CNC machines, or components of oil refineries; so even if we have collected sensor data over a long period of time,
 we may not have sufficient failure data. Consider how “failure” is defined; what
@@ -62,8 +62,8 @@ in external systems such as ERP, manufacturing execution systems (MES),
 historians, etc., and cross the infamous IT/OT divide so prevalent in
 manufacturing firms, making securing the necessary data extra challenging.
 
-By nature, PdM is a dynamic problem and, as such, associated machine learning
-models need to be continuously refreshed (or re-trained). If done well, PdM
+By nature, predictive maintenance is a dynamic problem and, as such, associated machine learning
+models need to be continuously refreshed (or re-trained). If done well, predictive maintenance
 should reduce the instances of failures - which is a good thing, but results in
 less failure data. Also, the features that affect failure may change
 invalidating prior machine learning models. We recommend training models
@@ -273,7 +273,7 @@ cases, there is no need to consider an edge gateway.
 ## Predictive Maintenance in the IoT Context
 
 Many IoT solutions ingest and store data as part of their feature set. And as
-PdM solutions often rely on IoT data, they can be a natural feature add to IoT
+predictive maintenance solutions often rely on IoT data, they can be a natural feature add to IoT
 solutions. A crucial point to highlight in this context is the importance of
 having recorded failures in the existing data to train a predictive model for
 the failures.
@@ -318,8 +318,8 @@ Injecting a new component for data ingestion makes the communication more
 scalable. This component needs to be scalable, secure and most probably globally
 accessible, with the option of geo-partitioning the data ingestion process. 
 
-Considering PdM is a feature of the IoT solution. As the data streams through
-the gateway, it needs to be routed to services related with PdM functionality.
+Considering predictive maintenance is a feature of the IoT solution. As the data streams through
+the gateway, it needs to be routed to services related with predictive maintenance functionality.
 Another pattern to consider is [Gateway
 Routing](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-routing).
 
@@ -351,12 +351,12 @@ non-time-critical reporting. With Azure IoT Edge and IoT Hub’s capabilities,
 customers can control the data-filtering options on the edge device, as well as
 interact with other shop-floor systems to deliver alerts. 
 
-![Multitenant](assets/pdm-assets/multitenant.png)
+![Multitenant](assets/predictive maintenance-assets/multitenant.png)
 
 ## Multitenant Perspective
 
 As mentioned earlier, some manufacturers or third-parties may want to deliver
-PdM services to their customers. These services will most likely be offered in
+predictive maintenance services to their customers. These services will most likely be offered in
 multitenant cloud deployments, which present their own set of challenges:
 
 ### Data security and Isolation
@@ -429,11 +429,11 @@ article for the details.
 
 Predictive maintenance has been a topic of discussion for a long time. Recent
 developments in cloud platforms, like Microsoft Azure, enables implementers for
-PdM to overcome many challenges that were obstacles in the past when dealing
+predictive maintenance to overcome many challenges that were obstacles in the past when dealing
 with data. With the elastic scale on the compute and storage capacity, cloud
-platforms present new opportunities for implementing PdM, along with new revenue
+platforms present new opportunities for implementing predictive maintenance, along with new revenue
 opportunities. Microsoft’s Azure platform provides many services of different
-capabilities for achieving business goals of a PdM solution.
+capabilities for achieving business goals of a predictive maintenance solution.
 
 This article provided a vision for how to collect data and train data models,
 along with utilizing the trained model to take action on the outcomes predicted
