@@ -351,7 +351,7 @@ non-time-critical reporting. With Azure IoT Edge and IoT Hub’s capabilities,
 customers can control the data-filtering options on the edge device, as well as
 interact with other shop-floor systems to deliver alerts. 
 
-![Multitenant](assets/predictive maintenance-assets/multitenant.png)
+![Multitenant](assets/pdm-assets/multitenant.png)
 
 ## Multitenant Perspective
 

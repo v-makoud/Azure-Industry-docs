@@ -15,6 +15,9 @@
           - name: Azure Batch documentation
             href: /azure/batch/
             maintainContext: true
+          - name: Azure Machine Learning Package for Forecasting
+            href: /python/api/overview/azure-machine-learning/forecasting-overview
+            maintainContext: true
           - name: On-premise connectivity
             href: /azure/networking/networking-overview#connectivity
             maintainContext: true
