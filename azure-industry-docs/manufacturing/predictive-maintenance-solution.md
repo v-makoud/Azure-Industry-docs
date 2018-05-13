@@ -13,7 +13,7 @@ description: Solution description of how to develop Predictive Maintenance for M
 
 ## Introduction
 
-Predictive maintenance (PdM) uses a combination of sensors, artificial intelligence, and data science to optimize equipment maintenance. Anticipating equipment maintenance needs to minimize maintenance costs and maximize uptime provides significant value to manufacturers.
+Predictive maintenance uses a combination of sensors, artificial intelligence, and data science to optimize equipment maintenance. Anticipating equipment maintenance needs to minimize maintenance costs and maximize uptime provides significant value to manufacturers.
 
 Data lies at the heart of the solution. The data needs to have adequate failure indicators, as well as other aspects that describe the context. It can come from multiple sources, such as sensors, machine logs, and manufacturing application logs.
 
@@ -352,7 +352,7 @@ alerts on the shop floor, while still scrubbing and posting data to a
 multitenant solution in the cloud for archival, model training, and
 non-time-critical reporting. With Azure IoT Edge and IoT Hub’s capabilities,
 customers can control the data-filtering options on the edge device, as well as
-interact with other shop-floor systems to deliver alerts. 
+interact with other shop-floor systems to deliver alerts.
 
 ![Multitenant](assets/pdm-assets/multitenant.png)
 
