@@ -13,9 +13,12 @@ description: Solution description of how to develop Predictive Maintenance for M
 
 ## Introduction
 
-Predictive maintenance (PdM) uses a combination of sensors, artificial intelligence, and data science to optimize equipment maintenance. Anticipating equipment maintenance needs to minimize maintenance costs and maximize uptime provides significant value to manufacturers. 
+Predictive maintenance (PdM) uses a combination of sensors, artificial intelligence, and data science to optimize equipment maintenance. Anticipating equipment maintenance needs to minimize maintenance costs and maximize uptime provides significant value to manufacturers.
+
 Data lies at the heart of the solution. The data needs to have adequate failure indicators, as well as other aspects that describe the context. It can come from multiple sources, such as sensors, machine logs, and manufacturing application logs.
+
 This article presents options for building a predictive maintenance solution. It presents different perspectives and reference existing materials to get you started. The requirements for a predictive maintenance solution vary by equipment, environment, process, and organization; we are attempting to give alternative approaches and technologies for guiding you in the journey of coming up with a solution for your needs.
+
 Let’s start with the high-level components of a predictive maintenance solution.
 
 
