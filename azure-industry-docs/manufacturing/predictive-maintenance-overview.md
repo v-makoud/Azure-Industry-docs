@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Predictive Maintenance Overview 
+title: Predictive Maintenance in Manufacturing Overview 
 author: scseely
 ms.author: scseely
 ms.date: 05/02/2018
@@ -9,7 +9,7 @@ ms.prod: industry
 description: Overview of how to develop Predictive Maintenance (PdM) for Manufacturing customers on Azure.
 ---
 
-# Predictive Maintenance Overview
+# Predictive Maintenance in Manufacturing Overview
 
 ## Introduction
 
