@@ -43,6 +43,8 @@ it can be used for business intelligence and actionable insights.
 
 A common pattern to data management follows:
 
+![Data management flow](./assets/data-mgmt-in-banking-overview/data-mgmt-00.png)
+
 In this model, “Data Services” describes any transformation, joining of data, or
 any other data operations other than archiving. This is the key activity needed
 to take advantage of the data to help make more informed decisions.
@@ -176,13 +178,9 @@ Almost all data flowing in and out of Azure goes through Blob storage as some
 part of the data’s movement. Blob storage has the following pillars.
 
 - Durable & Available
-
 - Secure & Compliant
-
 - Manageable & Cost efficient
-
 - Scalable & Performant
-
 - Open & Interoperable
 
 Connecting all branches to the same file share in Azure is often done through
