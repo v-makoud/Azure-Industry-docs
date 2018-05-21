@@ -5,7 +5,7 @@ author: dstarr
 ms.author: dastarr
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: industry
+ms.service: industry
 description: Retail use cases from Azure Industry Experiences
 ---
 # Retail Industry

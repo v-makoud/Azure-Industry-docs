@@ -5,7 +5,7 @@ author: dstarr
 ms.author: dastarr
 ms.date: 05/21/2018
 ms.topic: article
-ms.prod: industry
+ms.service: industry
 description: Describes techniques of managing data in a regulated banking environment using Microsoft Azure.
 ---
 # Data Management in Banking Overview

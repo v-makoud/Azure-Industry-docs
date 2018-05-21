@@ -5,7 +5,7 @@ author: dstarr
 ms.author: dastarr
 ms.date: 5/2/2018
 ms.topic: article
-ms.prod: industry
+ms.service: industry
 description: Introduces technical aspects of implementing Azure Batch for Risk Grid Computing in Banking. 
 ---
 # Risk Grid Computing in Banking Solution Guide
