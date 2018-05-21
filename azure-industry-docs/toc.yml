@@ -10,6 +10,8 @@
             href: financial/risk-grid-banking-overview.md
           - name: Solution Guide
             href: financial/risk-grid-banking-solution-guide.md
+        - name: Data Management in Banking Overview
+          href: financial/data-mgmt-in-banking-overview.md
         - name: Additional Resources
           items:
           - name: Azure Batch documentation
