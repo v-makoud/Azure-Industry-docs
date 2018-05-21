@@ -115,12 +115,9 @@ do this include the following:
 
 - Move from a current datacenter where prices are higher or some other
     operational reason
-
 - Current on-premises SQL Server database hardware is expiring or nearing
     end-of-life
-
 - To support a general “move to cloud” strategy for the company
-
 - Take advantage of SQL Azure’s availability and disaster recovery
     capabilities
 
