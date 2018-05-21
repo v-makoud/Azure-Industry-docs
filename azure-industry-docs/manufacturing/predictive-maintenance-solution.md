@@ -5,7 +5,7 @@ author: ercenk
 ms.author: ercenk
 ms.date: 05/03/2018
 ms.topic: article
-ms.prod: industry
+ms.service: industry
 description: Solution description of how to develop Predictive Maintenance for Manufacturing customers on Azure.
 ---
 # Predictive Maintenance in Manufacturing Solution Guide

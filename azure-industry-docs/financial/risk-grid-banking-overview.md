@@ -5,7 +5,7 @@ author: dstarr
 ms.author: dastarr
 ms.date: 04/12/2018
 ms.topic: article
-ms.prod: industry
+ms.service: industry
 description: Presents the business considerations of implementing Risk Grid Computing in Banking on Azure.
 ---
 # Risk Grid Computing in Banking Overview

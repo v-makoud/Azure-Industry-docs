@@ -5,7 +5,7 @@ author: scseely
 ms.author: scseely
 ms.date: 05/02/2018
 ms.topic: article
-ms.prod: industry
+ms.service: industry
 description: Overview of how to develop Predictive Maintenance (PdM) for Manufacturing customers on Azure.
 ---
 
