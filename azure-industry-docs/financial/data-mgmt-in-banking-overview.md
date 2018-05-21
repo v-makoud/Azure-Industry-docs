@@ -292,7 +292,7 @@ ownership of the hardware.
 
 ### Azure Archive storage
 
-For unstructured data such as files or images, Azure offers [Databricksseveral tiers of
+For unstructured data such as files or images, Azure offers [several tiers of
 storage](/azure/storage/blobs/storage-blob-storage-tiers)
 for Blob storage including hot, cool, and archive. The hot access tier is for
 data that is active and expected to be most performant and in use in
