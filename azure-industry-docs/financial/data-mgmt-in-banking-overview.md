@@ -32,7 +32,7 @@ requires transparency throughout the entire ingestion to rest data flow.
 
 To manage the many accounts or businesses that banks are serving, they need to
 make sense of all this data rapidly and cost-effectively. As banks mature
-digitally, the amount of data in the opportunities to leverage that data in new
+digitally, the amount of data and the opportunities to leverage that data in new
 ways is exponentially growing, enabling banks to pursue new business models and
 areas of customer-centric opportunities.
 
