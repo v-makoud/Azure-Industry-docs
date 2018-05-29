@@ -5,7 +5,7 @@ author: dstarr
 ms.author: dastarr
 ms.date: 05/21/2018
 ms.topic: article
-ms.prod: industry
+ms.service: industry
 description: Describes techniques of managing data in a regulated banking environment using Microsoft Azure.
 ---
 # Data Management in Banking Overview
@@ -32,7 +32,7 @@ requires transparency throughout the entire ingestion to rest data flow.
 
 To manage the many accounts or businesses that banks are serving, they need to
 make sense of all this data rapidly and cost-effectively. As banks mature
-digitally, the amount of data in the opportunities to leverage that data in new
+digitally, the amount of data and the opportunities to leverage that data in new
 ways is exponentially growing, enabling banks to pursue new business models and
 areas of customer-centric opportunities.
 
@@ -292,7 +292,7 @@ ownership of the hardware.
 
 ### Azure Archive storage
 
-For unstructured data such as files or images, Azure offers [Databricksseveral tiers of
+For unstructured data such as files or images, Azure offers [several tiers of
 storage](/azure/storage/blobs/storage-blob-storage-tiers)
 for Blob storage including hot, cool, and archive. The hot access tier is for
 data that is active and expected to be most performant and in use in
