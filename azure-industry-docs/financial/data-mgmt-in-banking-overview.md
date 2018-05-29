@@ -16,8 +16,9 @@ Banks today carry responsibility for securing and storing enormous amounts of
 valuable information within their firewalls, both about their customers and
 about the shifting financial landscape. In many cases that information goes
 unused because it is not easily accessible or searchable, even though use of
-data could improve decision making across multiple banking activities. With this
-data, banks could find information faster about who is at risk for defaulting on
+data could improve decision making across multiple banking activities. 
+
+With this data, banks could find information faster about who is at risk for defaulting on
 a loan or decide what market portfolio valuation adjustments are needed. Banks
 could also have a clearer view of how their data is stored and managed to meet
 regulatory requirements, so that data can be leveraged, retained, archived or
@@ -27,8 +28,8 @@ With thousands of decisions, large and small, required to meet every day banking
 function requirements, data becomes increasingly important. Not only that, but
 given strict regulatory requirements and Financial Crime obligations, banks need
 the ability to audit the results of any data analysis process, all the way back
-to the the initial information landing into a data repository. Traceability
-requires transparency throughout the entire ingestion to rest data flow.
+to the initial information landing into a data repository. Traceability
+requires transparency throughout the entire ingestion to rest data flow. 
 
 To manage the many accounts or businesses that banks are serving, they need to
 make sense of all this data rapidly and cost-effectively. As banks mature
@@ -39,7 +40,7 @@ areas of customer-centric opportunities.
 Having the appropriate data storage strategy in place is key to operational
 efficiencies, good application performance, and regulatory compliance. The data
 storage strategy is also the initial lynchpin in getting data into formats where
-it can be used for business intelligence and actionable insights.
+it can be used for business intelligence and actionable insights. Azure offers services to support all of these requirements, helping banks stay compliant with regulations.
 
 A common pattern to data management follows:
 
@@ -199,7 +200,9 @@ and recovery services.
 
 ### Azure Data Box
 
-Another service in preview is focused on migrating very large volumes of data to
+Often, banks will have terabytes, if not petbytes, of information to bring into Azure. Luckily thes data stores in Azure are very elastic and highly scalable.
+
+A service focused on migrating very large volumes of data to
 Azure is [Azure Data
 Box](https://azure.microsoft.com/en-us/services/storage/databox/). This service
 is designed to migrate data without transferring data or backups over an Azure
@@ -210,7 +213,14 @@ and secured via standard256-AES encryption. Once the data is on the appliance,
 it is shipped back to the Azure Data Center where the data is hydrated in Azure.
 The device is then securely erased.
 
+## Azure Information Protection
+
+Azure Information Protection (AIP) is a cloud-based solution helping organizations to classify, label, and protect its documents and emails. This can be done automatically by administrators who define rules and conditions, manually by users, or a combination where users are given recommendations.
+
 ## Data services
+
+Banks struggle with Master Data Management, meta data conflicting due to disparate core banking systems
+and data coming from origination systems, onboarding systems, offers management systems, CRM systems, and more. Azure has tools to help mitigat tehse and other commonly occuring data issues.
 
 There are many operations financial services organizations need to perform on
 their data. When writing data to Azure data stores, there may be a need to
@@ -401,3 +411,5 @@ of rarely-accessed data and it can be deleted on a rolling cycle as needed.
 Visit the Azure solutions library for [backup and archival
 storage](https://azure.microsoft.com/en-us/solutions/architecture/?solution=backup-archive)
 to get started designing your data management plan.
+
+**Article by**: Howard Bush and David Starr
