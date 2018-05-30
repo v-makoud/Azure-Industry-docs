@@ -16,7 +16,7 @@ Banks today carry responsibility for securing and storing enormous amounts of
 valuable information within their firewalls, both about their customers and
 about the shifting financial landscape. In many cases that information goes
 unused because it is not easily accessible or searchable, even though use of
-data could improve decision making across multiple banking activities. 
+data could improve decision making across multiple banking activities.
 
 With this data, banks could find information faster about who is at risk for defaulting on
 a loan or decide what market portfolio valuation adjustments are needed. Banks
@@ -29,7 +29,7 @@ function requirements, data becomes increasingly important. Not only that, but
 given strict regulatory requirements and Financial Crime obligations, banks need
 the ability to audit the results of any data analysis process, all the way back
 to the initial information landing into a data repository. Traceability
-requires transparency throughout the entire ingestion to rest data flow. 
+requires transparency from ingestion to producing actionable data.
 
 To manage the many accounts or businesses that banks are serving, they need to
 make sense of all this data rapidly and cost-effectively. As banks mature
@@ -40,7 +40,7 @@ areas of customer-centric opportunities.
 Having the appropriate data storage strategy in place is key to operational
 efficiencies, good application performance, and regulatory compliance. The data
 storage strategy is also the initial lynchpin in getting data into formats where
-it can be used for business intelligence and actionable insights. Azure offers services to support all of these requirements, helping banks stay compliant with regulations.
+it can be used for business intelligence and actionable insights.
 
 A common pattern to data management follows:
 
@@ -194,16 +194,15 @@ between the data center and Azure.
 Figure 1
 
 Enterprises often use Files storage to consolidate and secure large volumes of
-files. This allows retiring old file servers or repurposing the hardware.
+files. This allows retiring old file servers or re-purposing the hardware.
 Another advantage of moving to Files storage is to centralize data management
 and recovery services.
 
 ### Azure Data Box
 
-Often, banks will have terabytes, if not petbytes, of information to bring into Azure. Luckily thes data stores in Azure are very elastic and highly scalable.
+Often, banks will have terabytes, if not petabytes, of information to bring into Azure. Luckily data stores in Azure are very elastic and highly scalable.
 
-A service focused on migrating very large volumes of data to
-Azure is [Azure Data
+A service focused on migrating very large volumes of data to Azure is [Azure Data
 Box](https://azure.microsoft.com/en-us/services/storage/databox/). This service
 is designed to migrate data without transferring data or backups over an Azure
 connection. Suitable for terabytes of data, Azure Data Box is an appliance that
@@ -219,8 +218,8 @@ Azure Information Protection (AIP) is a cloud-based solution helping organizatio
 
 ## Data services
 
-Banks struggle with Master Data Management, meta data conflicting due to disparate core banking systems
-and data coming from origination systems, onboarding systems, offers management systems, CRM systems, and more. Azure has tools to help mitigat tehse and other commonly occuring data issues.
+Banks struggle with Master Data Management, meta data conflicting due to disparate core banking systems,
+and data coming from origination systems, onboarding systems, offers management systems, CRM systems, and more. Azure has tools to help mitigate thesee and other commonly occuring data issues.
 
 There are many operations financial services organizations need to perform on
 their data. When writing data to Azure data stores, there may be a need to
