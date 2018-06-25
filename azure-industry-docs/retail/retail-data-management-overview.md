@@ -87,6 +87,8 @@ Other data stores such as relational databases, Blob storage, Azure Files storag
 
 ## Analyze
 
+For problems like reducing cost of inventory, retailors can use analysis performed by a Machine Learning process.
+
 Data analysis prepares data for processing through a Machine Learning engine to gain deeper insights into the customer experience. This process produces a model that “learns” and may be applied to future data to predict outcomes. Models define the data that will be examined and how the data will be analyzed through various algorithms. Using the output data from the analysis with data visualization is what could trigger an insight—such as offering an in-store coupon for an item from the customer’s wish list in the retailors eCommerce platform.
 
 Data analysis occurs by feeding learning ecosystems with data stored for processing. Typically, this is machine learning performed by Hadoop, Databricks, or a self-managed Spark instance running on a virtual machine. This can also be done simply by querying for data. Insight into KPIs can often be found in clean data without going through a machine learning pipeline.
@@ -119,6 +121,7 @@ Use the following steps to get started.
 
 With data now ready to be used by data analysts, actionable insights may be discovered, and action taken to exploit this new knowledge. For example, a customer’s purchase preferences may be loaded back into the retailer’s systems and used to improve several customer touchpoints such as the following.
 
+- Increase the average eCommerce or POS transaction by bundling products
 - Purchase history in CRM to support customer call center inquiries
 - Product suggestions tailored by an e-commerce recommendation engine
 - Targeted and relevant ads based on customer data
