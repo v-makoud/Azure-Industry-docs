@@ -63,9 +63,9 @@
         - name: Predictive Maintenance
           items: 
           - name: Overview
-            href: manufacturing/predictive-maintenance-overview.md  
+            href: manufacturing/predictive-maintenance-overview.md
           - name: Solution Guide
-            href: manufacturing/predictive-maintenance-solution.md                 
+            href: manufacturing/predictive-maintenance-solution.md
           - name: Additional Resources
             items:
               - name: Azure Machine Learning Documentation
@@ -81,7 +81,7 @@
       href: retail/index.md
       items:
         - name: Data Management in Retail Overview
-          href: retail/retail-data-management-overview
+          href: retail/retail-data-management-overview.md
         - name: PCI DSS-compliant Payment Processing
           href: /azure/security/blueprints/payment-processing-blueprint
           maintainContext: true
