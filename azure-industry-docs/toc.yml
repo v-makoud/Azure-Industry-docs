@@ -36,6 +36,9 @@
     - name: Health & Life Sciences
       href: health/index.md
       items:
+      - name: Azure Blueprint - HIPAA/HITRUST Health Data and AI
+        href: /azure/security/blueprints/azure-health
+        maintainContext: true
       - name: Biomedical Entity Recognition
         href: /azure/machine-learning/desktop-workbench/scenario-tdsp-biomedical-recognition
         maintainContext: true
@@ -51,9 +54,6 @@
             href: https://gallery.technet.microsoft.com/Azure-GxP-Guidelines-ab1b98d9
           - name: Designing Secure Health Solutions with Azure
             href: https://gallery.technet.microsoft.com/Azure-A-Practical-Guide-to-5ebdc8bd
-          - name: Security - HIPAA/HITRUST Health Data and AI
-            href: /azure/security/blueprints/azure-health
-            maintainContext: true
           - name: The Health Bot Overview
             href: /healthbot/
             maintainContext: true

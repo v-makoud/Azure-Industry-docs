@@ -121,7 +121,6 @@ Use the following steps to get started.
 
 With data now ready to be used by data analysts, actionable insights may be discovered, and action taken to exploit this new knowledge. For example, a customer’s purchase preferences may be loaded back into the retailer’s systems and used to improve several customer touchpoints such as the following.
 
-
 - Increase the average eCommerce or POS transaction by bundling products
 - Purchase history in CRM to support customer call center inquiries
 - Product suggestions tailored by an e-commerce recommendation engine
