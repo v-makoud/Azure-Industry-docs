@@ -36,6 +36,9 @@
     - name: Health & Life Sciences
       href: health/index.md
       items:
+      - name: Azure Blueprint - HIPAA/HITRUST Health Data and AI
+        href: /azure/security/blueprints/azure-health
+        maintainContext: true
       - name: Biomedical Entity Recognition
         href: /azure/machine-learning/desktop-workbench/scenario-tdsp-biomedical-recognition
         maintainContext: true
@@ -51,9 +54,6 @@
             href: https://gallery.technet.microsoft.com/Azure-GxP-Guidelines-ab1b98d9
           - name: Designing Secure Health Solutions with Azure
             href: https://gallery.technet.microsoft.com/Azure-A-Practical-Guide-to-5ebdc8bd
-          - name: Security - HIPAA/HITRUST Health Data and AI
-            href: /azure/security/blueprints/azure-health
-            maintainContext: true
           - name: The Health Bot Overview
             href: /healthbot/
             maintainContext: true
@@ -63,9 +63,9 @@
         - name: Predictive Maintenance
           items: 
           - name: Overview
-            href: manufacturing/predictive-maintenance-overview.md  
+            href: manufacturing/predictive-maintenance-overview.md
           - name: Solution Guide
-            href: manufacturing/predictive-maintenance-solution.md                 
+            href: manufacturing/predictive-maintenance-solution.md
           - name: Additional Resources
             items:
               - name: Azure Machine Learning Documentation
@@ -81,7 +81,7 @@
       href: retail/index.md
       items:
         - name: Data Management in Retail Overview
-          href: retail/retail-data-management-overview
+          href: retail/retail-data-management-overview.md
         - name: PCI DSS-compliant Payment Processing
           href: /azure/security/blueprints/payment-processing-blueprint
           maintainContext: true
