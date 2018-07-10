@@ -43,17 +43,22 @@
         href: /azure/cosmos-db/change-feed-hl7-fhir-logic-apps
         maintainContext: true
       - name: Azure Blueprints
-        items:
+        list:
           - name: Azure Security and Compliance - HIPAA/HITRUST Health Data and AI
             href: /azure/security/blueprints/azure-health
+            maintainContext: true
           - name: Azure Security and Compliance - Data Analytics for UK NHS
             href: /azure/security/blueprints/uknhs-analytics-overview
+            maintainContext: true
           - name: Azure Security and Compliance - Data Analytics for UK NHS
             href: /azure/security/blueprints/uknhs-analytics-overview
+            maintainContext: true
           - name: Azure Security and Compliance - Data Warehouse for UK NHS
             href: /azure/security/blueprints/uknhs-datawarehouse-overview
+            maintainContext: true
           - name: Azure Security and Compliance - IaaS Web Application for UK NHS
             href: /azure/security/blueprints/uknhs-iaaswa-overview
+            maintainContext: true
           - name: Azure Security and Compliance - PaaS Web Application for UK NHS
             href: /azure/security/blueprints/uknhs-paaswa-overview
             maintainContext: true
