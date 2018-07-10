@@ -36,15 +36,27 @@
     - name: Health & Life Sciences
       href: health/index.md
       items:
-      - name: Azure Blueprint - HIPAA/HITRUST Health Data and AI
-        href: /azure/security/blueprints/azure-health
-        maintainContext: true
       - name: Biomedical Entity Recognition
         href: /azure/machine-learning/desktop-workbench/scenario-tdsp-biomedical-recognition
         maintainContext: true
       - name: HL7 FHIR health care record changes
         href: /azure/cosmos-db/change-feed-hl7-fhir-logic-apps
         maintainContext: true
+      - name: Azure Blueprints
+        items:
+          - name: Azure Security and Compliance - HIPAA/HITRUST Health Data and AI
+            href: /azure/security/blueprints/azure-health
+          - name: Azure Security and Compliance - Data Analytics for UK NHS
+            href: /azure/security/blueprints/uknhs-analytics-overview
+          - name: Azure Security and Compliance - Data Analytics for UK NHS
+            href: /azure/security/blueprints/uknhs-analytics-overview
+          - name: Azure Security and Compliance - Data Warehouse for UK NHS
+            href: /azure/security/blueprints/uknhs-datawarehouse-overview
+          - name: Azure Security and Compliance - IaaS Web Application for UK NHS
+            href: /azure/security/blueprints/uknhs-iaaswa-overview
+          - name: Azure Security and Compliance - PaaS Web Application for UK NHS
+            href: /azure/security/blueprints/uknhs-paaswa-overview
+            maintainContext: true
       - name: Additional Resources
         items:
           - name: Quickstart - The Microsoft Genomics service
