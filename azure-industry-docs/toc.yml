@@ -43,7 +43,7 @@
         href: /azure/cosmos-db/change-feed-hl7-fhir-logic-apps
         maintainContext: true
       - name: Azure Blueprints
-        list:
+        items:
           - name: Azure Security and Compliance - HIPAA/HITRUST Health Data and AI
             href: /azure/security/blueprints/azure-health
             maintainContext: true
