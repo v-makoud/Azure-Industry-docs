@@ -36,6 +36,20 @@
           tocHref: /azure/machine-learning/desktop-workbench/scenario-tdsp-biomedical-recognition
         - name: HL7 FHIR health care record changes
           tocHref: /azure/cosmos-db/change-feed-hl7-fhir-logic-apps
+        - name: Azure Blueprints
+          items:
+          - name: Azure Security and Compliance - HIPAA/HITRUST Health Data and AI
+            href: /azure/security/blueprints/azure-health
+          - name: Azure Security and Compliance - Data Analytics for UK NHS
+            href: /azure/security/blueprints/uknhs-analytics-overview
+          - name: Azure Security and Compliance - Data Analytics for UK NHS
+            href: /azure/security/blueprints/uknhs-analytics-overview
+          - name: Azure Security and Compliance - Data Warehouse for UK NHS
+            href: /azure/security/blueprints/uknhs-datawarehouse-overview
+          - name: Azure Security and Compliance - IaaS Web Application for UK NHS
+            href: /azure/security/blueprints/uknhs-iaaswa-overview
+          - name: Azure Security and Compliance - PaaS Web Application for UK NHS
+            href: /azure/security/blueprints/uknhs-paaswa-overview
         - name: Additional Resources
           items:
             - name: Quickstart - The Microsoft Genomics service
