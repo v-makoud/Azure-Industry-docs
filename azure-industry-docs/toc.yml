@@ -50,9 +50,6 @@
           - name: Azure Security and Compliance - Data Analytics for UK NHS
             href: /azure/security/blueprints/uknhs-analytics-overview
             maintainContext: true
-          - name: Azure Security and Compliance - Data Analytics for UK NHS
-            href: /azure/security/blueprints/uknhs-analytics-overview
-            maintainContext: true
           - name: Azure Security and Compliance - Data Warehouse for UK NHS
             href: /azure/security/blueprints/uknhs-datawarehouse-overview
             maintainContext: true
