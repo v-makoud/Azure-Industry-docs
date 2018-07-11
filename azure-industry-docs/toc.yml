@@ -74,6 +74,10 @@
     - name: Manufacturing
       href: manufacturing/index.md
       items:
+        - name: High-Power Compute
+          items:
+            - name: Overview
+              href: manufacturing/compute-in-manufacturing-overview.md
         - name: Predictive Maintenance
           items: 
           - name: Overview
