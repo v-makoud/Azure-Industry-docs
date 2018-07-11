@@ -1,4 +1,14 @@
-# Manufacturing Industry: On-demand, scalable, high-power compute
+---
+# required metadata
+title: On-demand, scalable, high-power compute 
+author: ercenk
+ms.author: ercenk
+ms.date: 07/11/2018
+ms.topic: article
+ms.service: industry
+description: Overview for the high power compute need in Manufacturing industry.
+---
+# On-demand, scalable, high-power compute
 
 ## Introduction
 
