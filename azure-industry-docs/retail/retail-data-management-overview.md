@@ -28,7 +28,7 @@ When bringing data into Azure, consider the 3Ps of data sources and their applic
 
 > **Purchased** data typically augments and enhances the organization’s existing data most often with market and demographic data that supplements the organization’s data capture reach. For example, a retailer may purchase additional demographic data to augment a master customer record, ensuring the record is accurate and complete. 
 >
-> **Public** data is freely available and may be harvested from social media, government resources (e.g. geography), and other online sources. This data can infer insights such as weather patterns that correlate with purchasing patterns or social engagement that signals product popularity amongst a specific geography. Public data is often available via APIs.
+> **Public** data is freely available and may be harvested from social media, government resources (e.g. geography?WT.mc_id=retaildm-docs-dastarr), and other online sources. This data can infer insights such as weather patterns that correlate with purchasing patterns or social engagement that signals product popularity amongst a specific geography. Public data is often available via APIs.
 >
 > **Proprietary** data resides within the organization. It may be a retailer’s on-premises systems, SaaS applications, or cloud providers. To access the data in a SaaS application provider, and other vendor data, APIs are typically used to communicate the vendor’s system. This includes data such as eCommerce site logs, POS sales data, and inventory management systems.
 
@@ -38,11 +38,11 @@ These different data types are used for various insights coming from the data ma
 
 Initially, data is loaded into Azure in its native format, and is stored accordingly. Receiving and managing disparate data sources can be daunting, but Microsoft Azure offers services to load data into the cloud quickly and easily, making it available for processing in the data management pipeline. 
 
-Azure has several helpful services for migrating data. The choice depends on the type of data being migrated. [Azure Data Migration](/azure/dms/dms-overview) Services for SQL Server and the [Azure Import/Export Service](/azure/storage/common/storage-import-export-service) are services to help get data into Azure. Other data ingress services to consider include [Azure Data Factory](/azure/data-factory) and [Azure Logic Apps](/azure/logic-apps/) connectors. Each has its own features and should be investigated to see which technology works best for the given situation.
+Azure has several helpful services for migrating data. The choice depends on the type of data being migrated. [Azure Data Migration](/azure/dms/dms-overview?WT.mc_id=retaildm-docs-dastarr) Services for SQL Server and the [Azure Import/Export Service](/azure/storage/common/storage-import-export-service?WT.mc_id=retaildm-docs-dastarr) are services to help get data into Azure. Other data ingress services to consider include [Azure Data Factory](/azure/data-factory?WT.mc_id=retaildm-docs-dastarr) and [Azure Logic Apps](/azure/logic-apps/?WT.mc_id=retaildm-docs-dastarr) connectors. Each has its own features and should be investigated to see which technology works best for the given situation.
 
-Data ingestion isn’t limited to Microsoft technologies. Through the [Azure Marketplace](https://azuremarketplace.microsoft.com), retailers may configure many different vendor databases in Azure to work with existing on-premises systems. 
+Data ingestion isn’t limited to Microsoft technologies. Through the [Azure Marketplace](https://azuremarketplace.microsoft.com?WT.mc_id=retaildm-docs-dastarr), retailers may configure many different vendor databases in Azure to work with existing on-premises systems. 
 
-Not all data must be maintained in Azure. For example, Point of Sale (POS) data may be held on-premises so Internet outages do not impact sales transactions. This data can be queued and uploaded to Azure on a schedule (perhaps nightly or weekly) for use in analysis, but always treating the on-premises data as the source of truth.
+Not all data must be maintained in Azure. For example, Point of Sale (POS?WT.mc_id=retaildm-docs-dastarr) data may be held on-premises so Internet outages do not impact sales transactions. This data can be queued and uploaded to Azure on a schedule (perhaps nightly or weekly?WT.mc_id=retaildm-docs-dastarr) for use in analysis, but always treating the on-premises data as the source of truth.
 
 ## Prepare
 
@@ -50,17 +50,17 @@ Before analysis begins, the data must be prepared. This shaping of data is impor
 
 There are two types of data to address when preparing data for analysis, structured and unstructured. Structured data is easier to deal with since it is already formed and formatted. It may require just a simple transformation to go from structured data in source format to structured data which is ready for analysis jobs. Unstructured data typically provides more challenges. Unstructured data isn’t stored in a fixed record length format. Examples include documents, social media feeds, and digital images and videos. These data must be managed differently than structured data and often require a dedicated process to ensure these data end up in the right data store, in a useable way.
 
-Data shaping occurs during the Extract-Transform-Load (ETL) process, in the preparation stage. Data is extracted from the unchanged data sources imported into Azure, “cleaned” or reformatted as needed, and stored in a new, more structured format. A common ETL data preparation operation is to transform .csv or Excel files into parquet files, which are easier for machine learning systems like Apache Spark to read and process quickly. Another common scenario is to create XML files or JSON from .csv files, or other formats. The resulting format is easier to use with other analysis engines.
+Data shaping occurs during the Extract-Transform-Load (ETL?WT.mc_id=retaildm-docs-dastarr) process, in the preparation stage. Data is extracted from the unchanged data sources imported into Azure, “cleaned” or reformatted as needed, and stored in a new, more structured format. A common ETL data preparation operation is to transform .csv or Excel files into parquet files, which are easier for machine learning systems like Apache Spark to read and process quickly. Another common scenario is to create XML files or JSON from .csv files, or other formats. The resulting format is easier to use with other analysis engines.
 
-In Azure, there are several transformation technologies available as a ETL services to reshape data. Options include [Azure Databricks](/azure/azure-databricks), [Azure Functions](/azure/azure-functions/) or Logic Apps. Databricks is a fully managed instance of Apache Spark, and is used to transform data from one form to another. Azure Functions are stateless (or “serverless”) functions with triggers to fire them and run code. Logic Apps integrates services.
+In Azure, there are several transformation technologies available as a ETL services to reshape data. Options include [Azure Databricks](/azure/azure-databricks?WT.mc_id=retaildm-docs-dastarr), [Azure Functions](/azure/azure-functions/?WT.mc_id=retaildm-docs-dastarr) or Logic Apps. Databricks is a fully managed instance of Apache Spark, and is used to transform data from one form to another. Azure Functions are stateless (or “serverless”?WT.mc_id=retaildm-docs-dastarr) functions with triggers to fire them and run code. Logic Apps integrates services.
 
 ## Store
 
 Storing data before processing requires consideration. Data can come in structured or unstructured formats and the shape of the data often determines its storage destination. For example, highly structured data may be suitable for Azure SQL. Less structured data may be held in blob storage, file storage, or table storage.
 
-Data stored in Azure has great performance backed up by a solid service-level agreement (SLA). Data services provide easier to manage solutions, high availability, replication across multiple geographic locations and—above all—Azure offers the data stores and services needed to drive Machine Learning.
+Data stored in Azure has great performance backed up by a solid service-level agreement (SLA?WT.mc_id=retaildm-docs-dastarr). Data services provide easier to manage solutions, high availability, replication across multiple geographic locations and—above all—Azure offers the data stores and services needed to drive Machine Learning.
 
-Both structured and unstructured data can be stored in [Azure Data Lake](/azure/data-lake-store/data-lake-store-overview) and queried using [U-SQL](/azure/data-lake-analytics/data-lake-analytics-u-sql-get-started), a query language specific to Azure Data Lake. Examples of data that may be included in a Data Lake include the following, which are divided into commonly structured and unstructured data sources.
+Both structured and unstructured data can be stored in [Azure Data Lake](/azure/data-lake-store/data-lake-store-overview?WT.mc_id=retaildm-docs-dastarr) and queried using [U-SQL](/azure/data-lake-analytics/data-lake-analytics-u-sql-get-started?WT.mc_id=retaildm-docs-dastarr), a query language specific to Azure Data Lake. Examples of data that may be included in a Data Lake include the following, which are divided into commonly structured and unstructured data sources.
 
 ### Structured Data
 
@@ -81,7 +81,7 @@ There are a growing number of use cases supporting unstructured data to generate
 
 Examples of structured data include relational database data feeds, sensor data, Apache Parquet files, and ecommerce data. The inherent structure of these data makes them well-suited for a Machine Learning pipeline.
 
-Azure Data Lake service also enables batch and interactive queries along with real time analytics using [Data Lake Analytics](/azure/data-lake-analytics/data-lake-analytics-overview). Also, Data Lake is specifically well-suited for very large data analysis workloads. Finally, data in the Data Lake is persistent and has no time limit.
+Azure Data Lake service also enables batch and interactive queries along with real time analytics using [Data Lake Analytics](/azure/data-lake-analytics/data-lake-analytics-overview?WT.mc_id=retaildm-docs-dastarr). Also, Data Lake is specifically well-suited for very large data analysis workloads. Finally, data in the Data Lake is persistent and has no time limit.
 
 Other data stores such as relational databases, Blob storage, Azure Files storage, and Cosmos DB document storage may also hold clean data ready for downstream analysis in the data management pipeline. There is no requirement that one uses a Data Lake.
 
@@ -93,13 +93,13 @@ Data analysis prepares data for processing through a Machine Learning engine to 
 
 Data analysis occurs by feeding learning ecosystems with data stored for processing. Typically, this is machine learning performed by Hadoop, Databricks, or a self-managed Spark instance running on a virtual machine. This can also be done simply by querying for data. Insight into KPIs can often be found in clean data without going through a machine learning pipeline.
 
-[Hadoop](/azure/hdinsight/hdinsight-hadoop-architecture) is part of the fully managed Azure service, [HDInsight](/azure/hdinsight/). HDInsight is a collection of data learning tools used for training data models, outputting data to a data warehouse, and performing queries on Hadoop through the Hive query language. HDInsight can analyze streaming or historical data.
+[Hadoop](/azure/hdinsight/hdinsight-hadoop-architecture?WT.mc_id=retaildm-docs-dastarr) is part of the fully managed Azure service, [HDInsight](/azure/hdinsight/?WT.mc_id=retaildm-docs-dastarr). HDInsight is a collection of data learning tools used for training data models, outputting data to a data warehouse, and performing queries on Hadoop through the Hive query language. HDInsight can analyze streaming or historical data.
 
 A variety of learning algorithms may be applied to the data as part of training and to maintain data models. A data model explicitly determines the structure of data produced for analysts.
 
 First, the data is cleaned and formed appropriately. It is then processed by a machine learning system such as HDInsight or Apache Spark. To do this, existing data is used to train a model, which in turn is used in analysis of data. The trained model is updated periodically with new known good data to increase its accuracy during analysis. Machine learning services use the model to perform an analysis of the data being processed.
 
-After model training and running a data analysis process, data derived from machine learning analysis can be stored in a data warehouse, or normalized storage databases for analytics data. Microsoft provides [Power BI](/power-bi/), a fully featured data analytics tool, for deep analysis of data in the data warehouse.
+After model training and running a data analysis process, data derived from machine learning analysis can be stored in a data warehouse, or normalized storage databases for analytics data. Microsoft provides [Power BI](/power-bi/?WT.mc_id=retaildm-docs-dastarr), a fully featured data analytics tool, for deep analysis of data in the data warehouse.
 
 ## Action
 
@@ -135,9 +135,9 @@ Data management in retail is complex. But it offers the valuable ability to deli
 
 To continue to understand more of Azure capabilities related to implementing a data management pipeline, read the following:
 
-- See how [Azure Data Factory](/azure/data-factory/) can help ingest data from on-premises data stores into Azure.
-- Learn more about how [Azure Data Lake](/azure/data-lake-store/data-lake-store-overview) can serve as a store all data, both structured and unstructured.
-- See actual retail reports illustrating how [Power BI](https://powerbi.microsoft.com/en-us/industries/retail/) can give deeper insights into known questions, but enable trend analysis.
-- Visit the [Azure Marketplace](https://azuremarketplace.microsoft.com/) to find solutions compatible with those already on-premises.
+- See how [Azure Data Factory](/azure/data-factory/?WT.mc_id=retaildm-docs-dastarr) can help ingest data from on-premises data stores into Azure.
+- Learn more about how [Azure Data Lake](/azure/data-lake-store/data-lake-store-overview?WT.mc_id=retaildm-docs-dastarr) can serve as a store all data, both structured and unstructured.
+- See actual retail reports illustrating how [Power BI](https://powerbi.microsoft.com/en-us/industries/retail/?WT.mc_id=retaildm-docs-dastarr) can give deeper insights into known questions, but enable trend analysis.
+- Visit the [Azure Marketplace](https://azuremarketplace.microsoft.com/?WT.mc_id=retaildm-docs-dastarr) to find solutions compatible with those already on-premises.
 
 _This article was authored by David Starr and Mariya Zorotovich._
