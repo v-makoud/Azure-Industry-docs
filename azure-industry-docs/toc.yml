@@ -100,6 +100,8 @@
       items:
         - name: Data Management in Retail Overview
           href: retail/retail-data-management-overview.md
+        - name: Optimize and reuse an existing recommendation system
+          href: retail/recommendation-engine-optimization.md
         - name: PCI DSS-compliant Payment Processing
           href: /azure/security/blueprints/payment-processing-blueprint
           maintainContext: true
