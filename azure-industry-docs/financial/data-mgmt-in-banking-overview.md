@@ -81,9 +81,9 @@ being used by current applications. There are several options for moving this
 data to Azure. In many cases existing applications can connect to data in Azure
 as though it were on-premises, with minimal changes to those existing
 applications. This is especially true when using Microsoft [Azure SQL
-Database](/azure/sql-database/), but through the
+Database](/azure/sql-database/?WT.mc_id=bankdm-docs-dastarr), but through the
 [Azure
-Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/category/databases)
+Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/category/databases?WT.mc_id=bankdm-docs-dastarr)
 solutions can be found for Oracle, TeraData MongoDB and others.
 
 Different data migration strategies exist for moving data from on-premises to
@@ -93,14 +93,14 @@ provide data transparency and reliable security.
 ### Virtual Network (VNet) Service Endpoints
 
 Security is a primary concern when dealing with customer financial information.
-The securing of resources (such as databases) within Azure often depends on
+The securing of resources (such as databases?WT.mc_id=bankdm-docs-dastarr) within Azure often depends on
 setting up a network infrastructure within Azure itself, and then accessing that
 network via a specific endpoint.
 
 Before transferring data to Azure, it is useful to consider the network topology
 securing both your Azure resources and the connection to them from on-premises.
-[Virtual Network (VNet) Service
-Endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview)
+[Virtual Network (VNet?WT.mc_id=bankdm-docs-dastarr) Service
+Endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview?WT.mc_id=bankdm-docs-dastarr)
 provide a secured direct connection to an Azure defined VNet.
 
 VNets are defined in Azure to contain Azure resources within a bounded VNet. An
@@ -130,15 +130,15 @@ the appropriate Azure data storage. For larger data migrations restoring backups
 in Azure is typically the fastest route.
 
 There are many ways to transfer data securely and quickly into Azure. [See this
-article](/azure/architecture/data-guide/scenarios/data-transfer)
+article](/azure/architecture/data-guide/scenarios/data-transfer?WT.mc_id=bankdm-docs-dastarr)
 for some standard techniques with advantages, and disadvantages of each.
 
 ### Azure Database Migration Service
 
 When lifting and shifting SQL Server databases the [Microsoft Azure Database
-Migration Service](/azure/dms/dms-overview) can
+Migration Service](/azure/dms/dms-overview?WT.mc_id=bankdm-docs-dastarr) can
 be used to move databases to Azure. The service uses the [Data Migration
-Assistant](https://docs.microsoft.com/en-us/sql/dma/dma-overview) to ensure your
+Assistant](https://docs.microsoft.com/en-us/sql/dma/dma-overview?WT.mc_id=bankdm-docs-dastarr) to ensure your
 on-premises database will be compatible with features offered in Azure SQL. Any
 changes required before migrating the database is up to you. Further, use of the
 service requires a Site-to-Site internet connection between the on-premises
@@ -148,7 +148,7 @@ network and Azure.
 
 If SQL Server is on-premises today and the goal is to move to SQL Azure, another
 great technique is to use SQL Server Management Studio [and the BCP utility to
-move data](https://azure.microsoft.com/en-us/blog/bcp-and-sql-azure/) into SQL
+move data](https://azure.microsoft.com/en-us/blog/bcp-and-sql-azure/?WT.mc_id=bankdm-docs-dastarr) into SQL
 Azure. After scripting and creating Azure SQL databases from the original
 on-premises server, BCP can be used to rapidly transfer data into SQL Azure.
 
@@ -167,9 +167,9 @@ storage with centralized permissions and access controls.
 Different data storage solutions may be more suitable for specific data formats.
 For example, data stored on-premises in SQL Server is likely best suited for
 Azure SQL. Data stored in .csv or Excel files is likely best suited for [Azure
-Blob](/azure/storage/blobs/storage-blobs-introduction)
+Blob](/azure/storage/blobs/storage-blobs-introduction?WT.mc_id=bankdm-docs-dastarr)
 storage or [Azure
-Files](/azure/storage/files/storage-files-introduction)
+Files](/azure/storage/files/storage-files-introduction?WT.mc_id=bankdm-docs-dastarr)
 storage, which is implemented on top of the Blob service.
 
 Almost all data flowing in and out of Azure goes through Blob storage as some
@@ -203,7 +203,7 @@ and recovery services.
 Often, banks will have terabytes, if not petabytes, of information to bring into Azure. Luckily data stores in Azure are very elastic and highly scalable.
 
 A service focused on migrating very large volumes of data to Azure is [Azure Data
-Box](https://azure.microsoft.com/en-us/services/storage/databox/). This service
+Box](https://azure.microsoft.com/en-us/services/storage/databox/?WT.mc_id=bankdm-docs-dastarr). This service
 is designed to migrate data without transferring data or backups over an Azure
 connection. Suitable for terabytes of data, Azure Data Box is an appliance that
 can be ordered from the Azure Portal. It is shipped to your location, where it
@@ -229,7 +229,7 @@ ingested.
 ### Azure Data Factory
 
 [Microsoft Azure Data
-Factory](/azure/data-factory/introduction) is a
+Factory](/azure/data-factory/introduction?WT.mc_id=bankdm-docs-dastarr) is a
 fully managed service to help with ingress, processing, and monitoring data
 movement in a Data Factory pipeline. Data Factory activities form the structure
 of the data management pipeline.
@@ -246,16 +246,16 @@ converting .csv files to parquet files, which are better suited for machine
 learning systems, and storing those parquet files in Blog storage.
 
 Data may also be submitted to downstream compute services such as such as [Azure
-HDInsight](/azure/hdinsight/hadoop/apache-hadoop-introduction),
-[Spark](/azure/hdinsight/spark/apache-spark-overview),
+HDInsight](/azure/hdinsight/hadoop/apache-hadoop-introduction?WT.mc_id=bankdm-docs-dastarr),
+[Spark](/azure/hdinsight/spark/apache-spark-overview?WT.mc_id=bankdm-docs-dastarr),
 [Azure Data Lake
-Analytics](/azure/data-lake-analytics/data-lake-analytics-overview),
+Analytics](/azure/data-lake-analytics/data-lake-analytics-overview?WT.mc_id=bankdm-docs-dastarr),
 and [Azure Machine
-Learning](/azure/machine-learning/). This allows
+Learning](/azure/machine-learning/?WT.mc_id=bankdm-docs-dastarr). This allows
 directly feeding systems which result in analysis and intelligent reporting. One
 common model for data ingress is shown in Figure 2 below. The data is held in a
 common [Data
-Lake](/azure/data-lake-store/data-lake-store-overview)
+Lake](/azure/data-lake-store/data-lake-store-overview?WT.mc_id=bankdm-docs-dastarr)
 to be used by downstream analytics services.
 
 ![A Data Lake ingest model](./assets/data-mgmt-in-banking-overview/data-mgmt-02.png)
@@ -268,12 +268,12 @@ get your data, how you want it processed, and where you want to store the
 results. Building pipelines with activities is the heart of Data Factory and
 composing a visual workflow right in the Azure Portal makes creating pipelines
 easy. [See here for a complete
-listing](/azure/data-factory/concepts-pipelines-activities)
+listing](/azure/data-factory/concepts-pipelines-activities?WT.mc_id=bankdm-docs-dastarr)
 of activities.
 
 ### Azure Databricks
 
-[Azure Databricks](/azure/azure-databricks/) is
+[Azure Databricks](/azure/azure-databricks/?WT.mc_id=bankdm-docs-dastarr) is
 a managed Apache Spark based analytics platform in Azure. It is highly scalable
 and Spark jobs run on machine clusters as large as needed. Databricks works from
 a Notebook which provides a single place of collaboration between data
@@ -302,7 +302,7 @@ ownership of the hardware.
 ### Azure Archive storage
 
 For unstructured data such as files or images, Azure offers [several tiers of
-storage](/azure/storage/blobs/storage-blob-storage-tiers)
+storage](/azure/storage/blobs/storage-blob-storage-tiers?WT.mc_id=bankdm-docs-dastarr)
 for Blob storage including hot, cool, and archive. The hot access tier is for
 data that is active and expected to be most performant and in use in
 applications. The cool access tier is for short-term backup and disaster
@@ -320,7 +320,7 @@ expensive data tier for blob storage.
 ### Azure SQL Database long-term retention
 
 When using Azure SQL, there is a [long-term backup retention
-service](/azure/sql-database/sql-database-long-term-retention)
+service](/azure/sql-database/sql-database-long-term-retention?WT.mc_id=bankdm-docs-dastarr)
 for storing backups up to ten years. Users can schedule backups to be retained
 for long-term storage such that the backup will be retained for weeks, months,
 or even years.
@@ -339,7 +339,7 @@ deleted from archive or any other data stores in Azure at any time.
 
 An effective strategy for deleting unwanted data is to do so on an interval,
 nightly or weekly being the most common. A [time triggered Azure
-Function](/azure/azure-functions/functions-bindings-timer)
+Function](/azure/azure-functions/functions-bindings-timer?WT.mc_id=bankdm-docs-dastarr)
 can be written to perform this job well. If you delete any data, Microsoft Azure
 deletes the data, including any cached or backup copies.
 
@@ -362,30 +362,30 @@ Once your data is hosted in Azure, create a data purge plan for data that has
 outlived its usefulness or lifespan. While long-term (cold) storage is always a
 great option for archiving, clean-up of expired data reduces footprint and
 overall storage costs. Backup and archive [Azure solution
-architectures](https://azure.microsoft.com/en-us/solutions/architecture/?solution=backup-archive)
+architectures](https://azure.microsoft.com/en-us/solutions/architecture/?solution=backup-archive?WT.mc_id=bankdm-docs-dastarr)
 is a good resource to help plan your overall strategy.
 
 ## Relevant Technologies
 
 - [Azure
-    Functions](/azure/azure-functions/functions-bindings-timer)
+    Functions](/azure/azure-functions/functions-bindings-timer?WT.mc_id=bankdm-docs-dastarr)
     are serverless scripts and small programs that can run in response to a
     system event or on a timer.
 
 - [Azure Storage Client
-    Tools](/azure/storage/common/storage-explorers)
+    Tools](/azure/storage/common/storage-explorers?WT.mc_id=bankdm-docs-dastarr)
     are tools to access data stores and include far more than the Azure portal.
 
 - [Blob
-    storage](/azure/storage/blobs/storage-blobs-introduction)
+    storage](/azure/storage/blobs/storage-blobs-introduction?WT.mc_id=bankdm-docs-dastarr)
     is suitable to store files like text or images and other types of
     unstructured data.
 
-- [Databricks](/azure/azure-databricks/) is a
+- [Databricks](/azure/azure-databricks/?WT.mc_id=bankdm-docs-dastarr) is a
     fully managed service offering easy implementation of a Spark cluster.
 
 - [Data
-    Factory](/azure/data-factory/concepts-pipelines-activities)
+    Factory](/azure/data-factory/concepts-pipelines-activities?WT.mc_id=bankdm-docs-dastarr)
     is a cloud data integration service used to compose data storage, transit,
     and processing services into automated data pipelines
 
@@ -408,7 +408,7 @@ Databricks and Data Factory. Archival storage is available for long-term storage
 of rarely-accessed data and it can be deleted on a rolling cycle as needed.
 
 Visit the Azure solutions library for [backup and archival
-storage](https://azure.microsoft.com/en-us/solutions/architecture/?solution=backup-archive)
+storage](https://azure.microsoft.com/en-us/solutions/architecture/?solution=backup-archive?WT.mc_id=bankdm-docs-dastarr)
 to get started designing your data management plan.
 
 **Article by**: Howard Bush and David Starr
