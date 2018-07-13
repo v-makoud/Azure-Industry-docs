@@ -90,7 +90,7 @@ Different data migration strategies exist for moving data from on-premises to
 Azure and have varying degrees of latency. All the techniques referenced below
 provide data transparency and reliable security.
 
-### Virtual Network (VNet?WT.mc_id=bankdm-docs-dastarr) Service Endpoints
+### Virtual Network (VNet) Service Endpoints
 
 Security is a primary concern when dealing with customer financial information.
 The securing of resources (such as databases?WT.mc_id=bankdm-docs-dastarr) within Azure often depends on
@@ -123,7 +123,7 @@ do this include the following:
     capabilities
 
 In the case of smaller databases, the first step of data ingestion is typically
-creating the datastores and structures (like tables?WT.mc_id=bankdm-docs-dastarr) needed via the Azure
+creating the datastores and structures (like tables) needed via the Azure
 Portal, Azure CLI, or the Azure SDK. For these smaller data stores, the next
 steps may be performed by a custom application written to copy the right data to
 the appropriate Azure data storage. For larger data migrations restoring backups
@@ -359,7 +359,7 @@ help migrate based on the content type, size and more. The Azure Data Migration
 Service is one such example.
 
 Once your data is hosted in Azure, create a data purge plan for data that has
-outlived its usefulness or lifespan. While long-term (cold?WT.mc_id=bankdm-docs-dastarr) storage is always a
+outlived its usefulness or lifespan. While long-term (cold) storage is always a
 great option for archiving, clean-up of expired data reduces footprint and
 overall storage costs. Backup and archive [Azure solution
 architectures](https://azure.microsoft.com/en-us/solutions/architecture/?solution=backup-archive?WT.mc_id=bankdm-docs-dastarr)

@@ -71,7 +71,7 @@ The Azure Batch processing model has several benefits for risk grid computing:
 - Augments existing investments in various on-premises systems.
 - Allows existing infrastructure to serve risk analysis needs when demand is low, deallocating Azure-based worker nodes.
 - Provides extra capacity to the risk compute grid when demand is high.
-- Enables matching machine profiles to the processing power needed by Batch workload, even when the load calls for [High Performance Computing (HPC?WT.mc_id=gridbank-docs-dastarr)](/azure/virtual-machines/windows/hpcpack-cluster-options?WT.mc_id=gridbank-docs-dastarr) configurations.
+- Enables matching machine profiles to the processing power needed by Batch workload, even when the load calls for [High Performance Computing (HPC)](/azure/virtual-machines/windows/hpcpack-cluster-options?WT.mc_id=gridbank-docs-dastarr) configurations.
 
 A common solution is to automatically add worker nodes in Azure when the on-premises workers are all in use. The risk grid head node simply asks for more workers. This automatically scales the number of grid worker nodes in Azure and enables an elastic demand solution.
 

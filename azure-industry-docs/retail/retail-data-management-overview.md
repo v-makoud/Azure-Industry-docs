@@ -42,7 +42,7 @@ Azure has several helpful services for migrating data. The choice depends on the
 
 Data ingestion isn’t limited to Microsoft technologies. Through the [Azure Marketplace](https://azuremarketplace.microsoft.com?WT.mc_id=retaildm-docs-dastarr), retailers may configure many different vendor databases in Azure to work with existing on-premises systems. 
 
-Not all data must be maintained in Azure. For example, Point of Sale (POS?WT.mc_id=retaildm-docs-dastarr) data may be held on-premises so Internet outages do not impact sales transactions. This data can be queued and uploaded to Azure on a schedule (perhaps nightly or weekly?WT.mc_id=retaildm-docs-dastarr) for use in analysis, but always treating the on-premises data as the source of truth.
+Not all data must be maintained in Azure. For example, Point of Sale (POS) data may be held on-premises so Internet outages do not impact sales transactions. This data can be queued and uploaded to Azure on a schedule (perhaps nightly or weekly) for use in analysis, but always treating the on-premises data as the source of truth.
 
 ## Prepare
 
@@ -52,13 +52,13 @@ There are two types of data to address when preparing data for analysis, structu
 
 Data shaping occurs during the Extract-Transform-Load (ETL?WT.mc_id=retaildm-docs-dastarr) process, in the preparation stage. Data is extracted from the unchanged data sources imported into Azure, “cleaned” or reformatted as needed, and stored in a new, more structured format. A common ETL data preparation operation is to transform .csv or Excel files into parquet files, which are easier for machine learning systems like Apache Spark to read and process quickly. Another common scenario is to create XML files or JSON from .csv files, or other formats. The resulting format is easier to use with other analysis engines.
 
-In Azure, there are several transformation technologies available as a ETL services to reshape data. Options include [Azure Databricks](/azure/azure-databricks?WT.mc_id=retaildm-docs-dastarr), [Azure Functions](/azure/azure-functions/?WT.mc_id=retaildm-docs-dastarr) or Logic Apps. Databricks is a fully managed instance of Apache Spark, and is used to transform data from one form to another. Azure Functions are stateless (or “serverless”?WT.mc_id=retaildm-docs-dastarr) functions with triggers to fire them and run code. Logic Apps integrates services.
+In Azure, there are several transformation technologies available as a ETL services to reshape data. Options include [Azure Databricks](/azure/azure-databricks?WT.mc_id=retaildm-docs-dastarr), [Azure Functions](/azure/azure-functions/?WT.mc_id=retaildm-docs-dastarr) or Logic Apps. Databricks is a fully managed instance of Apache Spark, and is used to transform data from one form to another. Azure Functions are stateless (or “serverless”) functions with triggers to fire them and run code. Logic Apps integrates services.
 
 ## Store
 
 Storing data before processing requires consideration. Data can come in structured or unstructured formats and the shape of the data often determines its storage destination. For example, highly structured data may be suitable for Azure SQL. Less structured data may be held in blob storage, file storage, or table storage.
 
-Data stored in Azure has great performance backed up by a solid service-level agreement (SLA?WT.mc_id=retaildm-docs-dastarr). Data services provide easier to manage solutions, high availability, replication across multiple geographic locations and—above all—Azure offers the data stores and services needed to drive Machine Learning.
+Data stored in Azure has great performance backed up by a solid service-level agreement (SLA). Data services provide easier to manage solutions, high availability, replication across multiple geographic locations and—above all—Azure offers the data stores and services needed to drive Machine Learning.
 
 Both structured and unstructured data can be stored in [Azure Data Lake](/azure/data-lake-store/data-lake-store-overview?WT.mc_id=retaildm-docs-dastarr) and queried using [U-SQL](/azure/data-lake-analytics/data-lake-analytics-u-sql-get-started?WT.mc_id=retaildm-docs-dastarr), a query language specific to Azure Data Lake. Examples of data that may be included in a Data Lake include the following, which are divided into commonly structured and unstructured data sources.
 
