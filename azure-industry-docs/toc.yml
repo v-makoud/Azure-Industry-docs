@@ -100,6 +100,8 @@
       items:
         - name: Data Management in Retail Overview
           href: retail/retail-data-management-overview.md
+        - name: Migrating your e-commerce solution to Azure Overview
+          href: retail/migrating-ecommerce-solution-to-azure.md
         - name: Optimize and reuse an existing recommendation system
           href: retail/recommendation-engine-optimization.md
         - name: PCI DSS-compliant Payment Processing
