@@ -181,14 +181,14 @@ In our scenario, once the models were created on the development VM, they were p
 2. Once a model is trained, publish it to the operations VM using the publishService or updateService functions in the mrsdeploy package. For this project, we used multiple deployment approaches, and—depending on the approach—either a new model was published, or an existing model was updated. The following code was implemented to handle both cases:
 
 ````r
-If the service does not exist, publish it and if it does exist, update it.  
-No service by this name so publish one
+# If the service does not exist, publish it and if it does exist, update it.  
+# No service by this name so publish one
  api <- publishService(serviceName, code =sc_predict, model = model,  
       inputs = list(prop_data="data.frame"),  
       outputs = list(answer = "numeric"), v = "v1.0.0" )
  print("=========== Model Created =============")
 } else {
- A service by this name already exists, update it  
+# A service by this name already exists, update it  
  api <- updateService(serviceName, model = model,
      inputs = list(prop_data="data.frame"), v = "v1.0.0" )
  print("=========== Model Updated =============")
