@@ -143,3 +143,6 @@ Used during rebuild:
 ## Conclusion
 
 Moving your ecommerce system into Azure takes analysis, planning and a defined approach. We looked at a three phase approach of rehost, refactor, and rebuild. This allows an organization to move from one working state to another while minimizing the amount of change at each step. Retailers may also choose to refactor or even rebuild components, skipping rehosting altogether. Many times, you will have a clear path forward to modernization—take it when you can. As you gain experience running in Azure, you will see more opportunities to add new capabilities, reduce costs, and improve the overall system.
+
+
+_This article was authored by Scott Seely and Mariya Zorotovich._
