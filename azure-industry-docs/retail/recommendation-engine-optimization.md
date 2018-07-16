@@ -139,8 +139,8 @@ It was decided to use the R “odbc” library which enabled data filtering at t
 input_data <- rxImport(sqlServerDataDS, colClasses = c(  
 Approved="integer",
       OnTimeArrivalRate="numeric",
-Amount="numeric",
-IsInformed="numeric",
+      Amount="numeric",
+      IsInformed="numeric",
       <continue with list of columns> )
 # View the characteristics of the variables in the data source
 rxGetInfo (input_data, getVarInfo = TRUE)
