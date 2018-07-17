@@ -10,7 +10,7 @@ description: This article explains the phases of migrating ecommerce infrastruct
 ---
 
 
-# Migrating your e-commerce solution to Azure Overview
+# Migrating your e-commerce solution to Azure overview
 
 ## Introduction
 
