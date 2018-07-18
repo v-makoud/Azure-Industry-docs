@@ -76,7 +76,7 @@ The sections below describe how the server infrastructure was deployed for this 
 
 ### Initial Database Load
 
-The first step was to import the subscriber data from a very large .csv file into Azure SQL Database. There are multiple options for importing data into Azure SQL Database described in in this [reference](https://en.wikipedia.org/wiki/R_(programming_language)). Here is how we did it:
+The first step was to import the subscriber data from a very large .csv file into Azure SQL Database. There are multiple options for importing data into Azure SQL Database described in in this [reference](https://docs.microsoft.com/azure/sql-database/sql-database-load-from-csv-with-bcp). Here is how we did it:
 
 1. Created the database through Azure portal following steps [here](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-portal).
 2. Downloaded and used [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) to connect to the database from the VM.
@@ -100,12 +100,12 @@ Implementing single sign-on (SSO) with *Azure Active Directory* turned out to be
 
 The development VM hosted model development, training and re-training, and deployment of the classification model. An Azure VM (DS13 V2) was provisioned with Linux/Ubuntu 16.10 and the following were installed to the base VM:
 
-- Machine Learning Server 9.3.0 using instructions available [here](https://azure.microsoft.com/en-us/services/sql-database/). Be sure to run through the setup verification steps to confirm the installation. Because this was the development VM, the section ‘*Enable web service deployment and remote connections*’ was disregarded.
+- Machine Learning Server 9.3.0 using instructions available [here](https://docs.microsoft.com/machine-learning-server/install/machine-learning-server-install). Be sure to run through the setup verification steps to confirm the installation. Because this was the development VM, the section ‘*Enable web service deployment and remote connections*’ was disregarded.
 - [RStudio Server](https://docs.microsoft.com/en-us/machine-learning-server/operationalize/how-to-consume-web-service-asynchronously-batch) (Open Source Version). Be careful not to re-install R/r-base (it was installed previously with MLS 9.3.0).  
 - [Add a network security group](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/nsg-quickstart-portal) to the VM to allow for inbound connections over port 8787 for RStudio Server.  
 - ODBC drivers to handle the communication between the development VM and Azure SQL Database. The following odbc drivers were installed on the VM:  
-- The [ODBC Driver for SQL Server 17](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connect-query-ssms?view=sql-server-2017) compatible with Linux/ubuntu 16.10  
-- An open source ODBC driver unixodbc with installation instructions from [Import relational data using ODBC](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connect-query-ssms?view=sql-server-2017). Note: this article has two typos for Ubuntu instructions.  
+- The [ODBC Driver for SQL Server 17](https://www.microsoft.com/download/details.aspx?id=56567) compatible with Linux/ubuntu 16.10  
+- An open source ODBC driver unixodbc with installation instructions from [Import relational data using ODBC](https://docs.microsoft.com/machine-learning-server/r/how-to-revoscaler-data-odbc). Note: this article has two typos for Ubuntu instructions.  
 - To check if unixodbc is installed:
         ````Apt list –installed | grep unixODBC (should be unixodbc)````
       - And to install the driver:
@@ -113,7 +113,7 @@ The development VM hosted model development, training and re-training, and deplo
 
 ### Operations VM (MLS 9.3.0)
 
-The operations VM hosted the model web services and endpoints, stored the Swagger files, and stored serialized versions of the classification models. Configuration is very similar to the MLS development server. However, it is configured for operationalization which means the web services necessary to serve the REST endpoints are installed. To deploy the operations VM, there are ARM templates that make deployment quick. See: [Configuring Microsoft Machine Learning Server 9.3 to Operationalize Analytics using ARM Templates](https://docs.microsoft.com/en-us/sql/advanced-analytics/what-is-sql-server-machine-learning). For our project, a *One-Box* configuration was deployed using this [ARM template](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios).  
+The operations VM hosted the model web services and endpoints, stored the Swagger files, and stored serialized versions of the classification models. Configuration is very similar to the MLS development server. However, it is configured for operationalization which means the web services necessary to serve the REST endpoints are installed. To deploy the operations VM, there are ARM templates that make deployment quick. See: [Configuring Microsoft Machine Learning Server 9.3 to Operationalize Analytics using ARM Templates](https://blogs.msdn.microsoft.com/mlserver/2018/02/27/configuring-microsoft-machine-learning-server-9-3-to-operationalize-analytics-using-arm-templates/). For our project, a *One-Box* configuration was deployed using this [ARM template](https://github.com/Microsoft/microsoft-r/tree/master/mlserver-arm-templates/one-box-configuration/windowss).  
 With this, the server components to support the model pipeline were up and running.
 
 ## Model implementation
@@ -126,12 +126,12 @@ All the data needed for model development resided in an *Azure SQL Database*. Fo
 
 1. A query was submitted to the database to retrieve data for a specific *subscriber_id* and a result set returned. Two options were considered for query access to the database:
 
-- A RevoScaleR function called [RxSQLServerData](https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server)
+- A RevoScaleR function called [RxSQLServerData](https://docs.microsoft.com/machine-learning-server/python-reference/revoscalepy/rxsqlserverdatar)
 - The R odbc package
 
 It was decided to use the R “odbc” library which enabled data filtering at the database level. Filtering the database table for only the rows needed for a specific subscriber model minimized the number of rows to be read into R and processed. That reduced the memory, compute, and overall time needed to train or retrain each model.  
 
-1. The result set was converted into an R data frame and some of the data types were explicitly converted from varchars to integers or numerics as required by the classification algorithms. For this functionality, the RevoScaleR function [rxImport](https://www.rstudio.com/products/rstudio/download/) was used. The *rxImport* function is bundled with RevoScaleR and MicrosoftML and is engineered to be multi-threaded. Here is an example of how we used it:
+1. The result set was converted into an R data frame and some of the data types were explicitly converted from varchars to integers or numerics as required by the classification algorithms. For this functionality, the RevoScaleR function [rxImport](https://docs.microsoft.com/machine-learning-server/r-reference/revoscaler/rximport) was used. The *rxImport* function is bundled with RevoScaleR and MicrosoftML and is engineered to be multi-threaded. Here is an example of how we used it:
 
 ````r
 
@@ -174,7 +174,7 @@ In the end, the customer selected the *rxFastForest* algorithm and decided to tr
 
 ## Model Deployment & Web Services
 
-Publishing a model for deployment to the operations VM is straight-forward and documented in this QuickStart documentation [Deploy an R Model as a web service with mrsdeploy](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/revoscaler/rxsqlserverdata).
+Publishing a model for deployment to the operations VM is straight-forward and documented in this QuickStart documentation [Deploy an R Model as a web service with mrsdeploy](https://docs.microsoft.com/machine-learning-server/operationalize/quickstart-publish-r-web-service).
 In our scenario, once the models were created on the development VM, they were published on the operations VM using these steps:
 
 1. Establish a remote login from the developer VM to the operations VM using one of two functions available in the mrsdeploy package for authentication; remoteLogin() using a local admin name and password, or remoteLoginAAD() using Azure Active Directory. Both options are described in this reference Log in to Machine Learning Server or R Server with mrsdeploy and open a remote session.  
@@ -195,7 +195,7 @@ In our scenario, once the models were created on the development VM, they were p
 }
  ````
 
-When deployed, models are serialized and stored on the operations server and can be consumed via web services in either *standard* or *real-time* mode. Every time a web service is called with standard mode, R and any required libraries are loaded and unloaded with each call. In contrast, with *real-time* mode, R and the libraries are loaded only once and re-used for subsequent web service calls. Since most of the overhead with a web service call is the loading of R and the libraries, real-time mode offers much lower latency for model scoring, and response times can be under 10ms. See documentation and reference examples [here](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/microsoftml/rxfastforest#realtime-web-services) for both standard and real-time options. Real-time lends itself well to single predictions, but you can also pass in an input data frame for scoring. That is described in this reference: [Asynchronous web service consumption via batch processing with mrsdeploy](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/revoscaler/rxdforest).
+When deployed, models are serialized and stored on the operations server and can be consumed via web services in either *standard* or *real-time* mode. Every time a web service is called with standard mode, R and any required libraries are loaded and unloaded with each call. In contrast, with *real-time* mode, R and the libraries are loaded only once and re-used for subsequent web service calls. Since most of the overhead with a web service call is the loading of R and the libraries, real-time mode offers much lower latency for model scoring, and response times can be under 10ms. See documentation and reference examples [here](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/microsoftml/rxfastforest#realtime-web-services) for both standard and real-time options. Real-time lends itself well to single predictions, but you can also pass in an input data frame for scoring. That is described in this reference: [Asynchronous web service consumption via batch processing with mrsdeploy](https://docs.microsoft.com/machine-learning-server/operationalize/how-to-consume-web-service-asynchronously-batch).
 
 ## Conclusion
 
@@ -203,10 +203,10 @@ Leveraging the parallelism of the MicrosoftML and RevoScaleR libraries built int
 Implementing the infrastructure to support a model pipeline and getting the technology components configured correctly end-to-end can be complex. Here are some references to get your started with your own approach:
 
 - [Machine Learning Server Documentation](https://docs.microsoft.com/en-us/machine-learning-server/)
-- [R Tutorials for Machine Learning Server](https://docs.microsoft.com/en-us/machine-learning-server/r/tutorial-r-to-revoscaler)
+- [R Tutorials for Machine Learning Server](https://docs.microsoft.com/advanced-analytics/tutorials/sql-server-r-tutorials?view=sql-server-2017)
 - [R Samples for Machine Learning Server](https://docs.microsoft.com/en-us/machine-learning-server/r/r-samples)
 - [R Function Library Reference](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/introducing-r-server-r-package-reference)
 
 ## References
 
-If you are interested in building other predictive solutions for your retail business, visit the [retail section](https://gallery.azure.ai/industries/retail) of the Azure [AI Gallery](https://docs.microsoft.com/en-us/machine-learning-server/operationalize/concept-what-are-web-services).  
+If you are interested in building other predictive solutions for your retail business, visit the [retail section](https://gallery.azure.ai/industries/retail) of the Azure [AI Gallery](https://gallery.azure.ai/).  
