@@ -3,7 +3,7 @@
 title: Recommendation Engine Optimization 
 author: kbaroni
 ms.author: kbaroni
-ms.date: 07/12/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.service: industry
 description: How to reuse and optimize recommendation apps written in the R language. Relies Machine Learning Server on a Azure VMs.
@@ -16,8 +16,8 @@ This document describes the process of successfully reusing and improving an exi
 ## Recommendation systems and R
 
 For a retailer, understanding consumer preferences and purchasing history is a competitive advantage. Retailers have been using such data for years, in combination with machine learning, to identify products relevant to the consumer and deliver a personalized shopping experience. The approach is called **product recommendation** and it generates a significant revenue stream for retailers. Recommendation systems help answer questions like: *What movie will this person watch next? What additional services is this customer likely to be interested in? Where will this customer want to vacation?*
-A recent customer wanted to know: *Will consumers (subscribers) renew their contacts?* The customer had an existing recommendation model that would forecast the probability of a subscriber renewing a contract. Once the forecast was generated, additional processing was applied to classify a response into a yes, no, or maybe. The model response was then integrated into a call center business process. That process enabled a service agent to deliver a personalized recommendation to the consumer.  
-Many of this customer’s early analytic products were built in the [programming language R](https://docs.microsoft.com/machine-learning-server/operationalize/quickstart-publish-r-web-service), including the machine learning model at the core of their recommendation system. As their subscriber base has grown, so have the data and compute requirements. So much so, the recommendation workload is now painfully slow and cumbersome to process. Now Python is increasingly a part of their analytic product strategy. But for the near term, they need to preserve their R investment and find a more efficient development and deployment process. The challenge was to optimize the existing approach using capabilities in Azure. We embarked on a task to provide—and validate—a proof-of-concept technology stack for the recommendation workload. Here we summarize a general approach that can be used for similar projects.  
+A recent customer wanted to know: *Will consumers (subscribers) renew their contracts?* The customer had an existing recommendation model that would forecast the probability of a subscriber renewing a contract. Once the forecast was generated, additional processing was applied to classify a response into a yes, no, or maybe. The model response was then integrated into a call center business process. That process enabled a service agent to deliver a personalized recommendation to the consumer.  
+Many of this customer’s early analytic products were built in the [programming language R](https://docs.microsoft.com/machine-learning-server/rebranding-microsoft-r-server), including the machine learning model at the core of their recommendation system. As their subscriber base has grown, so have the data and compute requirements. So much so, the recommendation workload is now painfully slow and cumbersome to process. Now Python is increasingly a part of their analytic product strategy. But for the near term, they need to preserve their R investment and find a more efficient development and deployment process. The challenge was to optimize the existing approach using capabilities in Azure. We embarked on a task to provide—and validate—a proof-of-concept technology stack for the recommendation workload. Here we summarize a general approach that can be used for similar projects.  
 
 ## Design goals
 
@@ -64,7 +64,7 @@ RStudio Server is a Linux application that provides a browser-based interface fo
 ### Azure SQL Database
 
 Originally, the subscriber data was stored in one very large .csv file with 6 million rows of purchasing and preference information for 500 unique subscribers. Storing the data in a database meant faster data access from within R and it would allow for filtered reads. No longer would the entire data set need to be imported for training or retraining: data would be filtered by subscriber at the database source, significantly reducing the resources needed to import and process the data.  
-There are several managed cloud database options in Azure. [Azure SQL Database](https://docs.microsoft.com/en-us/machine-learning-server/operationalize/how-to-connect-log-in-with-mrsdeploy) was selected because of the customer’s familiarity with SQL Server and—more importantly—future plans to introduce SQL Server Machine Learning Services on a broader scale to Azure SQL Database. [SQL Server Machine Learning Services](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/revoscaler/rximport?view=sql-server-2017) are in-database capabilities for executing R and Python workloads via stored procedures.
+There are several managed cloud database options in Azure. [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/) was selected because of the customer’s familiarity with SQL Server and—more importantly—future plans to introduce SQL Server Machine Learning Services on a broader scale to Azure SQL Database. [SQL Server Machine Learning Services](https://docs.microsoft.com/sql/advanced-analytics/what-is-sql-server-machine-learning?view=sql-server-2017) are in-database capabilities for executing R and Python workloads via stored procedures.
 
 ### Node.js and React.js
 
@@ -79,7 +79,7 @@ The sections below describe how the server infrastructure was deployed for this 
 The first step was to import the subscriber data from a very large .csv file into Azure SQL Database. There are multiple options for importing data into Azure SQL Database described in in this [reference](https://en.wikipedia.org/wiki/R_(programming_language)). Here is how we did it:
 
 1. Created the database through Azure portal following steps [here](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-portal).
-2. Downloaded and used [SQL Server Management Studio](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/microsoftml/rxfasttrees) to connect to the database from the VM.
+2. Downloaded and used [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) to connect to the database from the VM.
 3. Selected the SQL Import/Export Wizard (if you are time-constrained, there are more performant data import options). Keep in mind the import/export wizard maps datatypes from the data source to the target destination; and with our scenario, all data elements were mapped to a varchar(max) data type which was acceptable. If your scenario requires different mappings, you can modify the datatypes in the wizard ([reference](https://gallery.azure.ai/?view=sql-server-2017)).  
 4. Since most queries submitted to the database would filter on the field *subscriber_id*, we created an index on that field.
 
@@ -93,8 +93,8 @@ The web application is responsible for three functions:
 
 Implementing single sign-on (SSO) with *Azure Active Directory* turned out to be more of a challenge than expected. This was due to the single page application (SPA) framework. One specific Azure Active Directory library was key for success: [react-adal](https://github.com/salvoravida/react-adal). The following references provided helpful guidance for implementing authentication:
 
-- [Authentication Scenarios for Azure AD](https://blogs.msdn.microsoft.com/sqlcat/2010/07/30/loading-data-to-sql-azure-the-fast-way/)
-- [Single Page Application](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios#single-page-application-spa)
+- [Authentication Scenarios for Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)
+- [Single Page Application](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios#single-page-application-spa)
 
 ### Development VM (MLS 9.3.0)
 
