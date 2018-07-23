@@ -54,12 +54,12 @@ The technology components in the pipeline diagram are discussed in more detail b
 ### Microsoft Machine Learning Server
 
 The primary reason for selecting R workloads:
-**RevoScaleR** and **Microsoft ML**. The functions included with these packages were used extensively throughout the code to import the data, create the classification models, and deploy them into production.
+**[RevoScaleR](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/revoscaler/revoscaler)** and **Microsoft ML**. The functions included with these packages were used extensively throughout the code to import the data, create the classification models, and deploy them into production.
 MLS was deployed on two Linux virtual machines in Azure: one configured for “development” and one configured for “operations.” The development VM was provisioned with significantly more memory and processing power to facilitate the training and testing of hundreds of models. It also hosted RStudio Server to provide easy access to an RStudio IDE for remote users. The operations server was configured on a smaller VM with the additional extensions necessary to host R models that were callable from a web application through REST APIs.
 
 ### RStudio Server
 
-RStudio Server is a Linux application that provides a browser-based interface for remote or laptop clients. It runs on port 8787 and is available to remote connections once a network security rule is created on the Azure VM. For analysts and data scientists who prefer the RStudio IDE, it can be an efficient option for providing access to virtual machine with a large compute and memory capacity. It is available for download in both source and commercial editions.
+**[RStudio Server](https://www.rstudio.com/products/rstudio/#Server)** is a Linux application that provides a browser-based interface for remote or laptop clients. It runs on port 8787 and is available to remote connections once a network security rule is created on the Azure VM. For analysts and data scientists who prefer the RStudio IDE, it can be an efficient option for providing access to virtual machine with a large compute and memory capacity. It is available for download in both source and commercial editions.
 
 ### Azure SQL Database
 
@@ -76,11 +76,11 @@ The sections below describe how the server infrastructure was deployed for this 
 
 ### Initial Database Load
 
-The first step was to import the subscriber data from a very large .csv file into Azure SQL Database. There are multiple options for importing data into Azure SQL Database described in in this [reference](https://docs.microsoft.com/azure/sql-database/sql-database-load-from-csv-with-bcp). Here is how we did it:
+The first step was to import the subscriber data from a very large .csv file into Azure SQL Database. There are multiple options for importing data into Azure SQL Database described in in this [reference](https://blogs.msdn.microsoft.com/sqlcat/2010/07/30/loading-data-to-sql-azure-the-fast-way/). Here is how we did it:
 
 1. Created the database through Azure portal following steps [here](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-portal).
 2. Downloaded and used [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) to connect to the database from the VM.
-3. Selected the SQL Import/Export Wizard (if you are time-constrained, there are more performant data import options). Keep in mind the import/export wizard maps datatypes from the data source to the target destination; and with our scenario, all data elements were mapped to a varchar(max) data type which was acceptable. If your scenario requires different mappings, you can modify the datatypes in the wizard ([reference](https://gallery.azure.ai/?view=sql-server-2017)).  
+3. Selected the [SQL Import/Export Wizard](https://docs.microsoft.com/sql/integration-services/import-export-data/import-and-export-data-with-the-sql-server-import-and-export-wizard?view=sql-server-2017) (if you are time-constrained, there are more performant data import options). Keep in mind the import/export wizard maps datatypes from the data source to the target destination; and with our scenario, all data elements were mapped to a varchar(max) data type which was acceptable. If your scenario requires different mappings, you can modify the datatypes in the wizard ([reference](https://docs.microsoft.com/sql/integration-services/import-export-data/data-type-mapping-in-the-sql-server-import-and-export-wizard?view=sql-server-2017)).  
 4. Since most queries submitted to the database would filter on the field *subscriber_id*, we created an index on that field.
 
 ### Web application
@@ -101,7 +101,7 @@ Implementing single sign-on (SSO) with *Azure Active Directory* turned out to be
 The development VM hosted model development, training and re-training, and deployment of the classification model. An Azure VM (DS13 V2) was provisioned with Linux/Ubuntu 16.10 and the following were installed to the base VM:
 
 - Machine Learning Server 9.3.0 using instructions available [here](https://docs.microsoft.com/machine-learning-server/install/machine-learning-server-install). Be sure to run through the setup verification steps to confirm the installation. Because this was the development VM, the section ‘*Enable web service deployment and remote connections*’ was disregarded.
-- [RStudio Server](https://docs.microsoft.com/en-us/machine-learning-server/operationalize/how-to-consume-web-service-asynchronously-batch) (Open Source Version). Be careful not to re-install R/r-base (it was installed previously with MLS 9.3.0).  
+- [RStudio Server](https://www.rstudio.com/products/rstudio/download-server/) (Open Source Version). Be careful not to re-install R/r-base (it was installed previously with MLS 9.3.0).  
 - [Add a network security group](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/nsg-quickstart-portal) to the VM to allow for inbound connections over port 8787 for RStudio Server.  
 - ODBC drivers to handle the communication between the development VM and Azure SQL Database. The following odbc drivers were installed on the VM:  
 - The [ODBC Driver for SQL Server 17](https://www.microsoft.com/download/details.aspx?id=56567) compatible with Linux/ubuntu 16.10  
@@ -113,7 +113,7 @@ The development VM hosted model development, training and re-training, and deplo
 
 ### Operations VM (MLS 9.3.0)
 
-The operations VM hosted the model web services and endpoints, stored the Swagger files, and stored serialized versions of the classification models. Configuration is very similar to the MLS development server. However, it is configured for operationalization which means the web services necessary to serve the REST endpoints are installed. To deploy the operations VM, there are ARM templates that make deployment quick. See: [Configuring Microsoft Machine Learning Server 9.3 to Operationalize Analytics using ARM Templates](https://blogs.msdn.microsoft.com/mlserver/2018/02/27/configuring-microsoft-machine-learning-server-9-3-to-operationalize-analytics-using-arm-templates/). For our project, a *One-Box* configuration was deployed using this [ARM template](https://github.com/Microsoft/microsoft-r/tree/master/mlserver-arm-templates/one-box-configuration/windowss).  
+The operations VM hosted the model web services and endpoints, stored the Swagger files, and stored serialized versions of the classification models. Configuration is very similar to the MLS development server. However, it is configured for operationalization which means the web services necessary to serve the REST endpoints are installed. To deploy the operations VM, there are ARM templates that make deployment quick. See: [Configuring Microsoft Machine Learning Server 9.3 to Operationalize Analytics using ARM Templates](https://blogs.msdn.microsoft.com/mlserver/2018/02/27/configuring-microsoft-machine-learning-server-9-3-to-operationalize-analytics-using-arm-templates/). For our project, a *One-Box* configuration was deployed using this [ARM template](https://github.com/Microsoft/microsoft-r/tree/master/mlserver-arm-templates/one-box-configuration/linux).  
 With this, the server components to support the model pipeline were up and running.
 
 ## Model implementation
@@ -126,7 +126,7 @@ All the data needed for model development resided in an *Azure SQL Database*. Fo
 
 1. A query was submitted to the database to retrieve data for a specific *subscriber_id* and a result set returned. Two options were considered for query access to the database:
 
-- A RevoScaleR function called [RxSQLServerData](https://docs.microsoft.com/machine-learning-server/python-reference/revoscalepy/rxsqlserverdatar)
+- A RevoScaleR function called [RxSQLServerData](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/revoscaler/rxsqlserverdata)
 - The R odbc package
 
 It was decided to use the R “odbc” library which enabled data filtering at the database level. Filtering the database table for only the rows needed for a specific subscriber model minimized the number of rows to be read into R and processed. That reduced the memory, compute, and overall time needed to train or retrain each model.  
@@ -166,9 +166,9 @@ The table below summarizes the findings:
 
 | Algorithm | Description | Findings | Notes |
 | :--------- | :------------ | :--------- | :--------------- |
-| rxFastTrees | Parallel implementation of boosted decision tree that implements multi-threaded version of FastRank. | Accurate, fastest performance. | No special features for unbalanced data. Pre-treated data needed to be provided as input |
-| rxFastForest | Parallel implementation of random forest and uses rxFastTrees to build an ensemble learner of decision trees. | Better accuracy than original with pre-treated data. Less memory intensive, faster than rxDForest |No special features for unbalanced data. Pre-treated data provided as input. |
-| rxDForest | Parallel implementation of random forest. Included in RevoScaleR. Can deal with unbalanced data (removes missing data, conditions data, handles stratification of samples) all within the function call. | Faster than original model. Same or better accuracy than original model. Handles unbalanced data set using a variety of techniques for re-sampling and synthesizing. Largest memory footprint.  | Largest memory footprint because it includes the conditioned data within the function.   Treatment of the data was good but not as good as the customized transformations provided by the data owner. |
+| [rxFastTrees](https://docs.microsoft.com/machine-learning-server/r-reference/microsoftml/rxfasttrees) | Parallel implementation of boosted decision tree that implements multi-threaded version of FastRank. | Accurate, fastest performance. | No special features for unbalanced data. Pre-treated data needed to be provided as input |
+| [rxFastForest](https://docs.microsoft.com/machine-learning-server/r-reference/microsoftml/rxfastforest) | Parallel implementation of random forest and uses rxFastTrees to build an ensemble learner of decision trees. | Better accuracy than original with pre-treated data. Less memory intensive, faster than rxDForest |No special features for unbalanced data. Pre-treated data provided as input. |
+| [rxDForest](https://docs.microsoft.com/machine-learning-server/r-reference/revoscaler/rxdforest) | Parallel implementation of random forest. Included in RevoScaleR. Can deal with unbalanced data (removes missing data, conditions data, handles stratification of samples) all within the function call. | Faster than original model. Same or better accuracy than original model. Handles unbalanced data set using a variety of techniques for re-sampling and synthesizing. Largest memory footprint.  | Largest memory footprint because it includes the conditioned data within the function.   Treatment of the data was good but not as good as the customized transformations provided by the data owner. |
 
 In the end, the customer selected the *rxFastForest* algorithm and decided to treat the unbalanced data by using the [vtreat](https://cran.r-project.org/web/packages/vtreat/index.html) library and adding a customized data pre-processing step to synthetically generate data for the under-represented subscribers.
 
@@ -195,7 +195,7 @@ In our scenario, once the models were created on the development VM, they were p
 }
  ````
 
-When deployed, models are serialized and stored on the operations server and can be consumed via web services in either *standard* or *real-time* mode. Every time a web service is called with standard mode, R and any required libraries are loaded and unloaded with each call. In contrast, with *real-time* mode, R and the libraries are loaded only once and re-used for subsequent web service calls. Since most of the overhead with a web service call is the loading of R and the libraries, real-time mode offers much lower latency for model scoring, and response times can be under 10ms. See documentation and reference examples [here](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/microsoftml/rxfastforest#realtime-web-services) for both standard and real-time options. Real-time lends itself well to single predictions, but you can also pass in an input data frame for scoring. That is described in this reference: [Asynchronous web service consumption via batch processing with mrsdeploy](https://docs.microsoft.com/machine-learning-server/operationalize/how-to-consume-web-service-asynchronously-batch).
+When deployed, models are serialized and stored on the operations server and can be consumed via web services in either *standard* or *real-time* mode. Every time a web service is called with standard mode, R and any required libraries are loaded and unloaded with each call. In contrast, with *real-time* mode, R and the libraries are loaded only once and re-used for subsequent web service calls. Since most of the overhead with a web service call is the loading of R and the libraries, real-time mode offers much lower latency for model scoring, and response times can be under 10ms. See documentation and reference examples [here](https://docs.microsoft.com/en-us/machine-learning-server/operationalize/concept-what-are-web-services) for both standard and real-time options. Real-time lends itself well to single predictions, but you can also pass in an input data frame for scoring. That is described in this reference: [Asynchronous web service consumption via batch processing with mrsdeploy](https://docs.microsoft.com/machine-learning-server/operationalize/how-to-consume-web-service-asynchronously-batch).
 
 ## Conclusion
 
