@@ -28,7 +28,7 @@ When bringing data into Azure, consider the 3Ps of data sources and their applic
 
 > **Purchased** data typically augments and enhances the organization’s existing data most often with market and demographic data that supplements the organization’s data capture reach. For example, a retailer may purchase additional demographic data to augment a master customer record, ensuring the record is accurate and complete. 
 >
-> **Public** data is freely available and may be harvested from social media, government resources (e.g. geography?WT.mc_id=retaildm-docs-dastarr), and other online sources. This data can infer insights such as weather patterns that correlate with purchasing patterns or social engagement that signals product popularity amongst a specific geography. Public data is often available via APIs.
+> **Public** data is freely available and may be harvested from social media, government resources (e.g. geography), and other online sources. This data can infer insights such as weather patterns that correlate with purchasing patterns or social engagement that signals product popularity amongst a specific geography. Public data is often available via APIs.
 >
 > **Proprietary** data resides within the organization. It may be a retailer’s on-premises systems, SaaS applications, or cloud providers. To access the data in a SaaS application provider, and other vendor data, APIs are typically used to communicate the vendor’s system. This includes data such as eCommerce site logs, POS sales data, and inventory management systems.
 
