@@ -93,7 +93,7 @@ provide data transparency and reliable security.
 ### Virtual Network (VNet) Service Endpoints
 
 Security is a primary concern when dealing with customer financial information.
-The securing of resources (such as databases?WT.mc_id=bankdm-docs-dastarr) within Azure often depends on
+The securing of resources (such as database) within Azure often depends on
 setting up a network infrastructure within Azure itself, and then accessing that
 network via a specific endpoint.
 
