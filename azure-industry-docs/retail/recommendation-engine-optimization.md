@@ -54,7 +54,7 @@ The technology components in the pipeline diagram are discussed in more detail b
 ### Microsoft Machine Learning Server
 
 The primary reason for selecting R workloads:
-**[RevoScaleR](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/revoscaler/revoscaler)** and **Microsoft ML**. The functions included with these packages were used extensively throughout the code to import the data, create the classification models, and deploy them into production.
+**[RevoScaleR](https://docs.microsoft.com/machine-learning-server/r-reference/revoscaler/revoscaler)** and **Microsoft ML**. The functions included with these packages were used extensively throughout the code to import the data, create the classification models, and deploy them into production.
 MLS was deployed on two Linux virtual machines in Azure: one configured for “development” and one configured for “operations.” The development VM was provisioned with significantly more memory and processing power to facilitate the training and testing of hundreds of models. It also hosted RStudio Server to provide easy access to an RStudio IDE for remote users. The operations server was configured on a smaller VM with the additional extensions necessary to host R models that were callable from a web application through REST APIs.
 
 ### RStudio Server
@@ -78,7 +78,7 @@ The sections below describe how the server infrastructure was deployed for this 
 
 The first step was to import the subscriber data from a very large .csv file into Azure SQL Database. There are multiple options for importing data into Azure SQL Database described in in this [reference](https://blogs.msdn.microsoft.com/sqlcat/2010/07/30/loading-data-to-sql-azure-the-fast-way/). Here is how we did it:
 
-1. Created the database through Azure portal following steps [here](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-portal).
+1. Created the database through Azure portal following steps [here](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal).
 2. Downloaded and used [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) to connect to the database from the VM.
 3. Selected the [SQL Import/Export Wizard](https://docs.microsoft.com/sql/integration-services/import-export-data/import-and-export-data-with-the-sql-server-import-and-export-wizard?view=sql-server-2017) (if you are time-constrained, there are more performant data import options). Keep in mind the import/export wizard maps datatypes from the data source to the target destination; and with our scenario, all data elements were mapped to a varchar(max) data type which was acceptable. If your scenario requires different mappings, you can modify the datatypes in the wizard ([reference](https://docs.microsoft.com/sql/integration-services/import-export-data/data-type-mapping-in-the-sql-server-import-and-export-wizard?view=sql-server-2017)).  
 4. Since most queries submitted to the database would filter on the field *subscriber_id*, we created an index on that field.
@@ -102,7 +102,7 @@ The development VM hosted model development, training and re-training, and deplo
 
 - Machine Learning Server 9.3.0 using instructions available [here](https://docs.microsoft.com/machine-learning-server/install/machine-learning-server-install). Be sure to run through the setup verification steps to confirm the installation. Because this was the development VM, the section ‘*Enable web service deployment and remote connections*’ was disregarded.
 - [RStudio Server](https://www.rstudio.com/products/rstudio/download-server/) (Open Source Version). Be careful not to re-install R/r-base (it was installed previously with MLS 9.3.0).  
-- [Add a network security group](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/nsg-quickstart-portal) to the VM to allow for inbound connections over port 8787 for RStudio Server.  
+- [Add a network security group](https://docs.microsoft.com/azure/virtual-machines/windows/nsg-quickstart-portal) to the VM to allow for inbound connections over port 8787 for RStudio Server.  
 - ODBC drivers to handle the communication between the development VM and Azure SQL Database. The following odbc drivers were installed on the VM:  
 - The [ODBC Driver for SQL Server 17](https://www.microsoft.com/download/details.aspx?id=56567) compatible with Linux/ubuntu 16.10  
 - An open source ODBC driver unixodbc with installation instructions from [Import relational data using ODBC](https://docs.microsoft.com/machine-learning-server/r/how-to-revoscaler-data-odbc). Note: this article has two typos for Ubuntu instructions.  
@@ -126,7 +126,7 @@ All the data needed for model development resided in an *Azure SQL Database*. Fo
 
 1. A query was submitted to the database to retrieve data for a specific *subscriber_id* and a result set returned. Two options were considered for query access to the database:
 
-- A RevoScaleR function called [RxSQLServerData](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/revoscaler/rxsqlserverdata)
+- A RevoScaleR function called [RxSQLServerData](https://docs.microsoft.com/machine-learning-server/r-reference/revoscaler/rxsqlserverdata)
 - The R odbc package
 
 It was decided to use the R “odbc” library which enabled data filtering at the database level. Filtering the database table for only the rows needed for a specific subscriber model minimized the number of rows to be read into R and processed. That reduced the memory, compute, and overall time needed to train or retrain each model.  
@@ -195,17 +195,17 @@ In our scenario, once the models were created on the development VM, they were p
 }
  ````
 
-When deployed, models are serialized and stored on the operations server and can be consumed via web services in either *standard* or *real-time* mode. Every time a web service is called with standard mode, R and any required libraries are loaded and unloaded with each call. In contrast, with *real-time* mode, R and the libraries are loaded only once and re-used for subsequent web service calls. Since most of the overhead with a web service call is the loading of R and the libraries, real-time mode offers much lower latency for model scoring, and response times can be under 10ms. See documentation and reference examples [here](https://docs.microsoft.com/en-us/machine-learning-server/operationalize/concept-what-are-web-services) for both standard and real-time options. Real-time lends itself well to single predictions, but you can also pass in an input data frame for scoring. That is described in this reference: [Asynchronous web service consumption via batch processing with mrsdeploy](https://docs.microsoft.com/machine-learning-server/operationalize/how-to-consume-web-service-asynchronously-batch).
+When deployed, models are serialized and stored on the operations server and can be consumed via web services in either *standard* or *real-time* mode. Every time a web service is called with standard mode, R and any required libraries are loaded and unloaded with each call. In contrast, with *real-time* mode, R and the libraries are loaded only once and re-used for subsequent web service calls. Since most of the overhead with a web service call is the loading of R and the libraries, real-time mode offers much lower latency for model scoring, and response times can be under 10ms. See documentation and reference examples [here](https://docs.microsoft.com/machine-learning-server/operationalize/concept-what-are-web-services) for both standard and real-time options. Real-time lends itself well to single predictions, but you can also pass in an input data frame for scoring. That is described in this reference: [Asynchronous web service consumption via batch processing with mrsdeploy](https://docs.microsoft.com/machine-learning-server/operationalize/how-to-consume-web-service-asynchronously-batch).
 
 ## Conclusion
 
 Leveraging the parallelism of the MicrosoftML and RevoScaleR libraries built into Microsoft Machine Learning Server accelerated development, deployment, and scoring of individual classification models for hundreds of subscribers. Model accuracy improved, and training and re-training times were compressed—all with minimal changes to the existing R code base.
 Implementing the infrastructure to support a model pipeline and getting the technology components configured correctly end-to-end can be complex. Here are some references to get your started with your own approach:
 
-- [Machine Learning Server Documentation](https://docs.microsoft.com/en-us/machine-learning-server/)
+- [Machine Learning Server Documentation](https://docs.microsoft.com/machine-learning-server/)
 - [R Tutorials for Machine Learning Server](https://docs.microsoft.com/advanced-analytics/tutorials/sql-server-r-tutorials?view=sql-server-2017)
-- [R Samples for Machine Learning Server](https://docs.microsoft.com/en-us/machine-learning-server/r/r-samples)
-- [R Function Library Reference](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/introducing-r-server-r-package-reference)
+- [R Samples for Machine Learning Server](https://docs.microsoft.com/machine-learning-server/r/r-samples)
+- [R Function Library Reference](https://docs.microsoft.com/machine-learning-server/r-reference/introducing-r-server-r-package-reference)
 
 ## References
 
