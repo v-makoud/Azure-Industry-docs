@@ -140,8 +140,4 @@ To continue to understand more of Azure capabilities related to implementing a d
 - See actual retail reports illustrating how [Power BI](https://powerbi.microsoft.com/en-us/industries/retail/?WT.mc_id=retaildm-docs-dastarr) can give deeper insights into known questions, but enable trend analysis.
 - Visit the [Azure Marketplace](https://azuremarketplace.microsoft.com/?WT.mc_id=retaildm-docs-dastarr) to find solutions compatible with those already on-premises.
 
-<<<<<<< HEAD
 _This article was authored by David Starr and Mariya Zorotovich._
-=======
-_This article was authored by David Starr and Mariya Zorotovich._
->>>>>>> f4c5b775ffec8a84bb2e841c52e47502c42db911
