@@ -30,13 +30,13 @@ Therefore, the image recognition market will be worth more than $25 billion by 2
 
 The technology has already taken hold with major e-commerce brands, who have also contributed significantly to its development. The most prominent early adopters are probably:
 
-- eBay with their Image Search and &quot;Find It on eBay&quot; tools in their app (this is currently only a mobile experience).
+- eBay with their Image Search and "Find It on eBay" tools in their app (this is currently only a mobile experience).
 - Pinterest with their Lens visual discovery tool.
 - Microsoft with Bing Visual Search.
 
 ## Adopt and Adapt
 
-Fortunately, you don&#39;t need vast amounts of computing power to profit from visual search. Any business with an image catalog can take advantage of Microsoft&#39;s AI expertise built into its Azure services.
+Fortunately, you don't need vast amounts of computing power to profit from visual search. Any business with an image catalog can take advantage of Microsoft's AI expertise built into its Azure services.
 
 [Bing Visual Search](https://azure.microsoft.com/en-us/services/cognitive-services/bing-visual-search/?WT.mc_id=vsearchgio-article-gmarchet) API provides a way to extract context information from images, identifying—for instance—home furnishings, fashion, several kinds of products, etc.
 
@@ -47,7 +47,7 @@ Bing will also provide:
 - Tags that allow you to explore objects or concepts found in the image.
 - Bounding boxes for regions of interest in the image (e.g. clothing, furniture items).
 
-You can take that information to reduce the search space (and time) into a company&#39;s product catalog significantly, restricting it to objects like those in the region and category of interest.
+You can take that information to reduce the search space (and time) into a company's product catalog significantly, restricting it to objects like those in the region and category of interest.
 
 ## Implement Your Own
 
@@ -55,7 +55,7 @@ There are a few key components to consider when implementing visual search:
 
 - Ingesting and filtering images
 - Storage and retrieval techniques
-- Featurization, encoding or &quot;hashing&quot;
+- Featurization, encoding or "hashing"
 - Similarity measures or distances and ranking
 
  ![](./assets/visual-search-use-case-overview/visual-search-pipeline.png)
@@ -104,9 +104,9 @@ Other applicable technologies are a combination of Azure SQL Database (if fixed 
 
 ### Feature Extraction &amp; Encoding
 
-The encoding process extracts salient features from pictures in the database and maps each of them to a sparse &quot;feature&quot; vector (a vector with many zeros) that can have thousands of components. This vector is a numerical representation of the features (e.g. edges, shapes) that characterize the picture – akin to a code.
+The encoding process extracts salient features from pictures in the database and maps each of them to a sparse "feature" vector (a vector with many zeros) that can have thousands of components. This vector is a numerical representation of the features (e.g. edges, shapes) that characterize the picture – akin to a code.
 
-Feature extraction techniques typically use _transfer learning mechanisms_. This occurs when you select a pre-trained neural network, run each image through it and store the feature vector  produced back in your image database. In that way, you &quot;transfer&quot; the learning from whoever trained the network. Microsoft has developed and published several pre-trained networks that have been widely used for image recognition tasks, such as [ResNet50](https://www.kaggle.com/keras/resnet50).
+Feature extraction techniques typically use _transfer learning mechanisms_. This occurs when you select a pre-trained neural network, run each image through it and store the feature vector  produced back in your image database. In that way, you "transfer" the learning from whoever trained the network. Microsoft has developed and published several pre-trained networks that have been widely used for image recognition tasks, such as [ResNet50](https://www.kaggle.com/keras/resnet50).
 
 Depending on the neural network, the feature vector will be more or less long and sparse, hence the memory and storage requirements will vary.
 
@@ -114,7 +114,7 @@ Also, you may find that different networks are applicable to different categorie
 
 Pre-trained neural networks are relatively easy to use but may not be as efficient a custom model trained on your image catalog. Those pre-trained networks are typically designed for classification of benchmark datasets rather than search on your specific collection of images.
 
-You may want to modify and retrain them so they produce both a category prediction and a dense (i.e. smaller, not sparse) vector, which will be very useful to restrict the search space, reduce memory and storage requirements. Binary vectors can be used and are often referred to as &quot; [semantic hash](https://www.cs.utoronto.ca/~rsalakhu/papers/semantic_final.pdf)&quot; – a term derived from document encoding and retrieval techniques. The binary representation simplifies further calculations.
+You may want to modify and retrain them so they produce both a category prediction and a dense (i.e. smaller, not sparse) vector, which will be very useful to restrict the search space, reduce memory and storage requirements. Binary vectors can be used and are often referred to as " [semantic hash](https://www.cs.utoronto.ca/~rsalakhu/papers/semantic_final.pdf)" – a term derived from document encoding and retrieval techniques. The binary representation simplifies further calculations.
 
  ![](./assets/visual-search-use-case-overview/resnet-modifications.png)
 
@@ -138,13 +138,13 @@ The combination of vector size and distance measure will determine how computati
 
 ### Search &amp; Ranking
 
-Once similarity is defined, we need to devise an efficient method to retrieve the closest N items to the one passed as input, then return a list of identifiers. This is also known as &quot;image ranking&quot;. On a large data set, the time to compute every distance is prohibitive, so we use approximate nearest-neighbor algorithms. Several open source libraries exist for those, so you won&#39;t have to code them from scratch.
+Once similarity is defined, we need to devise an efficient method to retrieve the closest N items to the one passed as input, then return a list of identifiers. This is also known as "image ranking". On a large data set, the time to compute every distance is prohibitive, so we use approximate nearest-neighbor algorithms. Several open source libraries exist for those, so you won't have to code them from scratch.
 
 Finally, memory and computation requirements will determine the choice of deployment technology for the trained model, as well high availability. Typically, the search space will be partitioned, and several instances of the ranking algorithm will run in parallel. One option that allows for scalability and availability is [Azure Kubernetes](https://azure.microsoft.com/en-us/services/container-service/kubernetes/?WT.mc_id=vsearchgio-article-gmarchet) clusters. In that case it is advisable to deploy the ranking model across several containers (handling a partition of the search space each) and several nodes (for high availability).
 
 ## Next steps
 
-Implementing visual search need not be complex. You can use Bing or build your own with Azure services, while benefiting from Microsoft&#39;s AI research and tools.
+Implementing visual search need not be complex. You can use Bing or build your own with Azure services, while benefiting from Microsoft's AI research and tools.
 
 ### Trial
 
