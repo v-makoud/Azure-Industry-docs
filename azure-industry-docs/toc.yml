@@ -107,6 +107,8 @@
         - name: PCI DSS-compliant Payment Processing
           href: /azure/security/blueprints/payment-processing-blueprint
           maintainContext: true
+        - name: Visual Search Overview
+          href: retail/visual-search-use-case-overview.md
         - name: Additional Resources
           items:
             - name: Azure Cosmos DB in retail and marketing
