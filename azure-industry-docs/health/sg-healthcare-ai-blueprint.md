@@ -12,7 +12,7 @@ description: This article introduces the Microsoft Azure blueprint for AI.
 
 ## Introduction
 
-Healthcare organizations are realizing that AI (Artificial Intelligence) and ML (machine learning) can be valuable tools for many parts of their business, from improving patient outcomes to streamlining daily operations. Often, healthcare organizations do not have the technology staff to implement AI/ML systems. To improve this situation and get AI/ML solutions running on Azure quickly, Microsoft created the [Azure healthcare AI blueprint](https://docs.microsoft.com/en-us/azure/security/blueprints/azure-health?WT.mc_id=ms-docs-dastarr). Using the blueprint, we show how to get started with AI/ML quickly in a safe, compliant, secure, and reliable way.
+Healthcare organizations are realizing that AI (Artificial Intelligence) and ML (machine learning) can be valuable tools for many parts of their business, from improving patient outcomes to streamlining daily operations. Often, healthcare organizations do not have the technology staff to implement AI/ML systems. To improve this situation and get AI/ML solutions running on Azure quickly, Microsoft created the [Azure healthcare AI blueprint](/azure/security/blueprints/azure-health?WT.mc_id=ms-docs-dastarr). Using the blueprint, we show how to get started with AI/ML quickly in a safe, compliant, secure, and reliable way.
 
 The health blueprint for AI bootstraps AI/ML into your organization using Azure. This article describes installing the blueprint, its components, and how to use it to run an AI/ML experiment that predicts a patient’s length of stay.
 
@@ -155,17 +155,17 @@ Further, the install is not designed to work with MSDN subscriptions due to the 
 
 The Azure blueprint installation doesn’t include more services than those needed to implement the AI/ML use case. However, more resources or services can be added to the Azure environment, making it a good test bed for additional initiatives, or a starting point for a production system. For instance, one might add other PaaS services or IaaS resources in the same subscription and AAD.
 
-New resources, like [Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?WT.mc_id=ms-docs-dastarr) or a new [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview?WT.mc_id=ms-docs-dastarr), may be added to the solution as more Azure capabilities are needed. When adding new resources or services, ensure they are configured to meet security and privacy policies to remain compliant with regulations and policy.
+New resources, like [Cosmos DB](/azure/cosmos-db/introduction?WT.mc_id=ms-docs-dastarr) or a new [Azure Functions](/azure/azure-functions/functions-overview?WT.mc_id=ms-docs-dastarr), may be added to the solution as more Azure capabilities are needed. When adding new resources or services, ensure they are configured to meet security and privacy policies to remain compliant with regulations and policy.
 
 New resources and services may be created with [Azure REST APIs](https://docs.microsoft.com/en-us/rest/api/?view=Azure&WT.mc_id=ms-docs-dastarr), [Azure PowerShell scripting](https://docs.microsoft.com/en-us/powershell/azure/get-started-azureps?view=azurermps-6.6.0&WT.mc_id=ms-docs-dastarr), or by using the [Azure Portal](http://portal.azure.com/?WT.mc_id=ms-docs-dastarr).
 
 ## Using machine learning with the blueprint
 
-The blueprint was built to demonstrate an ML scenario with a regression algorithm used in a model to predict a [patient’s length of stay](https://docs.microsoft.com/en-us/azure/security/blueprints/azure-health?WT.mc_id=ms-docs-dastarr#example-use-case). This is a common prediction for healthcare providers to run as it helps in scheduling staffing and other operational decisions. Further, anomalies can be detected over time when an average length of stay for a given condition rises or declines.
+The blueprint was built to demonstrate an ML scenario with a regression algorithm used in a model to predict a [patient’s length of stay](/azure/security/blueprints/azure-health?WT.mc_id=ms-docs-dastarr#example-use-case). This is a common prediction for healthcare providers to run as it helps in scheduling staffing and other operational decisions. Further, anomalies can be detected over time when an average length of stay for a given condition rises or declines.
 
 ### Ingesting training data
 
-With the blueprint installed and all services working properly, the data to be analyzed can be ingested. 100,000 patient [records are available for ingest](https://docs.microsoft.com/en-us/azure/security/blueprints/azure-health?WT.mc_id=ms-docs-dastarr#ingest) and working with the model. Ingesting patient records is the first step in the using [Azure Machine Learning Studio](https://docs.microsoft.com/en-us/azure/machine-learning/studio/what-is-ml-studio?WT.mc_id=ms-docs-dastarr) to run the patient length of stay experiment as shown below.
+With the blueprint installed and all services working properly, the data to be analyzed can be ingested. 100,000 patient [records are available for ingest](/azure/security/blueprints/azure-health?WT.mc_id=ms-docs-dastarr#ingest) and working with the model. Ingesting patient records is the first step in the using [Azure Machine Learning Studio](/azure/machine-learning/studio/what-is-ml-studio?WT.mc_id=ms-docs-dastarr) to run the patient length of stay experiment as shown below.
 
 ![Ingest](assets/sg-healthcare-ai-blueprint-assets/ingest.png)
 
@@ -179,13 +179,13 @@ Many healthcare organizations don’t have the technical staff to focus on ML pr
 
 AI/ML experts as well as those learning about AI/ML can use Azure Machine Learning Studio to design experiments. MLS is a web-based design environment used to create ML experiments. With MLS, you can create, train, evaluate, and score models, saving precious time when using different tools to develop models.
 
-MLS offers a complete toolset for ML workloads. This means people new to ML can get a jump start using the tool and produce results faster than with other ML tools. That lets your IT staff focus on providing value elsewhere and without bringing in a ML specialist. This capability in your own healthcare organization means various hypotheses can be tested and the resulting data analyzed for actionable insights, like patient interventionism offers [pre-written modules](https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/index?WT.mc_id=ms-docs-dastarr#help-for-machine-learning-modules) to be used on a drag and drop canvas, visually composing end-to-end data-science workflows as experiments.
+MLS offers a complete toolset for ML workloads. This means people new to ML can get a jump start using the tool and produce results faster than with other ML tools. That lets your IT staff focus on providing value elsewhere and without bringing in a ML specialist. This capability in your own healthcare organization means various hypotheses can be tested and the resulting data analyzed for actionable insights, like patient interventionism offers [pre-written modules](/azure/machine-learning/studio-module-reference/index?WT.mc_id=ms-docs-dastarr#help-for-machine-learning-modules) to be used on a drag and drop canvas, visually composing end-to-end data-science workflows as experiments.
 
 There are pre-written modules that encapsulate specific algorithms such as decision trees, decision forests, clustering, time series, anomaly detection and others.
 
-Custom modules can be added to any experiment. These are written in the [R language](https://docs.microsoft.com/en-us/azure/machine-learning/studio/extend-your-experiment-with-r?WT.mc_id=ms-docs-dastarr) or in [Python](https://docs.microsoft.com/en-us/azure/machine-learning/studio/execute-python-scripts?WT.mc_id=ms-docs-dastarr). This allows using pre-built modules as well as custom logic to create a more sophisticated experiment.
+Custom modules can be added to any experiment. These are written in the [R language](/azure/machine-learning/studio/extend-your-experiment-with-r?WT.mc_id=ms-docs-dastarr) or in [Python](/azure/machine-learning/studio/execute-python-scripts?WT.mc_id=ms-docs-dastarr). This allows using pre-built modules as well as custom logic to create a more sophisticated experiment.
 
-MLS enables [creating and using](https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/machine-learning-initialize-model?WT.mc_id=ms-docs-dastarr) learning models, as well as providing a set of pre-designed experiments for use in common applications. Additionally, new experiments can be added to MLS without changing any of the blueprint’s resources.
+MLS enables [creating and using](/azure/machine-learning/studio-module-reference/machine-learning-initialize-model?WT.mc_id=ms-docs-dastarr) learning models, as well as providing a set of pre-designed experiments for use in common applications. Additionally, new experiments can be added to MLS without changing any of the blueprint’s resources.
 
 To save time, visit the [Azure AI Gallery](https://gallery.azure.ai/industries/healthcare?WT.mc_id=ms-docs-dastarr) to find ready-to-use ML solutions for specific industries, including healthcare. For example, the gallery includes solutions and experiments for breast cancer detection and heart disease prediction.
 
@@ -221,7 +221,7 @@ If a Key Vault is deleted, it is not immediately purged from Azure. Implications
 
 ### Application Insights
 
-Healthcare organizations often have mission and life-critical systems that must be reliable and resilient. Anomalies or disruptions in service must be detected and corrected as soon as possible. [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-proactive-application-security-detection-pack?WT.mc_id=ms-docs-dastarr) is an Application Performance Management (APM) technology that monitors applications and sends alerts when something goes wrong. It monitors applications at runtime for errors or application anomalies. It is designed to work with multiple programming languages and provides a rich set of capabilities to help ensure applications are healthy and running smoothly.
+Healthcare organizations often have mission and life-critical systems that must be reliable and resilient. Anomalies or disruptions in service must be detected and corrected as soon as possible. [Application Insights](/azure/application-insights/app-insights-proactive-application-security-detection-pack?WT.mc_id=ms-docs-dastarr) is an Application Performance Management (APM) technology that monitors applications and sends alerts when something goes wrong. It monitors applications at runtime for errors or application anomalies. It is designed to work with multiple programming languages and provides a rich set of capabilities to help ensure applications are healthy and running smoothly.
 
 For example, an application may have a memory leak. Application Insights can help find and diagnose issues like this through the rich reporting and KPIs it monitors. Application Insights is a robust APM service for application developers.
 
@@ -260,7 +260,7 @@ The ML capabilities in ASC allow it to detect threats manual approaches would no
 
 ### RBAC security
 
-[Role Based Access Control](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal?WT.mc_id=ms-docs-dastarr) (RBAC) provides or denies access to protected resources, sometimes with specific rights per resource. This ensures only appropriate users can access their designated system components. 
+[Role Based Access Control](/azure/role-based-access-control/role-assignments-portal?WT.mc_id=ms-docs-dastarr) (RBAC) provides or denies access to protected resources, sometimes with specific rights per resource. This ensures only appropriate users can access their designated system components. 
 For example, a database administrator may have access to a database containing encrypted patient data whereas a health care provider may only have access to appropriate patient’s records through the application that displays them. This is typically an Electronic Medical Record or Electronic Health Record system. The nurse has no need to access the databases and the database administrator has no need to see a patient’s health record data.
 
 To enable this, RBAC is part of Azure security and enables precisely focused access management for Azure resources. Fine-grained settings for each user enable security and systems administrators to be very exact in the rights they give each user.
@@ -304,7 +304,7 @@ The following issues can cause the blueprint installation to fail or to install 
 
 Key vaults are unique when deleting an Azure resource. Vaults are kept by Azure for recovery purposes. Accordingly, a different prefix must be passed into the install script each time the install script is run, or the install will fail due to a collision with the old vault name. Key vaults, and all other resources, are named using the prefix you provide to the install script.
 
-A Key Vault created by the installation script is retained as a “soft delete” for 30 days. Although not currently accessible through the portal, soft deleted [Key Vaults are manageable from PowerShell](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-soft-delete-powershell?WT.mc_id=ms-docs-dastarr), and may even be deleted manually.
+A Key Vault created by the installation script is retained as a “soft delete” for 30 days. Although not currently accessible through the portal, soft deleted [Key Vaults are manageable from PowerShell](/azure/key-vault/key-vault-soft-delete-powershell?WT.mc_id=ms-docs-dastarr), and may even be deleted manually.
 
 ### Azure Active Directory
 
@@ -312,18 +312,18 @@ It is strongly recommended that you install the blueprint in an empty AAD rather
 
 ## Technologies presented
 
-- Learn more about the [Azure Health Data and AI blueprint](https://docs.microsoft.com/en-us/azure/security/blueprints/azure-health?WT.mc_id=ms-docs-dastarr).
+- Learn more about the [Azure Health Data and AI blueprint](/azure/security/blueprints/azure-health?WT.mc_id=ms-docs-dastarr).
 - Download, clone or fork the [GitHub repo here](https://github.com/Azure/Health-Data-and-AI-Blueprint/blob/master/deployment.md).
-- [Machine Learning Studio](https://docs.microsoft.com/en-us/azure/machine-learning/studio/?WT.mc_id=ms-docs-dastarr) is the workspace and tool data scientists use to create Machine Learning experiments. It allows using built-in algorithms, special purpose widgets, and Python and R scripts.
-- Secrets, certificates, and other private data is held in [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-whatis?WT.mc_id=ms-docs-dastarr).
+- [Machine Learning Studio](/azure/machine-learning/studio/?WT.mc_id=ms-docs-dastarr) is the workspace and tool data scientists use to create Machine Learning experiments. It allows using built-in algorithms, special purpose widgets, and Python and R scripts.
+- Secrets, certificates, and other private data is held in [Azure Key Vault](/azure/key-vault/key-vault-whatis?WT.mc_id=ms-docs-dastarr).
 - The scripting language PowerShell is instrumental to setting up the blueprint, although needed commands are presented in the installation instructions.
 - [Azure AI Gallery](https://docs.microsoft.com/en-us/powershell/scripting/powershell-scripting?WT.mc_id=ms-docs-dastarr) provides a recipe box of AI/ML solutions useful for customers by their industry. There are several solutions published by data scientists along with other experts for healthcare.
-- [Azure Security Center](https://docs.microsoft.com/en-us/azure/security-center/?WT.mc_id=ms-docs-dastarr) provides insights into your application’s behavior, vulnerabilities, and mitigation techniques.
-- The [Microsoft Threat Modeling Tool](https://docs.microsoft.com/en-us/azure/security/blueprints/azure-health?WT.mc_id=ms-docs-dastarr) is used to plan and predict threats to your system environment. It is needed to review the threat model included with the blueprint.
+- [Azure Security Center](/azure/security-center/?WT.mc_id=ms-docs-dastarr) provides insights into your application’s behavior, vulnerabilities, and mitigation techniques.
+- The [Microsoft Threat Modeling Tool](/azure/security/blueprints/azure-health?WT.mc_id=ms-docs-dastarr) is used to plan and predict threats to your system environment. It is needed to review the threat model included with the blueprint.
 
 ## Wrapping up
 
-The [Azure Health Data AI blueprint](https://docs.microsoft.com/en-us/azure/security/blueprints/azure-health?WT.mc_id=ms-docs-dastarr) is a complete ML solution and can be used as a learning tool for technologists to better understand Azure and how to ensure systems conform to healthcare regulatory requirements. It can also be used as a starting point for a production system using Azure Machine Learning Studio as the focal point.
+The [Azure Health Data AI blueprint](/azure/security/blueprints/azure-health?WT.mc_id=ms-docs-dastarr) is a complete ML solution and can be used as a learning tool for technologists to better understand Azure and how to ensure systems conform to healthcare regulatory requirements. It can also be used as a starting point for a production system using Azure Machine Learning Studio as the focal point.
 
 [Download the blueprint](https://github.com/Azure/Health-Data-and-AI-Blueprint/blob/master/deployment.md) to get started with your implementation in hours, not days or weeks. If you have problems with your install or questions about blueprint, visit [the FAQ page](https://github.com/Azure/Health-Data-and-AI-Blueprint/blob/master/faq.md).
 
