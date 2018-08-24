@@ -36,6 +36,9 @@
     - name: Health & Life Sciences
       href: health/index.md
       items:
+      - name: Implementing the Azure blueprint for AI
+        href: health/sg-healthcare-ai-blueprint
+        maintainContext: true
       - name: Biomedical Entity Recognition
         href: /azure/machine-learning/desktop-workbench/scenario-tdsp-biomedical-recognition
         maintainContext: true
