@@ -3,14 +3,11 @@
 title: Actuarial risk analysis and modeling solution guide 
 author: scseely
 ms.author: scseely
-ms.date: 05/21/2018
+ms.date: 08/23/2018
 ms.topic: article
 ms.service: industry
 description: This solution guide explains how an actuarial developer can move their existing solution plus supporting infrastructure into Azure.
 ---
-## Keywords
-
-Actuary, insurance, Azure, grid, HPC
 
 # Actuarial risk analysis and financial modeling solution guide
 
