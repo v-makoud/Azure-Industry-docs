@@ -10,10 +10,18 @@
             href: financial/risk-grid-banking-overview.md
           - name: Solution Guide
             href: financial/risk-grid-banking-solution-guide.md
+        - name: Mobile Bank Fraud
+          items:
+          - name: Overview
+            href: financial/mobile-bank-fraud-overview.md
+        - name: Actuarial risk analysis and financial modeling
+          items:
+          - name: Overview
+            href: financial/actuarial-risk-analysis-and-financial-modeling-overview.md
+          - name: Solution Guide
+            href: financial/actuarial-risk-analysis-and-financial-modeling-solution-guide.md
         - name: Data Management in Banking Overview
           href: financial/data-mgmt-in-banking-overview.md
-        - name: Actuarial risk analysis and financial modeling solution guide
-          href: financial/actuarial-risk-analysis-and-financial-modeling-solution-guide.md          
         - name: Additional Resources
           items:
           - name: Azure Batch documentation
@@ -39,8 +47,12 @@
       href: health/index.md
       items:
       - name: Implementing the Azure blueprint for AI
-        href: health/sg-healthcare-ai-blueprint.md
-        maintainContext: true
+        items:
+        - name: Overview
+          href: health/overview-healthcare-ai-blueprint.md
+        - name: Solution Guide
+          href: health/sg-healthcare-ai-blueprint.md
+          maintainContext: true
       - name: Biomedical Entity Recognition
         href: /azure/machine-learning/desktop-workbench/scenario-tdsp-biomedical-recognition
         maintainContext: true
