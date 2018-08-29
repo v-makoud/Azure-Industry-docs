@@ -47,7 +47,7 @@
       href: health/index.md
       items:
       - name: Implementing the Azure blueprint for AI
-        items
+        items:
         - name: Overview
           href: health/overview-healthcare-ai-blueprint.md
         - name: Solution Guide
