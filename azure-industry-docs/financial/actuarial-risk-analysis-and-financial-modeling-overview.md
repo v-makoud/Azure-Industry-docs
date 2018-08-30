@@ -15,4 +15,6 @@ The insurance industry depends on risk analysis and financial modeling by actuar
 
 The key to using Azure compute is to prepare your data and develop a way to parallelize the work. The other aspects of using Azure compute comes from understanding how technologies such as Azure Batch or Data Factory can be used to process the work. Finally, the guide surveys options for reporting--such as using a Data Science VM, or Power BI.
 
-[Actuarial risk analysis and financial modeling](./financial/actuarial-risk-analysis-and-financial-modeling-overview.md?WT.mc_id=sg-docs-dastarr)
+[Actuarial risk analysis and financial modeling](https://docs.microsoft.com/azure/industry/finance/actuarial-risk-analysis-and-financial-modeling-overview.md?WT.mc_id=sg-docs-dastarr)
+
+[Actuarial risk analysis and financial modeling](/azure/industry/finance/actuarial-risk-analysis-and-financial-modeling-overview.md?WT.mc_id=sg-docs-dastarr)
