@@ -16,4 +16,4 @@ The solution guide shows you the value of starting with the blueprint. The insta
 
 The solution gives you practical advice on installing the solution. It makes sure you are successful in getting started. It also points to the right learning resources for Python and the R language (the best current technologies for ML).
 
-Implementing the Azure blueprint for AI
+[Implementing the Azure blueprint for AI](https://docs.microsoft.com/azure/industry/health/sg-healthcare-ai-blueprint?WT.mc_id=sg-docs-dastarr)
