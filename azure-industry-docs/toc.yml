@@ -14,7 +14,6 @@
           items:
           - name: Overview
             href: financial/mobile-bank-fraud-overview.md
-            maintainContext: true
         - name: Actuarial risk analysis and financial modeling
           items:
           - name: Overview
