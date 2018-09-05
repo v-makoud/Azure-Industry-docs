@@ -10,10 +10,8 @@
             href: financial/risk-grid-banking-overview.md
           - name: Solution Guide
             href: financial/risk-grid-banking-solution-guide.md
-        - name: Mobile Bank Fraud
-          items:
-          - name: Overview
-            href: financial/mobile-bank-fraud-overview.md
+        - name: Mobile Bank Fraud Overview
+          href: financial/mobile-bank-fraud-overview.md
         - name: Actuarial risk analysis and financial modeling
           items:
           - name: Overview
