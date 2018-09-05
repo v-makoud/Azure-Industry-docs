@@ -50,7 +50,6 @@
           href: health/overview-healthcare-ai-blueprint.md
         - name: Solution Guide
           href: health/sg-healthcare-ai-blueprint.md
-          maintainContext: true
       - name: Biomedical Entity Recognition
         href: /azure/machine-learning/desktop-workbench/scenario-tdsp-biomedical-recognition
         maintainContext: true
