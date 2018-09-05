@@ -10,10 +10,8 @@
             href: financial/risk-grid-banking-overview.md
           - name: Solution Guide
             href: financial/risk-grid-banking-solution-guide.md
-        - name: Mobile Bank Fraud
-          items:
-          - name: Overview
-            href: financial/mobile-bank-fraud-overview.md
+        - name: Mobile Bank Fraud Overview
+          href: financial/mobile-bank-fraud-overview.md
         - name: Actuarial risk analysis and financial modeling
           items:
           - name: Overview
@@ -52,7 +50,6 @@
           href: health/overview-healthcare-ai-blueprint.md
         - name: Solution Guide
           href: health/sg-healthcare-ai-blueprint.md
-          maintainContext: true
       - name: Biomedical Entity Recognition
         href: /azure/machine-learning/desktop-workbench/scenario-tdsp-biomedical-recognition
         maintainContext: true
