@@ -139,4 +139,4 @@ Uploading files to Azure Storage before the Batch job begins is another way to t
 
 After selecting a connectivity strategy, a logical place to start with risk compute is placing your existing jobs into Azure compute worker nodes and running them in a test environment to see if any code needs to be changed. [This article provides a starting point](/azure/batch/batch-virtual-network?WT.mc_id=gridbank-docs-dastarr) for getting started with Azure Batch in the language or tool of your choice.
 
-[Risk Grid Computing in Banking Solution Guide](/azure/financial/risk-grid-banking-solution-guide?WT.mc_id=banking-docs-dastarr)
+[Risk Grid Computing in Banking Solution Guide](/azure/industry/financial/risk-grid-banking-solution-guide?WT.mc_id=banking-docs-dastarr)
