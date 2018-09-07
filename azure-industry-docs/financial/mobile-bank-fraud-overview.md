@@ -2,7 +2,6 @@
 # required metadata
 title: Mobile Bank Fraud 
 author: dstarr
-layout: article
 ms.author: dastarr
 ms.date: 09/26/2018
 ms.topic: article
