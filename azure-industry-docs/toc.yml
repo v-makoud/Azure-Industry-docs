@@ -20,6 +20,8 @@
             href: financial/actuarial-risk-analysis-and-financial-modeling-solution-guide.md
         - name: Data Management in Banking Overview
           href: financial/data-mgmt-in-banking-overview.md
+        - name: Enabling the financial services risk lifecycle with Azure and R
+          href: financial/data-mgmt-in-banking-overview.md  
         - name: Additional Resources
           items:
           - name: Azure Batch documentation
