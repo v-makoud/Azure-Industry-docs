@@ -111,6 +111,12 @@
                 href: /azure/iot-suite/iot-suite-what-is-azure-iot
               - name: Pillars of Software Quality
                 href: /azure/architecture/guide/pillars
+        - name: Extracting insights from IoT Data
+          items:
+            - name: Overview
+              href: manufacturing/extracting-insights-from-iot-data-overview.md  
+            - name: Solution Guide
+              href: manufacturing/extracting-insights-from-iot-data.md              
     - name: Retail
       href: retail/index.md
       items:
