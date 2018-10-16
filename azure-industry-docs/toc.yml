@@ -131,6 +131,12 @@
           maintainContext: true
         - name: Visual Search Overview
           href: retail/visual-search-use-case-overview.md
+        - name: SKU optimization for consumer brands
+          items:
+          - name: Overview
+            href: retail/sku-optimization-overview.md
+          - name: Solution guide
+            href: retail/sku-optimization-solution-guide.md            
         - name: Additional Resources
           items:
             - name: Azure Cosmos DB in retail and marketing

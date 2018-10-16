@@ -1,9 +1,9 @@
 ---
 # required metadata
 title: SKU optimization for consumer brands 
-author: scseely
-ms.author: scseely, mazoroto
-ms.date: 10/10/2018
+author: gmarchet
+ms.author: gmarchet
+ms.date: 10/16/2018
 ms.topic: article
 ms.service: industry
 description: Retail industry assortment optimization. SKU optimization through insights from AI and ML.
