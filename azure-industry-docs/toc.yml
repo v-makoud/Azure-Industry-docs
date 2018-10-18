@@ -18,27 +18,77 @@
             href: financial/actuarial-risk-analysis-and-financial-modeling-overview.md
           - name: Solution Guide
             href: financial/actuarial-risk-analysis-and-financial-modeling-solution-guide.md
+        - name: Architectures
+          items:
+          - name: Azure Data Architecture Guide
+            href: /azure/architecture/data-guide
+        - name: Training
+          items:
+          - name: Azure Solutions Architect Training
+          href: https://www.pluralsight.com/role-iq/microsoft-azure-solution-architect
+          maintainContext: true
         - name: Data Management in Banking Overview
           href: financial/data-mgmt-in-banking-overview.md
         - name: Enabling the financial services risk lifecycle with Azure and R
           href: financial/fsi-risk-modeling.md  
         - name: Additional Resources
           items:
+          - name: Azure AI Platform
+            href: https://azure.microsoft.com/en-us/overview/ai-platform/#platform
+            maintainContext: true
+          - name: Azure AI Services
+            href: https://azure.microsoft.com/en-us/overview/ai-platform/#services
+            maintainContext: true
           - name: Azure Batch documentation
             href: /azure/batch/
+            maintainContext: true
+          - name: Azure Functions
+            href: https://azure.microsoft.com/en-us/services/functions/
+            maintainContext: true
+          - name: Azure for banking
+            href: https://azure.microsoft.com/en-us/industries/financial/banking
+            maintainContext: true
+          - name: Azure for IoT Hub
+            href: https://azure.microsoft.com/en-us/services/iot-hub/
+            maintainContext: true
+          - name: Azure IoT Suite
+            href: https://azure.microsoft.com/en-us/features/iot-accelerators/
+            maintainContext: true
+          - name: Azure Key Vault
+            href: https://azure.microsoft.com/en-us/services/key-vault/
+            maintainContext: true
+          - name: Azure Machine Learning
+            href: https://azure.microsoft.com/en-us/overview/machine-learning/
             maintainContext: true
           - name: Azure Machine Learning Package for Forecasting
             href: /python/api/overview/azure-machine-learning/forecasting-overview
             maintainContext: true
-          - name: On-premise connectivity
-            href: /azure/networking/networking-overview#connectivity
+          - name: Azure SQL Database
+            href: https://azure.microsoft.com/en-us/services/sql-database/
+            maintainContext: true
+          - name: Azure Stack
+            href: https://azure.microsoft.com/en-us/overview/azure-stack/
+            maintainContext: true
+          - name: Azure Stream Analytics
+            href: https://azure.microsoft.com/en-us/services/stream-analytics/
+            maintainContext: true
+          - name: Banking Industry News
+            href: https://azure.microsoft.com/en-us/blog/author/hbush/
             maintainContext: true
           - name: Batch code samples
             href: https://azure.microsoft.com/en-us/resources/samples/
+            maintainContext: true
           - name: Batch code samples repo
-            href: https://github.com/Azure/azure-batch-samples
+            href: https://github.com/Azure-Samples/azure-batch-samples
+            maintainContext: true
           - name: FFIEC for Regulated Workloads
             href: /azure/security/blueprints/financial-services-regulated-workloads
+            maintainContext: true
+          - name: Logic Apps
+            href: https://azure.microsoft.com/en-us/services/logic-apps/
+            maintainContext: true
+          - name: On-premises connectivity
+            href: /azure/networking/networking-overview#connectivity
             maintainContext: true
           - name: Tutorial- AAD integration with Asset Bank
             href: /azure/active-directory/active-directory-saas-assetbank-tutorial
