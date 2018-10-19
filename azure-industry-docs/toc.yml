@@ -96,6 +96,14 @@
     - name: Health & Life Sciences
       href: health/index.md
       items:
+      - name: Architectures
+        items:
+        - name: Azure Data Architecture Guide
+          href: /azure/architecture/data-guide
+      - name: Training
+        items:
+        - name: Azure Solutions Architect Training
+          href: https://www.pluralsight.com/role-iq/microsoft-azure-solution-architect
       - name: Implementing the Azure blueprint for AI
         items:
         - name: Overview
@@ -167,6 +175,136 @@
               href: manufacturing/extracting-insights-from-iot-data-overview.md  
             - name: Solution Guide
               href: manufacturing/extracting-insights-from-iot-data.md              
+        - name: Architectures
+          items:
+            - name: Azure Data Architecture Guide
+              href: /azure/architecture/data-guide
+        - name: Training
+          items:
+            - name: Azure solutions architect training
+              href: https://www.pluralsight.com/role-iq/microsoft-azure-solution-architect
+            - name: Check traffic on a schedule with Azure Logic Apps
+              href: /azure/logic-apps/tutorial-build-schedule-recurring-logic-app-workflow.md    
+            - name: Code examples for data operations on Logic Apps
+              href: /azure/logic-apps/logic-apps-data-operations-code-samples.md 
+            - name: Running Azure Functions in a container
+              href: /azure/azure-functions/functions-create-function-linux-custom-image
+            - name: Using various bindings on Azure Functions
+              href: /azure/azure-functions/functions-triggers-bindings
+            - name: Visualize data anomalies on Event Hubs data streams
+              href: /azure/event-hubs/event-hubs-tutorial-visualize-anomalies
+            - name: Create a Stream Analytics job to analyze phone call data
+              href: /azure/stream-analytics/stream-analytics-manage-job
+            - name: Transforming data in the cloud by using a Spark activity
+              href: /azure/event-hubs/event-hubs-tutorial-visualize-anomalies
+            - name: Analyzing simulated device data on Time Series Insights 
+              href: /azure/time-series-insights/tutorial-create-populate-tsi-environment
+            - name: Learning Power BI
+              href: /power-bi/guided-learning
+            - name: Creating a Time Series Insights SPA
+              href: /power-bi/guided-learning
+            - name: Exploring Time Series Insights Java Script client library
+              href: /azure/time-series-insights/tutorial-create-tsi-sample-spa
+            - name: TSI demo
+              href: https://insights.timeseries.azure.com/demo
+            - name: Power BI demo
+              href: https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html
+        - name: Additional resources
+          items:
+          - name: Apache Kafka on HDInsight
+            href: /azure/hdinsight/kafka/apache-kafka-introduction
+          - name: App Service
+            href: /azure/app-service
+          - name: Azure Blob Storage
+            href: /azure/storage/blobs/storage-blobs-introduction
+          - name: Azure Blob Storage tiers
+            href: /azure/storage/blobs/storage-blob-storage-tiers
+          - name: Azure Blob Storage tiers
+            href: /azure/storage/blobs/storage-blob-storage-tiers
+          - name: Azure Container Instances
+            href: /azure/container-instances
+          - name: Azure Cosmos DB
+            href: /azure/cosmos-db/introduction
+          - name: Azure Cosmos DB - request units
+            href: /azure/cosmos-db/request-units
+          - name: Azure Databricks
+            href: /azure/azure-databricks
+          - name: Azure Databricks notebook
+            href: /azure/data-factory/transform-data-using-databricks-notebook
+          - name: Azure Data Factory
+            href: /azure/data-factory
+          - name: Azure Data Factory pipelines and activities
+            href: /azure/data-factory/concepts-pipelines-activities
+          - name: Azure Data Lake Storage
+            href: /azure/storage/data-lake-storage/introduction
+          - name: Azure Event Hubs
+            href: /azure/event-hubs/event-hubs-about
+          - name: Azure Files
+            href: /azure/storage/files/storage-files-introduction
+          - name: Azure Functions
+            href: /azure/azure-functions/functions-overview
+          - name: Azure Functions Host
+            href: https://github.com/Azure/azure-functions-host
+          - name: Azure HDInsight 
+            href: /azure/hdinsight
+          - name: Azure IoT Edge
+            href: /azure/iot-edge
+          - name: Azure IoT Hub
+            href: /azure/iot-hub
+          - name: Azure IoT Hub Device Provisioning Service
+            href: /azure/iot-dps
+          - name: Azure Kubernetes Service (AKS)
+            href: /azure/aks
+          - name: Azure Logic Apps
+            href: /azure/logic-apps
+          - name: Azure Service Fabric
+            href: /azure/service-fabric/service-fabric-overview
+          - name: Azure SQL Database
+            href: /azure/sql-database
+          - name: Azure SQL Data Warehouse
+            href: /azure/sql-data-warehouse/sql-data-warehouse-overview-what-is
+          - name: Azure Storage
+            href: /azure/storage
+          - name: Azure Storage authorization
+            href: /azure/storage/common/storage-auth
+          - name: Azure Storage replication
+            href: /azure/storage/common/storage-redundancy
+          - name: Azure Stream Analytics
+            href: /azure/stream-analytics
+          - name: Azure Table Storage
+            href: /azure/cosmos-db/table-storage-overview
+          - name: Azure Time Series Insights
+            href: /azure/time-series-insights
+          - name: Azure Time Series Insights (TSI) Java Script client library
+            href: /azure/time-series-insights/tutorial-explore-js-client-lib
+          - name: BizTalk Services
+            href: /services/biztalk-services
+          - name: IoT Edge device as a gateway
+            href: /azure/iot-edge/iot-edge-as-gateway
+          - name: Microsoft Power BI
+            href: /power-bi/power-bi-overview
+          - name: Microsoft Power BI Documentation
+            href: /power-bi
+          - name: Microsoft PowerBI - real-time streaming
+            href: /power-bi/service-real-time-streaming
+          - name: Power BI Desktop
+            href: https://powerbi.microsoft.com/en-us/desktop
+          - name: Power BI JavaScript SDK
+            href: https://github.com/Microsoft/PowerBI-JavaScript
+          - name: Power BI REST APIs
+            href: /rest/api/power-bi
+          - name: REST query APIs
+            href: /rest/api/time-series-insights/time-series-insights-reference-queryapi
+          - name: Table Service Data Model
+            href: /rest/api/storageservices/Understanding-the-Table-Service-Data-Model
+          - name: 29
+            href: y 
+          - name: 30
+            href: y
+          - name: 31
+            href: y 
+          - name: 32
+            href: y
     - name: Retail
       href: retail/index.md
       items:
