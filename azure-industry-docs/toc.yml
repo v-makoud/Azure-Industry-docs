@@ -96,14 +96,6 @@
     - name: Health & Life Sciences
       href: health/index.md
       items:
-      - name: Architectures
-        items:
-        - name: Azure Data Architecture Guide
-          href: /azure/architecture/data-guide
-      - name: Training
-        items:
-        - name: Azure Solutions Architect Training
-          href: https://www.pluralsight.com/role-iq/microsoft-azure-solution-architect
       - name: Implementing the Azure blueprint for AI
         items:
         - name: Overview
@@ -297,40 +289,69 @@
             href: /rest/api/time-series-insights/time-series-insights-reference-queryapi
           - name: Table Service Data Model
             href: /rest/api/storageservices/Understanding-the-Table-Service-Data-Model
-          - name: 29
-            href: y 
-          - name: 30
-            href: y
-          - name: 31
-            href: y 
-          - name: 32
-            href: y
+          - name: Transform XML
+            href: /azure/logic-apps/logic-apps-enterprise-integration-transform
     - name: Retail
       href: retail/index.md
       items:
-        - name: Data Management in Retail Overview
-          href: retail/retail-data-management-overview.md
-        - name: Migrating your e-commerce solution to Azure Overview
-          href: retail/migrating-ecommerce-solution-to-azure.md
-        - name: Optimize and reuse an existing recommendation system
-          href: retail/recommendation-engine-optimization.md
-        - name: PCI DSS-compliant Payment Processing
-          href: /azure/security/blueprints/payment-processing-blueprint
+      - name: Architectures
+        items:
+        - name: Azure Data Architecture Guide
+          href: /azure/architecture/data-guide/
+      - name: Training
+        items:
+        - name: Azure Solutions Architect Training
+          href: /training/learning-paths/azure-solution-architect/
+      - name: Test drive the Neal Analytics SKU Max solution
+        href: https://appsource.microsoft.com/en-us/product/web-apps/neal_analytics.8066ad01-1e61-40cd-bd33-9b86c65fa73a
+      - name: Additional Resources
+        items:
+        - name: Accelerating SKU optimization with Neal Analytics
+          href: https://nealanalytics.com/solutions/sku-max/
+        - name: Azure Active Directory
+          href: /azure/active-directory/
+        - name: Accelerating SKU optimization with Neal Analytics
+          href: /services/analysis-services
+        - name: Azure Blob Storage
+          href: /services/storage/blobs
+        - name: Azure Databricks
+          href: /services/databricks
+        - name: Azure Data Factory
+          href: /services/data-factory
+        - name: Accelerating SKU optimization with Neal Analytics
+          href: /azure/machine-learning/service/overview-what-is-azure-ml
+        - name: Azure Machine Learning Workbench
+          href: /azure/machine-learning/service/overview-what-happened-to-workbench
+        - name: Azure SQL Data Warehouse
+          href: /services/sql-data-warehouse
+        - name: HDInsight
+          href: /services/hdinsight
+        - name: Power BI
+          href: https://powerbi.microsoft.com/en-us/
           maintainContext: true
-        - name: Visual Search Overview
-          href: retail/visual-search-use-case-overview.md
-        - name: SKU optimization for consumer brands
-          items:
-          - name: Overview
-            href: retail/sku-optimization-overview.md
-          - name: Solution guide
-            href: retail/sku-optimization-solution-guide.md            
-        - name: Additional Resources
-          items:
-            - name: Azure Cosmos DB in retail and marketing
-              href: /azure/cosmos-db/use-cases#retail-and-marketing
-              maintainContext: true
-            - name: Demand Forecasting and Price Optimization
-              href: https://gallery.azure.ai/Solution/Demand-Forecasting-and-Price-Optimization
-            - name: Inventory Optimization Solution with Azure AI
-              href: https://blogs.technet.microsoft.com/machinelearning/2018/04/05/inventory-optimization-solution-in-the-azure-ai-gallery
+      - name: Data Management in Retail Overview
+        href: retail/retail-data-management-overview.md
+      - name: Migrating your e-commerce solution to Azure Overview
+        href: retail/migrating-ecommerce-solution-to-azure.md
+      - name: Optimize and reuse an existing recommendation system
+        href: retail/recommendation-engine-optimization.md
+      - name: PCI DSS-compliant Payment Processing
+        href: /azure/security/blueprints/payment-processing-blueprint
+        maintainContext: true
+      - name: Visual Search Overview
+        href: retail/visual-search-use-case-overview.md
+      - name: SKU optimization for consumer brands
+        items:
+        - name: Overview
+          href: retail/sku-optimization-overview.md
+        - name: Solution guide
+          href: retail/sku-optimization-solution-guide.md            
+      - name: Additional Resources
+        items:
+        - name: Azure Cosmos DB in retail and marketing
+          href: /azure/cosmos-db/use-cases#retail-and-marketing
+          maintainContext: true
+        - name: Demand Forecasting and Price Optimization
+          href: https://gallery.azure.ai/Solution/Demand-Forecasting-and-Price-Optimization
+        - name: Inventory Optimization Solution with Azure AI
+          href: https://blogs.technet.microsoft.com/machinelearning/2018/04/05/inventory-optimization-solution-in-the-azure-ai-gallery
